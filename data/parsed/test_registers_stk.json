@@ -1,0 +1,950 @@
+[
+  {
+    "source": "test_registers.pdf",
+    "page": 40,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Reference | xx101F23MTS ytisned-woL | xx101F23MTS ytisned-muideM | x101F23MTS ytisned-LX dna hgiH | xx201F23MTS ytisned-woL | xx201F23MTS ytisned-muideM | xx301F23MTS ytisned-woL | xx301F23MTS ytisned-muideM | xx301F23MTS ytisned-LX dna hgiH | xx501F23MTS | xx701F23MTS |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\nSection2: Documentation conventions |  |  |  |  |  |  |  |  |  | \nSection3: Memory and bus architecture |  |  |  |  |  |  |  |  |  | \nSection4: CRC calculation unit |  |  |  |  |  |  |  |  |  | \nSection5: Power control (PWR) |  |  |  |  |  |  |  |  |  | \nSection6: Backup registers (BKP) |  |  |  |  |  |  |  |  |  | \nSection7: Low-, medium-, high- and XL- density reset and clock control (RCC) |  |  |  |  |  |  |  | \nSection8: Connectivity line devices: reset and clock control (RCC) |  | \nSection9: General-purpose and alternate- function I/Os (GPIOs and AFIOs) |  |  |  |  |  |  |  |  |  | \nSection10: Interrupts and events |  |  |  |  |  |  |  |  |  | \nSection13: Direct memory access controller (DMA) |  |  |  |  |  |  |  |  |  | \nSection11: Analog-to-digital converter (ADC) |  |  |  |  |  |  |  |  |  | \nSection12: Digital-to-analog converter (DAC) |  |  |  | \nSection14: Advanced-control timers (TIM1 and TIM8) |  |  |  |  |  | \nSection15: General-purpose timers (TIM2 to TIM5) |  |  |  |  |  |  |  |  |  | \nSection16: General-purpose timers (TIM9 to TIM14) | (1) | (1)\nSection17: Basic timers (TIM6 and TIM7) |  |  |  | \nSection18: Real-time clock (RTC) |  |  |  |  |  |  |  |  |  | "
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 41,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Reference | xx101F23MTS ytisned-woL | xx101F23MTS ytisned-muideM | x101F23MTS ytisned-LX dna hgiH | xx201F23MTS ytisned-woL | xx201F23MTS ytisned-muideM | xx301F23MTS ytisned-woL | xx301F23MTS ytisned-muideM | xx301F23MTS ytisned-LX dna hgiH | xx501F23MTS | xx701F23MTS |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\nSection19: Independent watchdog (IWDG) |  |  |  |  |  |  |  |  |  | \nSection20: Window watchdog (WWDG) |  |  |  |  |  |  |  |  |  | \nSection21: Flexible static memory controller (FSMC) |  | \nSection22: Secure digital input/output interface (SDIO) |  | \nSection23: Universal serial bus full-speed device interface (USB) |  |  |  |  | \nSection24: Controller area network (bxCAN) |  |  |  |  | \nSection25: Serial peripheral interface (SPI) |  |  |  |  |  |  |  |  |  | \nSection26: Inter-integrated circuit (I2C) interface |  |  |  |  |  |  |  |  |  | \nSection27: Universal synchronous asynchronous receiver transmitter (USART) |  |  |  |  |  |  |  |  |  | \nSection28: USB on-the-go full-speed (OTG_FS) |  | \nSection29: Ethernet (ETH): media access control (MAC) with DMA controller | \nSection30: Device electronic signature |  |  |  |  |  |  |  |  |  | \nSection31: Debug support (DBG) |  |  |  |  |  |  |  |  |  | "
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 42,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Reference | )PKB( sretsiger pukcaB | )sOIPG( sO/I esoprup-lareneG | )CDA( retrevnoc latigid-ot-golanA | )CAD( retrevnoc golana-ot-latigiD | )8MIT&1MIT( sremit lortnoc-decnavdA | )5MIT ot 2MIT( sremit esoprup-lareneG | ot 9MIT( sremit esoprup-lareneG | )7MIT&6MIT( sremit cisaB | )CTR( kcolc emit-laeR | )GDWI( godhctaw tnednepednI | )GDWW( godhctaw wodniW | rellortnoc yromem citats elbixelF | ecafretni tuptuo/tupni latigid eruceS | )BSU( ecived deeps-lluf BSU | )NACxb( krowten aera rellortnoC | )IPS( ecafretni larehpirep laireS | ecafretni )C2I( tiucric detargetni-retnI | TRASU | )SF_GTO( deeps-lluf og-eht-no BSU | )HTE( tenrehtE |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\nSection2: Documentation conventions |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection3: Memory and bus architecture |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection4: CRC calculation unit\nSection5: Power control (PWR) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection6: Backup registers (BKP) |  | \nSection7: Low-, medium-, high- and XL- density reset and clock control (RCC) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection8: Connectivity line devices: reset and clock control (RCC) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection9: General- purpose and alternate- function I/Os (GPIOs and AFIOs) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection10: Interrupts and events |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \nSection13: Direct memory access controller (DMA) |  |  |  |  |  |  |  |  |  |  | \nSection11: Analog-to- digital converter (ADC) | "
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 44,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Reference | )PKB( sretsiger pukcaB | )sOIPG( sO/I esoprup-lareneG | )CDA( retrevnoc latigid-ot-golanA | )CAD( retrevnoc golana-ot-latigiD | )8MIT&1MIT( sremit lortnoc-decnavdA | )5MIT ot 2MIT( sremit esoprup-lareneG | ot 9MIT( sremit esoprup-lareneG | )7MIT&6MIT( sremit cisaB | )CTR( kcolc emit-laeR | )GDWI( godhctaw tnednepednI | )GDWW( godhctaw wodniW | rellortnoc yromem citats elbixelF | ecafretni tuptuo/tupni latigid eruceS | )BSU( ecived deeps-lluf BSU | )NACxb( krowten aera rellortnoC | )IPS( ecafretni larehpirep laireS | ecafretni )C2I( tiucric detargetni-retnI | TRASU | )SF_GTO( deeps-lluf og-eht-no BSU | )HTE( tenrehtE |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\nSection25: Serial peripheral interface (SPI) | \nSection26: Inter- integrated circuit (I2C) interface | \nSection27: Universal synchronous asynchronous receiver transmitter (USART) | \nSection28: USB on- the-go full-speed (OTG_FS) | \nSection29: Ethernet (ETH): media access control (MAC) with DMA controller | \nSection30: Device electronic signature\nSection31: Debug support (DBG) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | "
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 51,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Boundary address | Peripheral | Bus | Register map |\n| --- | --- | --- | --- |\n0x4001 5800 - 0x4001 7FFF | Reserved | APB2 | -\n0x4001 5400 - 0x4001 57FF | TIM11 timer | Section16.5.11 on page 468\n0x4001 5000 - 0x4001 53FF | TIM10 timer | Section16.5.11 on page 468\n0x4001 4C00 - 0x4001 4FFF | TIM9 timer | Section16.4.13 on page 458\n0x4001 4000 - 0x4001 4BFF | Reserved | -\n0x4001 3C00 - 0x4001 3FFF | ADC3 | Section11.12.15 on page 252\n0x4001 3800 - 0x4001 3BFF | USART1 | Section27.6.8 on page 827\n0x4001 3400 - 0x4001 37FF | TIM8 timer | Section14.4.21 on page 363\n0x4001 3000 - 0x4001 33FF | SPI1 | Section25.5 on page 742\n0x4001 2C00 - 0x4001 2FFF | TIM1 timer | Section14.4.21 on page 363\n0x4001 2800 - 0x4001 2BFF | ADC2 | Section11.12.15 on page 252\n0x4001 2400 - 0x4001 27FF | ADC1\n0x4001 2000 - 0x4001 23FF | GPIO Port G | Section9.5 on page 194\n0x4001 1C00 - 0x4001 1FFF | GPIO Port F\n0x4001 1800 - 0x4001 1BFF | GPIO Port E\n0x4001 1400 - 0x4001 17FF | GPIO Port D\n0x4001 1000 - 0x4001 13FF | GPIO Port C\n0x4001 0C00 - 0x4001 0FFF | GPIO Port B\n0x4001 0800 - 0x4001 0BFF | GPIO Port A\n0x4001 0400 - 0x4001 07FF | EXTI | Section10.3.7 on page 214\n0x4001 0000 - 0x4001 03FF | AFIO | Section9.5 on page 194"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 52,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Boundary address | Peripheral | Bus | Register map |\n| --- | --- | --- | --- |\n0x4000 7800 - 0x4000 FFFF | Reserved | APB1 | -\n0x4000 7400 - 0x4000 77FF | DAC | Section12.5.14 on page 273\n0x4000 7000 - 0x4000 73FF | Power control PWR | Section5.4.3 on page 80\n0x4000 6C00 - 0x4000 6FFF | Backup registers (BKP) | Section6.4.5 on page 85\n0x4000 6400 - 0x4000 67FF | bxCAN1 | Section24.9.5 on page 695\n0x4000 6800 - 0x4000 6BFF | bxCAN2\n0x4000 6000(1) - 0x4000 63FF | Shared USB/CAN SRAM 512 bytes | -\n0x4000 5C00 - 0x4000 5FFF | USB device FS registers | Section23.5.4 on page 651\n0x4000 5800 - 0x4000 5BFF | I2C2 | Section26.6.10 on page 784\n0x4000 5400 - 0x4000 57FF | I2C1\n0x4000 5000 - 0x4000 53FF | UART5 | Section27.6.8 on page 827\n0x4000 4C00 - 0x4000 4FFF | UART4\n0x4000 4800 - 0x4000 4BFF | USART3\n0x4000 4400 - 0x4000 47FF | USART2\n0x4000 4000 - 0x4000 43FF | Reserved | -\n0x4000 3C00 - 0x4000 3FFF | SPI3/I2S | Section25.5 on page 742\n0x4000 3800 - 0x4000 3BFF | SPI2/I2S | Section25.5 on page 742\n0x4000 3400 - 0x4000 37FF | Reserved | -\n0x4000 3000 - 0x4000 33FF | Independent watchdog (IWDG) | Section19.4.5 on page 499\n0x4000 2C00 - 0x4000 2FFF | Window watchdog (WWDG) | Section20.6.4 on page 506\n0x4000 2800 - 0x4000 2BFF | RTC | Section18.4.7 on page 493\n0x4000 2400 - 0x4000 27FF | Reserved | -\n0x4000 2000 - 0x4000 23FF | TIM14 timer | Section16.5.11 on page 468\n0x4000 1C00 - 0x4000 1FFF | TIM13 timer\n0x4000 1800 - 0x4000 1BFF | TIM12 timer | Section16.4.13 on page 458\n0x4000 1400 - 0x4000 17FF | TIM7 timer | Section17.4.9 on page 481\n0x4000 1000 - 0x4000 13FF | TIM6 timer\n0x4000 0C00 - 0x4000 0FFF | TIM5 timer | Section15.4.19 on page 423\n0x4000 0800 - 0x4000 0BFF | TIM4 timer\n0x4000 0400 - 0x4000 07FF | TIM3 timer\n0x4000 0000 - 0x4000 03FF | TIM2 timer"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 60,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Boot mode selection pins | Boot mode | Aliasing |\n| --- | --- | --- |\nBOOT1 | BOOT0\nx | 0 | Main Flash memory | Main Flash memory is selected as boot space\n0 | 1 | System memory | System memory is selected as boot space\n1 | 1 | Embedded SRAM | Embedded SRAM is selected as boot space"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 68,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Standby circuitry (Wakeup logic, IWDG) |\n| --- |\nVoltage Regulator"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 72,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Mode name | Entry | Wakeup | Effect on 1.8V domain clocks | Effect on V DD domain clocks | Voltage regulator |\n| --- | --- | --- | --- | --- | --- |\nSleep (Sleep now or Sleep-on -exit) | WFI | Any interrupt | CPU clock OFF no effect on other clocks or analog clock sources | None | ON\nWFE | Wakeup event\nStop | PDDS and LPDS bits + SLEEPDEEP bit + WFI or WFE | Any EXTI line (configured in the EXTI registers) | All 1.8V domain clocks OFF | HSI and HSE oscillators OFF | ON or in low-power mode (depends on Power control register (PWR_CR))\nStandby | PDDS bit + SLEEPDEEP bit + WFI or WFE | WKUP pin rising edge, RTC alarm, external reset in NRST pin, IWDG reset | OFF"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 75,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Stop mode | Description |\n| --- | --- |\nMode entry | WFI (Wait for Interrupt) or WFE (Wait for Event) while: – Set SLEEPDEEP bit in Cortex®-M3 System Control register – Clear PDDS bit in Power Control register (PWR_CR) – Select the voltage regulator mode by configuring LPDS bit in PWR_CR Note: To enter Stop mode, all EXTI Line pending bits (in Pending register (EXTI_PR)), all peripheral interrupt pending bits, and RTC Alarm flag must be reset. Otherwise, the Stop mode entry procedure is ignored and program execution continues.\nMode exit | If WFI was used for entry: Any EXTI Line configured in Interrupt mode (the corresponding EXTI Interrupt vector must be enabled in the NVIC). Refer to Section10.1.2: Interrupt and exception vectors. If WFE was used for entry: Any EXTI Line configured in event mode. Refer to Section10.2.3: Wakeup event management\nWakeup latency | HSI RC wakeup time + regulator wakeup time from Low-power mode"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 76,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Standby mode | Description |\n| --- | --- |\nMode entry | WFI (Wait for Interrupt) or WFE (Wait for Event) while: – Set SLEEPDEEP in Cortex®-M3 System Control register – Set PDDS bit in Power Control register (PWR_CR) – Clear WUF bit in Power Control/Status register (PWR_CSR) – No interrupt (for WFI) or event (for WFI) is pending\nMode exit | WKUP pin rising edge, RTC alarm event’s rising edge, external Reset in NRST pin, IWDG Reset.\nWakeup latency | Reset phase"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 119,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| LPWR RSTF | WWDG RSTF | IWDG RSTF | SFT RSTF | POR RSTF | PIN RSTF | Res. | RMVF | Reserved |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\nrw | rw | rw | rw | rw | rw | rw"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 152,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| LPWR RSTF | WWDG RSTF | IWDG RSTF | SFT RSTF | POR RSTF | PIN RSTF | Res. | RMVF | Reserved |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\nrw | rw | rw | rw | rw | rw | rw"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 161,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Configuration mode | CNF1 | CNF0 | MODE1 | MODE0 | PxODR register |\n| --- | --- | --- | --- | --- | --- |\nGeneral purpose output | Push-pull | 0 | 0 | 01 10 11 see Table21 | 0 or 1\nOpen-drain | 1 | 0 or 1\nAlternate Function output | Push-pull | 1 | 0 | Don’t care\nOpen-drain | 1 | Don’t care\nInput | Analog | 0 | 0 | 00 | Don’t care\nInput floating | 1 | Don’t care\nInput pull-down | 1 | 0 | 0\nInput pull-up | 1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 166,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| TIM1/8 pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nTIM1/8_CHx | Input capture channel x | Input floating\nOutput compare channel x | Alternate function push-pull\nTIM1/8_CHxN | Complementary output channel x | Alternate function push-pull\nTIM1/8_BKIN | Break input | Input floating\nTIM1/8_ETR | External trigger timer input | Input floating"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 166,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| TIM2/3/4/5 pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nTIM2/3/4/5_CHx | Input capture channel x | Input floating\nOutput compare channel x | Alternate function push-pull\nTIM2/3/4/5_ETR | External trigger timer input | Input floating"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 166,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| USART pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nUSARTx_TX(1) | Full duplex | Alternate function push-pull\nHalf duplex synchronous mode | Alternate function push-pull"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 167,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| USART pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nUSARTx_RX | Full duplex | Input floating / Input pull-up\nHalf duplex synchronous mode | Not used. Can be used as a general IO\nUSARTx_CK | Synchronous mode | Alternate function push-pull\nUSARTx_RTS | Hardware flow control | Alternate function push-pull\nUSARTx_CTS | Hardware flow control | Input floating/ Input pull-up"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 167,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| SPI pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nSPIx_SCK | Master | Alternate function push-pull\nSlave | Input floating\nSPIx_MOSI | Full duplex / master | Alternate function push-pull\nFull duplex / slave | Input floating / Input pull-up\nSimplex bidirectional data wire / master | Alternate function push-pull\nSimplex bidirectional data wire/ slave | Not used. Can be used as a GPIO\nSPIx_MISO | Full duplex / master | Input floating / Input pull-up\nFull duplex / slave (point to point) | Alternate function push-pull\nFull duplex / slave (multi-slave) | Alternate function open drain\nSimplex bidirectional data wire / master | Not used. Can be used as a GPIO\nSimplex bidirectional data wire/ slave (point to point) | Alternate function push-pull\nSimplex bidirectional data wire/ slave (multi-slave) | Alternate function open drain\nSPIx_NSS | Hardware master /slave | Input floating/ Input pull-up / Input pull-down\nHardware master/ NSS output enabled | Alternate function push-pull\nSoftware | Not used. Can be used as a GPIO"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 167,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| I2S pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nI2Sx_ WS | Master | Alternate function push-pull\nSlave | Input floating\nI2Sx_CK | Master | Alternate function push-pull\nSlave | Input floating\nI2Sx_SD | Transmitter | Alternate function push-pull\nReceiver | Input floating/ Input pull-up/ Input pull-down"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 168,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| I2S pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nI2Sx_MCK | Master | Alternate function push-pull\nSlave | Not used. Can be used as a GPIO"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 168,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| I2C pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nI2Cx_SCL | I2C clock | Alternate function open drain\nI2Cx_SDA | I2C Data I/O | Alternate function open drain"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 168,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| BxCAN pinout | GPIO configuration |\n| --- | --- |\nCAN_TX (Transmit data line) | Alternate function push-pull\nCAN_RX (Receive data line) | Input floating / Input pull-up"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 168,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| USB pinout | GPIO configuration |\n| --- | --- |\nUSB_DM / USB_DP | As soon as the USB is enabled, these pins are automatically connected to the USB internal transceiver."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 168,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| OTG_FS pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nOTG_FS_SOF | Host | AF push-pull, if used\nDevice | AF push-pull, if used\nOTG | AF push-pull, if used\nOTG_FS_VBUS(2) | Host | Input floating\nDevice | Input floating\nOTG | Input floating\nOTG_FS_ID | Host | No need if the Force host mode is selected by software (FHMOD set in the OTG_FS_GUSBCFG register)\nDevice | No need if the Force device mode is selected by software (FDMOD set in the OTG_FS_GUSBCFG register)\nOTG | Input pull-up\nOTG_FS_DM | Host | Controlled automatically by the USB power-down\nDevice | Controlled automatically by the USB power-down\nOTG | Controlled automatically by the USB power-down"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 169,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| OTG_FS pinout | Configuration | GPIO configuration |\n| --- | --- | --- |\nOTG_FS_DP | Host | Controlled automatically by the USB power-down\nDevice | Controlled automatically by the USB power-down\nOTG | Controlled automatically by the USB power-down"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 169,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| SDIO pinout | GPIO configuration |\n| --- | --- |\nSDIO_CK | Alternate function push-pull\nSDIO_CMD | Alternate function push-pull\nSDIO[D7:D0] | Alternate function push-pull"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 169,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| ADC/DAC pin | GPIO configuration |\n| --- | --- |\nADC/DAC | Analog"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 169,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC pinout | GPIO configuration |\n| --- | --- |\nFSMC_A[25:0] FSMC_D[15:0] | Alternate function push-pull\nFSMC_CK | Alternate function push-pull\nFSMC_NOE FSMC_NWE | Alternate function push-pull\nFSMC_NE[4:1] FSMC_NCE[3:2] FSMC_NCE4_1 FSMC_NCE4_2 | Alternate function push-pull\nFSMC_NWAIT FSMC_CD | Input floating/ Input pull-up\nFSMC_NIOS16, FSMC_INTR FSMC_INT[3:2] | Input floating\nFSMC_NL FSMC_NBL[1:0] | Alternate function push-pull\nFSMC_NIORD, FSMC_NIOWR FSMC_NREG | Alternate function push-pull"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 170,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Pins | Alternate function | GPIO configuration |\n| --- | --- | --- |\nTAMPER-RTC pin | RTC output | Forced by hardware when configuring the BKP_CR and BKP_RTCCR registers\nTamper event input\nMCO | Clock output | Alternate function push-pull\nEXTI input lines | External input interrupts | Input floating / input pull-up / input pull-down"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 176,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function(1) | CAN_REMAP[1:0] = “00” | CAN_REMAP[1:0] = “10” (2) | CAN_REMAP[1:0] = “11”(3) |\n| --- | --- | --- | --- |\nCAN1_RX or CAN_RX | PA11 | PB8 | PD0\nCAN1_TX or CAN_RX | PA12 | PB9 | PD1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 176,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | CAN2_REMAP = “0” | CAN2_REMAP = “1” |\n| --- | --- | --- |\nCAN2_RX | PB12 | PB5\nCAN2_TX | PB13 | PB6"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 176,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | GPIO port |\n| --- | --- |\nJTMS / SWDIO | PA13\nJTCK / SWCLK | PA14\nJTDI | PA15\nJTDO / TRACESWO | PB3\nNJTRST | PB4\nTRACECK | PE2\nTRACED0 | PE3\nTRACED1 | PE4\nTRACED2 | PE5\nTRACED3 | PE6"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 177,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| SWJ _CFG [2:0] | Available debug ports | SWJ I/O pin assigned |\n| --- | --- | --- |\nPA13 / JTMS/ SWDIO | PA14 / JTCK/S WCLK | PA15 / JTDI | PB3 / JTDO/ TRACE SWO | PB4/ NJTRST\n000 | Full SWJ (JTAG-DP + SW-DP) (Reset state) | X | X | X | X | X\n001 | Full SWJ (JTAG-DP + SW-DP) but without NJTRST | X | X | X | x | Free\n010 | JTAG-DP Disabled and SW-DP Enabled | X | X | Free | Free(1) | Free\n100 | JTAG-DP Disabled and SW-DP Disabled | Free | Free | Free | Free | Free\nOther | Forbidden | - | - | - | - | -"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 177,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | ADC1_ETRGINJ_REMAP = 0 | ADC1_ETRGINJ_REMAP = 1 |\n| --- | --- | --- |\nADC1 external trigger injected conversion | ADC1 external trigger injected conversion is connected to EXTI15 | ADC1 external trigger injected conversion is connected to TIM8_CH4"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 177,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | ADC1_ETRGREG_REMAP = 0 | ADC1_ETRGREG_REMAP = 1 |\n| --- | --- | --- |\nADC1 external trigger regular conversion | ADC1 external trigger regular conversion is connected to EXTI11 | ADC1 external trigger regular conversion is connected to TIM8_TRGO"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 177,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | ADC2_ETRGINJ_REMAP = 0 | ADC2_ETRGINJ_REMAP = 1 |\n| --- | --- | --- |\nADC2 external trigger injected conversion | ADC2 external trigger injected conversion is connected to EXTI 15 | ADC2 external trigger injected conversion is connected to TIM8_CH4"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 178,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | ADC2_ETRGREG_REG = 0 | ADC2_ETRGREG_REG = 1 |\n| --- | --- | --- |\nADC2 external trigger regular conversion | ADC2 external trigger regular conversion is connected to EXTI11 | ADC2 external trigger regular conversion is connected to TIM8_TRGO"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 178,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM5CH4_IREMAP = 0 | TIM5CH4_IREMAP = 1 |\n| --- | --- | --- |\nTIM5_CH4 | TIM5 Channel4 is connected to PA3 | LSI internal clock is connected to TIM5_CH4 input for calibration purpose."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 178,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM4_REMAP = 0 | TIM4_REMAP = 1(1) |\n| --- | --- | --- |\nTIM4_CH1 | PB6 | PD12\nTIM4_CH2 | PB7 | PD13\nTIM4_CH3 | PB8 | PD14\nTIM4_CH4 | PB9 | PD15"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 178,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM3_REMAP[1:0] = “00” (no remap) | TIM3_REMAP[1:0] = “10” (partial remap) | TIM3_REMAP[1:0] = “11” (full remap) (1) |\n| --- | --- | --- | --- |\nTIM3_CH1 | PA6 | PB4 | PC6\nTIM3_CH2 | PA7 | PB5 | PC7\nTIM3_CH3 | PB0 | PC8\nTIM3_CH4 | PB1 | PC9"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 179,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM2_REMAP [1:0] = “00” (no remap) | TIM2_REMAP [1:0] = “01” (partial remap) | TIM2_REMAP [1:0] = “10” (partial remap)(1) | TIM2_REMAP [1:0] = “11” (full remap)(1) |\n| --- | --- | --- | --- | --- |\nTIM2_CH1_ETR(2) | PA0 | PA15 | PA0 | PA15\nTIM2_CH2 | PA1 | PB3 | PA1 | PB3\nTIM2_CH3 | PA2 | PB10\nTIM2_CH4 | PA3 | PB11"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 179,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate functions mapping | TIM1_REMAP[1:0] = “00” (no remap) | TIM1_REMAP[1:0] = “01” (partial remap) | TIM1_REMAP[1:0] = “11” (full remap)(1) |\n| --- | --- | --- | --- |\nTIM1_ETR | PA12 | PE7\nTIM1_CH1 | PA8 | PE9\nTIM1_CH2 | PA9 | PE11\nTIM1_CH3 | PA10 | PE13\nTIM1_CH4 | PA11 | PE14\nTIM1_BKIN | PB12(2) | PA6 | PE15\nTIM1_CH1N | PB13 | PA7 | PE8\nTIM1_CH2N | PB14 2) | PB0 | PE10\nTIM1_CH3N | PB15(2) | PB1 | PE12"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 179,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM9_REMAP = 0 | TIM9_REMAP = 1 |\n| --- | --- | --- |\nTIM9_CH1 | PA2 | PE5\nTIM9_CH2 | PA3 | PE6"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 179,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM10_REMAP = 0 | TIM10_REMAP = 1 |\n| --- | --- | --- |\nTIM10_CH1 | PB8 | PF6"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 180,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM11_REMAP = 0 | TIM11_REMAP = 1 |\n| --- | --- | --- |\nTIM11_CH1 | PB9 | PF7"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 180,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM13_REMAP = 0 | TIM13_REMAP = 1 |\n| --- | --- | --- |\nTIM13_CH1 | PA6 | PF8"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 180,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | TIM14_REMAP = 0 | TIM14_REMAP = 1 |\n| --- | --- | --- |\nTIM14_CH1 | PA7 | PF9"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 180,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | USART3_REMAP[1:0] = “00” (no remap) | USART3_REMAP[1:0] = “01” (partial remap) (1) | USART3_REMAP[1:0] = “11” (full remap) (2) |\n| --- | --- | --- | --- |\nUSART3_TX | PB10 | PC10 | PD8\nUSART3_RX | PB11 | PC11 | PD9\nUSART3_CK | PB12 | PC12 | PD10\nUSART3_CTS | PB13 | PD11\nUSART3_RTS | PB14 | PD12"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 180,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate functions | USART2_REMAP = 0 | USART2_REMAP = 1(1) |\n| --- | --- | --- |\nUSART2_CTS | PA0 | PD3\nUSART2_RTS | PA1 | PD4\nUSART2_TX | PA2 | PD5\nUSART2_RX | PA3 | PD6\nUSART2_CK | PA4 | PD7"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 181,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | USART1_REMAP = 0 | USART1_REMAP = 1 |\n| --- | --- | --- |\nUSART1_TX | PA9 | PB6\nUSART1_RX | PA10 | PB7"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 181,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | I2C1_REMAP = 0 | I2C1_REMAP = 1(1) |\n| --- | --- | --- |\nI2C1_SCL | PB6 | PB8\nI2C1_SDA | PB7 | PB9"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 181,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | SPI1_REMAP = 0 | SPI1_REMAP = 1 |\n| --- | --- | --- |\nSPI1_NSS | PA4 | PA15\nSPI1_SCK | PA5 | PB3\nSPI1_MISO | PA6 | PB4\nSPI1_MOSI | PA7 | PB5"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 181,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | SPI3_REMAP = 0 | SPI3_REMAP = 1 |\n| --- | --- | --- |\nSPI3_NSS / I2S3_WS | PA15 | PA4\nSPI3_SCK / I2S3_CK | PB3 | PC10\nSPI3_MISO | PB4 | PC11\nSPI3_MOSI / I2S3_SD | PB5 | PC12"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 182,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Alternate function | ETH_REMAP = 0 | ETH_REMAP = 1 |\n| --- | --- | --- |\nRX_DV-CRS_DV | PA7 | PD8\nRXD0 | PC4 | PD9\nRXD1 | PC5 | PD10\nRXD2 | PB0 | PD11\nRXD3 | PB1 | PD12"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 183,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Reserved | EVOE | PORT[2:0] | PIN[3:0] |\n| --- | --- | --- | --- |\nrw | rw | rw | rw | rw | rw | rw | rw"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 194,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| tesffO | Register | 13 | 03 | 92 | 82 | 72 | 62 | 52 | 42 | 32 | 22 | 12 | 02 | 91 | 81 | 71 | 61 | 51 | 41 | 31 | 21 | 11 | 01 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n0x00 | GPIOx _CRL Reset value | CNF 7 [1:0] | MODE 7 [1:0] | CNF 6 [1:0] | MODE 6 [1:0] | CNF 5 [1:0] | MODE 5 [1:0] | CNF 4 [1:0] | MODE 4 [1:0] | CNF 3 [1:0] | MOD E3 [1:0] | CNF 2 [1:0] | MODE 2 [1:0] | CNF 1 [1:0] | MOD E1 [1:0] | CNF 0 [1:0] | MODE 0 [1:0]\n0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0\n0x04 | GPIOx _CRH Reset value | CNF 15 [1:0] | MODE 15 [1:0] | CNF 14 [1:0] | MODE 14 [1:0] | CNF 13 [1:0] | MODE 13 [1:0] | CNF 12 [1:0] | MODE 12 [1:0] | CNF 11 [1:0] | MOD E11 [1:0] | CNF 10 [1:0] | MODE 10 [1:0] | CNF 9 [1:0] | MOD E9 [1:0] | CNF 8 [1:0] | MODE 8 [1:0]\n0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0\n0x08 | GPIOx _IDR Reset value | Reserved | IDRy\n0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x0C | GPIOx _ODR Reset value | Reserved | ODRy\n0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x10 | GPIOx _BSRR Reset value | BR[15:0] | BSR[15:0]\n0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x14 | GPIOx _BRR Reset value | Reserved | BR[15:0]\n0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x18 | GPIOx _LCKR Reset value | Reserved | KKCL | LCK[15:0]\n0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 195,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Offset | Register | 13 | 03 | 92 | 82 | 72 | 62 | 52 | 42 | 32 | 22 | 12 | 02 | 91 | 81 | 71 | 61 | 51 | 41 | 31 | 21 | 11 | 01 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n0x00 | AFIO_EVCR | Reserved | EOVE | PORT[2: 0] | PIN[3:0]\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x04 | AFIO_MAPR low-, medium-, high- and XL- density devices | Reserved | ]2[GFC_JWS | ]1[GFC_JWS | ]0[GFC_JWS | Reserve d | PAMER_GERGRTE_2CDA | PAMER_JNIGRTE_2CDA | PAMER_GERGRTE_1CDA | PAMER_JNIGRTE_1CDA | PAMERI_4HC5MIT | PAMER_10DP | ]1[PAMER_1NAC | ]0[PAMER_1NAC | PAPMER_4MIT | ]1[PAPMER_3MIT | ]0[PAPMER_3MIT | ]1[PAPMER_2MIT | ]0[PAPMER_2MIT | ]1[PAPMER_1MIT | ]0[PAPMER_1MIT | ]1[PAMER_3TRASU | ]0[PAMER_3TRASU | PAMER_2TRASU | PAMER_1TRASU | PAMER_1C2I | PAMER_1IPS\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x04 | AFIO_MAPR connectivity line devices | devreseR | PAMER_SPP_PTP | PAMERI_1RTI2MIT | PAMER_3IPS | devreseR | ]2[GFC_JWS | ]1[GFC_JWS | ]0[GFC_JWS | LES_IIMR_IIM | PAMER_2NAC | PAMER_HTE | devreseR | PAMERI_4HC5MIT | PAMER_10DP | ]1[PAMER_1NAC | ]0[PAMER_1NAC | PAPMER_4MIT | ]1[PAPMER_3MIT | ]0[PAPMER_3MIT | ]1[PAPMER_2MIT | ]0[PAPMER_2MIT | ]1[PAPMER_1MIT | ]0[PAPMER_1MIT | ]1[PAMER_3TRASU | ]0[PAMER_3TRASU | PAMER_2TRASU | PAMER_1TRASU | PAMER_1C2I | PAMER_1IPS\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x04 | AFIO_MAPR | Reserved | SWJ_ CFG[2:0] | Reserved | PAMERI_4HC5MIT | PAMER_10DP | devreseR | PAMER_4MIT | ]0:1[PAMER_3MIT | ]0:1[PAMER_2MIT | ]0:1[PAMER_1MIT | ]0:1[PAMER_3TRASU | PAMER_2TRASU | PAMER_1TRASU | PAMER_1C2I | PAMER_1IPS\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x08 | AFIO_EXTICR1 | Reserved | EXTI3[3:0] | EXTI2[3:0] | EXTI1[3:0] | EXTI0[3:0]\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x0C | AFIO_EXTICR2 | Reserved | EXTI7[3:0] | EXTI6[3:0] | EXTI5[3:0] | EXTI4[3:0]\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x10 | AFIO_EXTICR3 | Reserved | EXTI11[3:0] | EXTI10[3:0] | EXTI9[3:0] | EXTI8[3:0]\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x14 | AFIO_EXTICR4 | Reserved | EXTI15[3:0] | EXTI14[3:0] | EXTI13[3:0] | EXTI12[3:0]\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x1C | AFIO_MAPR 2 | Reserved | VDAN_CMSF | PAMER_41MIT | PAMER_31MIT | PAMER_11MIT | PAMER_01MIT | PAMER_9MIT | Reserved\nReset value | 0 | 0 | 0 | 0 | 0 | 0"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 217,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| GPIO Ports |\n| --- |\n"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 218,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Name | Signal type | Remarks |\n| --- | --- | --- |\nV REF+ | Input, analog reference positive | The higher/positive reference voltage for the ADC, 2.4 V  V  V REF+ DDA\nV (1) DDA | Input, analog supply | Analog power supply equal to V and DD 2.4V V 3.6V DDA\nV REF- | Input, analog reference negative | The lower/negative reference voltage for the ADC, V =V REF- SSA\nV (1) SSA | Input, analog supply ground | Ground for analog power supply equal to V SS\nADCx_IN[15:0] | Analog signals | Up to 21 analog channels(2)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 225,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Source | Type | EXTSEL[2:0] |\n| --- | --- | --- |\nTIM1_CC1 event | Internal signal from on-chip timers | 000\nTIM1_CC2 event | 001\nTIM1_CC3 event | 010\nTIM2_CC2 event | 011\nTIM3_TRGO event | 100\nTIM4_CC4 event | 101\nEXTI line 11 / TIM8_TRGO event(1)(2) | External pin / Internal signal from on-chip timers | 110\nSWSTART | Software control bit | 111"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 226,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Source | Connection type | JEXTSEL[2:0] |\n| --- | --- | --- |\nTIM1_TRGO event | Internal signal from on-chip timers | 000\nTIM1_CC4 event | 001\nTIM2_TRGO event | 010\nTIM2_CC1 event | 011\nTIM3_CC4 event | 100\nTIM4_TRGO event | 101\nEXTI line 15/TIM8_CC4 event(1)(2) | External pin/Internal signal from on- chip timers | 110\nJSWSTART | Software control bit | 111"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 226,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Source | Connection type | EXTSEL[2:0] |\n| --- | --- | --- |\nTIM3_CC1 event | Internal signal from on-chip timers | 000\nTIM2_CC3 event | 001\nTIM1_CC3 event | 010\nTIM8_CC1 event | 011\nTIM8_TRGO event | 100\nTIM5_CC1 event | 101\nTIM5_CC3 event | 110\nSWSTART | Software control bit | 111"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 226,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Source | Connection type | JEXTSEL[2:0] |\n| --- | --- | --- |\nTIM1_TRGO event | Internal signal from on-chip timers | 000\nTIM1_CC4 event | 001\nTIM4_CC3 event | 010\nTIM8_CC2 event | 011\nTIM8_CC4 event | 100\nTIM5_TRGO event | 101\nTIM5_CC4 event | 110\nJSWSTART | Software control bit | 111"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 229,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| GPIO Ports |\n| --- |\n"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 255,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Name | Signal type | Remarks |\n| --- | --- | --- |\nV REF+ | Input, analog reference positive | The higher/positive reference voltage for the DAC, 2.4V  V  V (3.3V) REF+ DDA\nV DDA | Input, analog supply | Analog power supply\nV SSA | Input, analog supply ground | Ground for analog power supply\nDAC_OUTx | Analog output signal | DAC channelx analog output"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 258,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Source | Type | TSEL[2:0] |\n| --- | --- | --- |\nTimer 6 TRGO event | Internal signal from on-chip timers | 000\nTimer 3 TRGO event in connectivity line devices or Timer 8 TRGO in high-density and XL-density devices | 001\nTimer 7 TRGO event | 010\nTimer 5 TRGO event | 011\nTimer 2 TRGO event | 100\nTimer 4 TRGO event | 101\nEXTI line9 | External pin | 110\nSWTRIG | Software control bit | 111"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 279,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Source port width | Desti- nation port width | Number of data items to transfer (NDT) | Source content: address / data | Transfer operations | Destination content: address / data |\n| --- | --- | --- | --- | --- | --- |\n8 | 8 | 4 | @0x0 / B0 @0x1 / B1 @0x2 / B2 @0x3 / B3 | 1: READ B0[7:0] @0x0 then WRITE B0[7:0] @0x0 2: READ B1[7:0] @0x1 then WRITE B1[7:0] @0x1 3: READ B2[7:0] @0x2 then WRITE B2[7:0] @0x2 4: READ B3[7:0] @0x3 then WRITE B3[7:0] @0x3 | @0x0 / B0 @0x1 / B1 @0x2 / B2 @0x3 / B3\n8 | 16 | 4 | @0x0 / B0 @0x1 / B1 @0x2 / B2 @0x3 / B3 | 1: READ B0[7:0] @0x0 then WRITE 00B0[15:0] @0x0 2: READ B1[7:0] @0x1 then WRITE 00B1[15:0] @0x2 3: READ B3[7:0] @0x2 then WRITE 00B2[15:0] @0x4 4: READ B4[7:0] @0x3 then WRITE 00B3[15:0] @0x6 | @0x0 / 00B0 @0x2 / 00B1 @0x4 / 00B2 @0x6 / 00B3\n8 | 32 | 4 | @0x0 / B0 @0x1 / B1 @0x2 / B2 @0x3 / B3 | 1: READ B0[7:0] @0x0 then WRITE 000000B0[31:0] @0x0 2: READ B1[7:0] @0x1 then WRITE 000000B1[31:0] @0x4 3: READ B3[7:0] @0x2 then WRITE 000000B2[31:0] @0x8 4: READ B4[7:0] @0x3 then WRITE 000000B3[31:0] @0xC | @0x0 / 000000B0 @0x4 / 000000B1 @0x8 / 000000B2 @0xC / 000000B3\n16 | 8 | 4 | @0x0 / B1B0 @0x2 / B3B2 @0x4 / B5B4 @0x6 / B7B6 | 1: READ B1B0[15:0] @0x0 then WRITE B0[7:0] @0x0 2: READ B3B2[15:0] @0x2 then WRITE B2[7:0] @0x1 3: READ B5B4[15:0] @0x4 then WRITE B4[7:0] @0x2 4: READ B7B6[15:0] @0x6 then WRITE B6[7:0] @0x3 | @0x0 / B0 @0x1 / B2 @0x2 / B4 @0x3 / B6\n16 | 16 | 4 | @0x0 / B1B0 @0x2 / B3B2 @0x4 / B5B4 @0x6 / B7B6 | 1: READ B1B0[15:0] @0x0 then WRITE B1B0[15:0] @0x0 2: READ B3B2[15:0] @0x2 then WRITE B3B2[15:0] @0x2 3: READ B5B4[15:0] @0x4 then WRITE B5B4[15:0] @0x4 4: READ B7B6[15:0] @0x6 then WRITE B7B6[15:0] @0x6 | @0x0 / B1B0 @0x2 / B3B2 @0x4 / B5B4 @0x6 / B7B6\n16 | 32 | 4 | @0x0 / B1B0 @0x2 / B3B2 @0x4 / B5B4 @0x6 / B7B6 | 1: READ B1B0[15:0] @0x0 then WRITE 0000B1B0[31:0] @0x0 2: READ B3B2[15:0] @0x2 then WRITE 0000B3B2[31:0] @0x4 3: READ B5B4[15:0] @0x4 then WRITE 0000B5B4[31:0] @0x8 4: READ B7B6[15:0] @0x6 then WRITE 0000B7B6[31:0] @0xC | @0x0 / 0000B1B0 @0x4 / 0000B3B2 @0x8 / 0000B5B4 @0xC / 0000B7B6\n32 | 8 | 4 | @0x0 / B3B2B1B0 @0x4 / B7B6B5B4 @0x8 / BBBAB9B8 @0xC / BFBEBDBC | 1: READ B3B2B1B0[31:0] @0x0 then WRITE B0[7:0] @0x0 2: READ B7B6B5B4[31:0] @0x4 then WRITE B4[7:0] @0x1 3: READ BBBAB9B8[31:0] @0x8 then WRITE B8[7:0] @0x2 4: READ BFBEBDBC[31:0] @0xC then WRITE BC[7:0] @0x3 | @0x0 / B0 @0x1 / B4 @0x2 / B8 @0x3 / BC\n32 | 16 | 4 | @0x0 / B3B2B1B0 @0x4 / B7B6B5B4 @0x8 / BBBAB9B8 @0xC / BFBEBDBC | 1: READ B3B2B1B0[31:0] @0x0 then WRITE B1B0[7:0] @0x0 2: READ B7B6B5B4[31:0] @0x4 then WRITE B5B4[7:0] @0x1 3: READ BBBAB9B8[31:0] @0x8 then WRITE B9B8[7:0] @0x2 4: READ BFBEBDBC[31:0] @0xC then WRITE BDBC[7:0] @0x3 | @0x0 / B1B0 @0x2 / B5B4 @0x4 / B9B8 @0x6 / BDBC\n32 | 32 | 4 | @0x0 / B3B2B1B0 @0x4 / B7B6B5B4 @0x8 / BBBAB9B8 @0xC / BFBEBDBC | 1: READ B3B2B1B0[31:0] @0x0 then WRITE B3B2B1B0[31:0] @0x0 2: READ B7B6B5B4[31:0] @0x4 then WRITE B7B6B5B4[31:0] @0x4 3: READ BBBAB9B8[31:0] @0x8 then WRITE BBBAB9B8[31:0] @0x8 4: READ BFBEBDBC[31:0] @0xC then WRITE BFBEBDBC[31:0] @0xC | @0x0 / B3B2B1B0 @0x4 / B7B6B5B4 @0x8 / BBBAB9B8 @0xC / BFBEBDBC"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 286,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Res. | MEM2 MEM | PL[1:0] | MSIZE[1:0] | PSIZE[1:0] | MINC | PINC | CIRC | DIR | TEIE | HTIE | TCIE | EN |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\nrw | rw | rw | rw | rw | rw | rw | rw | rw | rw | rw | rw | rw | rw | rw"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 330,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Active edge | Level on opposite signal (TI1FP1 for TI2, TI2FP2 for TI1) | TI1FP1 signal | TI2FP2 signal |\n| --- | --- | --- | --- |\nRising | Falling | Rising | Falling\nCounting on TI1 only | High | Down | Up | No Count | No Count\nLow | Up | Down | No Count | No Count\nCounting on TI2 only | High | No Count | No Count | Up | Down\nLow | No Count | No Count | Down | Up\nCounting on TI1 and TI2 | High | Down | Up | Up | Down\nLow | Up | Down | Down | Up"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 393,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Active edge | Level on opposite signal (TI1FP1 for TI2, TI2FP2 for TI1) | TI1FP1 signal | TI2FP2 signal |\n| --- | --- | --- | --- |\nRising | Falling | Rising | Falling\nCounting on TI1 only | High | Down | Up | No Count | No Count\nLow | Up | Down | No Count | No Count\nCounting on TI2 only | High | No Count | No Count | Up | Down\nLow | No Count | No Count | Down | Up\nCounting on TI1 and TI2 | High | Down | Up | Up | Down\nLow | Up | Down | Down | Up"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 484,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Backup domain |\n| --- |\n32-bit programmable counter RTC_CNT | RTC_Overflow\n= RTC_ALR powered in Standby | RTC_Alarm"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 484,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| RTC_PRL Reload TR_CLK RTC_DIV |\n| --- |\nrising edge RTC prescaler powered in Standby"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 514,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Parameter | Function | Access mode | Unit | Min. | Max. |\n| --- | --- | --- | --- | --- | --- |\nAddress setup | Duration of the address setup phase | Asynchronous | AHB clock cycle (HCLK) | 1 | 16\nAddress hold | Duration of the address hold phase | Asynchronous, muxed I/Os | AHB clock cycle (HCLK) | 2 | 16\nData setup | Duration of the data setup phase | Asynchronous | AHB clock cycle (HCLK) | 2 | 256\nBus turn | Duration of the bus turnaround phase | Asynchronous and synchronous read/write | AHB clock cycle (HCLK) | 1 | 16\nClock divide ratio | Number of AHB clock cycles (HCLK) to build one memory clock cycle (CLK) | Synchronous | AHB clock cycle (HCLK) | 2 | 16\nData latency | Number of clock cycles to issue to the memory before the first data of the burst | Synchronous | Memory clock cycle (CLK) | 2 | 17"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 514,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC signal name | I/O | Function |\n| --- | --- | --- |\nCLK | O | Clock (for synchronous access)\nA[25:0] | O | Address bus\nD[15:0] | I/O | Bidirectional data bus\nNE[x] | O | Chip select, x = 1..4\nNOE | O | Output enable\nNWE | O | Write enable\nNL(=NADV) | O | Latch enable (this signal is called address valid, NADV, by some NOR Flash devices)\nNWAIT | I | NOR Flash wait input signal to the FSMC"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 515,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC signal name | I/O | Function |\n| --- | --- | --- |\nCLK | O | Clock (for synchronous access)\nA[25:16] | O | Address bus\nAD[15:0] | I/O | 16-bit multiplexed, bidirectional address/data bus\nNE[x] | O | Chip select, x = 1..4\nNOE | O | Output enable\nNWE | O | Write enable\nNL(=NADV) | O | Latch enable (this signal is called address valid, NADV, by some NOR Flash devices)\nNWAIT | I | NOR Flash wait input signal to the FSMC"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 515,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC signal name | I/O | Function |\n| --- | --- | --- |\nCLK | O | Clock (only for PSRAM synchronous access)\nA[25:0] | O | Address bus\nD[15:0] | I/O | Data bidirectional bus\nNE[x] | O | Chip select, x = 1..4 (called NCE by PSRAM (Cellular RAM i.e. CRAM))\nNOE | O | Output enable\nNWE | O | Write enable\nNL(= NADV) | O | Address valid only for PSRAM input (memory signal name: NADV)\nNWAIT | I | PSRAM wait input signal to the FSMC\nNBL[1] | O | Upper byte enable (memory signal name: NUB)\nNBL[0] | O | Lowed byte enable (memory signal name: NLB)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 516,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Device | Mode | R/W | AHB data size | Memory data size | Allowed/ not allowed | Comments |\n| --- | --- | --- | --- | --- | --- | --- |\nNOR Flash (muxed I/Os and nonmuxed I/Os) | Asynchronous | R | 8 | 16 | Y | -\nAsynchronous | W | 8 | 16 | N | -\nAsynchronous | R | 16 | 16 | Y | -\nAsynchronous | W | 16 | 16 | Y | -\nAsynchronous | R | 32 | 16 | Y | Split into two FSMC accesses\nAsynchronous | W | 32 | 16 | Y | Split into two FSMC accesses\nAsynchronous page | R | - | 16 | N | Mode is not supported\nSynchronous | R | 8 | 16 | N | -\nSynchronous | R | 16 | 16 | Y | -\nSynchronous | R | 32 | 16 | Y | -\nPSRAM (multiplexed and nonmultiplexed I/Os) | Asynchronous | R | 8 | 16 | Y | -\nAsynchronous | W | 8 | 16 | Y | Use of byte lanes NBL[1:0]\nAsynchronous | R | 16 | 16 | Y | -\nAsynchronous | W | 16 | 16 | Y | -\nAsynchronous | R | 32 | 16 | Y | Split into two FSMC accesses\nAsynchronous | W | 32 | 16 | Y | Split into two FSMC accesses\nAsynchronous page | R | - | 16 | N | Mode is not supported\nSynchronous | R | 8 | 16 | N | -\nSynchronous | R | 16 | 16 | Y | -\nSynchronous | R | 32 | 16 | Y | -\nSynchronous | W | 8 | 16 | Y | Use of byte lanes NBL[1:0]\nSynchronous | W | 16 / 32 | 16 | Y | -\nSRAM and ROM | Asynchronous | R | 8 / 16 | 16 | Y | -\nAsynchronous | W | 8 / 16 | 16 | Y | Use of byte lanes NBL[1:0]\nAsynchronous | R | 32 | 16 | Y | Split into two FSMC accesses\nAsynchronous | W | 32 | 16 | Y | Split into two FSMC accesses. Use of byte lanes NBL[1:0]"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 519,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit number | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | 0x0 (no effect on asynchronous mode)\n18:16 | CPSIZE | 0x0 (no effect on asynchronous mode)\n15 | ASYNCWAIT | Set to 1 if the memory supports this feature. Otherwise keep at 0.\n14 | EXTMOD | 0x0\n13 | WAITEN | 0x0 (no effect on asynchronous mode)\n12 | WREN | As needed\n11 | WAITCFG | Don’t care\n10 | WRAPMOD | 0x0\n9 | WAITPOL | Meaningful only if bit 15 is 1\n8 | BURSTEN | 0x0\n7 | Reserved | 0x1\n6 | FACCEN | Don’t care\n5-4 | MWID | As needed\n3-2 | MTYP[0:1] | As needed, exclude 0x2 (NOR Flash)\n1 | MUXE | 0x0\n0 | MBKEN | 0x1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 521,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit number | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | 0x0 (no effect on asynchronous mode)\n18:16 | CPSIZE | 0x0 (no effect on asynchronous mode)\n15 | ASYNCWAIT | Set to 1 if the memory supports this feature. Otherwise keep at 0.\n14 | EXTMOD | 0x1\n13 | WAITEN | 0x0 (no effect on asynchronous mode)\n12 | WREN | As needed\n11 | WAITCFG | Don’t care\n10 | WRAPMOD | 0x0\n9 | WAITPOL | Meaningful only if bit 15 is 1\n8 | BURSTEN | 0x0\n7 | Reserved | 0x1\n6 | FACCEN | Don’t care\n5-4 | MWID | As needed\n3-2 | MTYP[0:1] | As needed, exclude 0x2 (NOR Flash)\n1 | MUXEN | 0x0\n0 | MBKEN | 0x1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 524,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit number | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | 0x0 (no effect on asynchronous mode)\n18:16 | Reserved | 0x0 (no effect on asynchronous mode)\n15 | ASYNCWAIT | Set to 1 if the memory supports this feature. Otherwise keep at 0.\n14 | EXTMOD | 0x1 for mode B, 0x0 for mode 2\n13 | WAITEN | 0x0 (no effect on asynchronous mode)\n12 | WREN | As needed\n11 | WAITCFG | Don’t care\n10 | WRAPMOD | 0x0\n9 | WAITPOL | Meaningful only if bit 15 is 1\n8 | BURSTEN | 0x0\n7 | Reserved | 0x1\n6 | FACCEN | 0x1\n5-4 | MWID | As needed\n3-2 | MTYP[0:1] | 0x2 (NOR Flash memory)\n1 | MUXEN | 0x0\n0 | MBKEN | 0x1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 526,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | 0x0 (no effect on asynchronous mode)\n18:16 | CPSIZE | 0x0 (no effect on asynchronous mode)\n15 | ASYNCWAIT | Set to 1 if the memory supports this feature. Otherwise keep at 0.\n14 | EXTMOD | 0x1\n13 | WAITEN | 0x0 (no effect on asynchronous mode)\n12 | WREN | As needed\n11 | WAITCFG | Don’t care\n10 | WRAPMOD | 0x0\n9 | WAITPOL | Meaningful only if bit 15 is 1\n8 | BURSTEN | 0x0\n7 | Reserved | 0x1\n6 | FACCEN | 0x1\n5-4 | MWID | As needed\n3-2 | MTYP[0:1] | 0x2 (NOR Flash memory)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 529,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | 0x0 (no effect on asynchronous mode)\n18:16 | CPSIZE | 0x0 (no effect on asynchronous mode)\n15 | ASYNCWAIT | Set to 1 if the memory supports this feature. Otherwise keep at 0.\n14 | EXTMOD | 0x1\n13 | WAITEN | 0x0 (no effect on asynchronous mode)\n12 | WREN | As needed\n11 | WAITCFG | Don’t care\n10 | WRAPMOD | 0x0\n9 | WAITPOL | Meaningful only if bit 15 is 1\n8 | BURSTEN | 0x0\n7 | Reserved | 0x1\n6 | FACCEN | Set according to memory support\n5-4 | MWID | As needed\n3-2 | MTYP[0:1] | As needed\n1 | MUXEN | 0x0\n0 | MBKEN | 0x1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 531,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31-21 | Reserved | 0x000\n19 | CBURSTRW | 0x0 (no effect on asynchronous mode)\n18:16 | CPSIZE | 0x0 (no effect on asynchronous mode)\n15 | ASYNCWAIT | Set to 1 if the memory supports this feature. Otherwise keep at 0.\n14 | EXTMOD | 0x0\n13 | WAITEN | 0x0 (no effect on asynchronous mode)\n12 | WREN | As needed\n11 | WAITCFG | Don’t care\n10 | WRAPMOD | 0x0\n9 | WAITPOL | Meaningful only if bit 15 is 1\n8 | BURSTEN | 0x0\n7 | Reserved | 0x1\n6 | FACCEN | 0x1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 537,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | No effect on synchronous read\n18-16 | CPSIZE | As needed (0x1 for CRAM 1.5)\n15 | ASCYCWAIT | 0x0\n14 | EXTMOD | 0x0\n13 | WAITEN | Set to 1 if the memory supports this feature, otherwise keep at 0.\n12 | WREN | no effect on synchronous read\n11 | WAITCFG | to be set according to memory\n10 | WRAPMOD | 0x0\n9 | WAITPOL | to be set according to memory\n8 | BURSTEN | 0x1\n7 | Reserved | 0x1\n6 | FACCEN | Set according to memory support (NOR Flash memory)\n5-4 | MWID | As needed"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 538,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31:30 | Reserved | 0x0\n29:28 | ACCMOD | 0x0\n27-24 | DATLAT | Data latency\n23-20 | CLKDIV | 0x0 to get CLK = HCLK (not supported) 0x1 to get CLK = 2 × HCLK\n19-16 | BUSTURN | no effect\n15-8 | DATAST | Don’t care\n7-4 | ADDHLD | Don’t care\n3-0 | ADDSET[3:0] | Don’t care"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 539,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31-20 | Reserved | 0x000\n19 | CBURSTRW | 0x1\n18-16 | CPSIZE | As needed (0x1 for CRAM 1.5)\n15 | ASCYCWAIT | 0x0\n14 | EXTMOD | 0x0\n13 | WAITEN | Set to 1 if the memory supports this feature, otherwise keep at 0.\n12 | WREN | 0x1\n11 | WAITCFG | 0x0\n10 | WRAPMOD | 0x0"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 540,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n9 | WAITPOL | to be set according to memory\n8 | BURSTEN | no effect on synchronous write\n7 | Reserved | 0x1\n6 | FACCEN | Set according to memory support\n5-4 | MWID | As needed\n3-2 | MTYP[0:1] | 0x1\n1 | MUXEN | As needed\n0 | MBKEN | 0x1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 540,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit No. | Bit name | Value to set |\n| --- | --- | --- |\n31:30 | Reserved | 0x0\n29:28 | ACCMOD | 0x0\n27-24 | DATLAT | Data latency\n23-20 | CLKDIV | 0x0 to get CLK = HCLK (not supported) 0x1 to get CLK = 2 × HCLK\n19-16 | BUSTURN | Time between NEx high to NEx low (BUSTURN HCLK)\n15-8 | DATAST | Don’t care\n7-4 | ADDHLD | Don’t care\n3-0 | ADDSET[3:0] | Don’t care"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 549,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Parameter | Function | Access mode | Unit | Min. | Max. |\n| --- | --- | --- | --- | --- | --- |\nMemory setup time | Number of clock cycles (HCLK) to set up the address before the command assertion | Read/Write | AHB clock cycle (HCLK) | 1 | 255\nMemory wait | Minimum duration (HCLK clock cycles) of the command assertion | Read/Write | AHB clock cycle (HCLK) | 2 | 256\nMemory hold | Number of clock cycles (HCLK) to hold the address (and the data in case of a write access) after the command de-assertion | Read/Write | AHB clock cycle (HCLK) | 1 | 254\nMemory databus high-Z | Number of clock cycles (HCLK) during which the databus is kept in high-Z state after the start of a write access | Write | AHB clock cycle (HCLK) | 0 | 255"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 549,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC signal name | I/O | Function |\n| --- | --- | --- |\nA[17] | O | NAND Flash address latch enable (ALE) signal\nA[16] | O | NAND Flash command latch enable (CLE) signal\nD[7:0] | I/O | 8-bit multiplexed, bidirectional address/data bus\nNCE[x] | O | Chip select, x = 2, 3\nNOE(= NRE) | O | Output enable (memory signal name: read enable, NRE)\nNWE | O | Write enable\nNWAIT/INT[3:2] | I | NAND Flash ready/busy input signal to the FSMC"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 550,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC signal name | I/O | Function |\n| --- | --- | --- |\nA[17] | O | NAND Flash address latch enable (ALE) signal\nA[16] | O | NAND Flash command latch enable (CLE) signal\nD[15:0] | I/O | 16-bit multiplexed, bidirectional address/data bus\nNCE[x] | O | Chip select, x = 2, 3\nNOE(= NRE) | O | Output enable (memory signal name: read enable, NRE)\nNWE | O | Write enable\nNWAIT/INT[3:2] | I | NAND Flash ready/busy input signal to the FSMC"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 550,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| FSMC signal name | I/O | Function |\n| --- | --- | --- |\nA[10:0] | O | Address bus\nNIOS16 | I | Data transfer in I/O space. It must be shorted to GND (16-bit transfer only)\nNIORD | O | Output enable for I/O space\nNIOWR | O | Write enable for I/O space\nNREG | O | Register signal indicating if access is in Common or Attribute space\nD[15:0] | I/O | Bidirectional databus\nNCE4_1 | O | Chip select 1\nNCE4_2 | O | Chip select 2 (indicates if access is 16-bit or 8-bit)\nNOE | O | Output enable in Common and in Attribute space\nNWE | O | Write enable in Common and in Attribute space\nNWAIT | I | PC Card wait input signal to the FSMC (memory signal name IORDY)\nINTR | I | PC Card interrupt to the FSMC (only for PC Cards that can generate an interrupt)\nCD | I | PC Card presence detection. Active high. If an access is performed to the PC Card banks while CD is low, an AHB error is generated. Refer to Section21.3: AHB interface"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 556,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| 2ECn | 1ECn | GERn | EWn/EOn | RWOIn/ DROIn | 01A | 9A | 1-7A | 0A | Space | Access Type | Allowed/not Allowed |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n1 | 0 | 1 | 0 | 1 | X | X | X-X | X | Common Memory Space | Read/Write byte on D7-D0 | YES\n0 | 1 | 1 | 0 | 1 | X | X | X-X | X | Read/Write byte on D15-D8 | Not supported\n0 | 0 | 1 | 0 | 1 | X | X | X-X | 0 | Read/Write word on D15-D0 | YES\nX | 0 | 0 | 0 | 1 | 0 | 1 | X-X | 0 | Attribute Space | Read or Write Configuration registers | YES\nX | 0 | 0 | 0 | 1 | 0 | 0 | X-X | 0 | Read or Write CIS (Card Information Structure) | YES\n1 | 0 | 0 | 0 | 1 | X | X | X-X | 1 | Attribute Space | Invalid Read or Write (odd address) | YES\n0 | 1 | 0 | 0 | 1 | X | X | X-X | x | Invalid Read or Write (odd address) | YES\n1 | 0 | 0 | 1 | 0 | X | X | X-X | 0 | I/O space | Read Even Byte on D7-0 | YES\n1 | 0 | 0 | 1 | 0 | X | X | X-X | 1 | Read Odd Byte on D7-0 | YES\n1 | 0 | 0 | 1 | 0 | X | X | X-X | 0 | Write Even Byte on D7-0 | YES\n1 | 0 | 0 | 1 | 0 | X | X | X-X | 1 | Write Odd Byte on D7-0 | YES\n0 | 0 | 0 | 1 | 0 | X | X | X-X | 0 | Read Word on D15-0 | YES\n0 | 0 | 0 | 1 | 0 | X | X | X-X | 0 | Write word on D15-0 | YES\n0 | 1 | 0 | 1 | 0 | X | X | X-X | X | Read Odd Byte on D15-8 | Not supported\n0 | 1 | 0 | 1 | 0 | X | X | X-X | X | Write Odd Byte on D15-8 | Not supported"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 570,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Pin | Direction | Description |\n| --- | --- | --- |\nSDIO_CK | Output | MultiMediaCard/SD/SDIO card clock. This pin is the clock from host to card.\nSDIO_CMD | Bidirectional | MultiMediaCard/SD/SDIO card command. This pin is the bidirectional command/response signal.\nSDIO_D[7:0] | Bidirectional | MultiMediaCard/SD/SDIO card data. These pins are the bidirectional databus."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 571,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Power management Clock management |\n| --- |\n"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 591,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bits | Identifier | Type | Value | Description | Clear condition |\n| --- | --- | --- | --- | --- | --- |\n25 | CARD_IS_LOCKED | S R | ‘0’ = card unlocked ‘1’ = card locked | When set, signals that the card is locked by the host | A\n24 | LOCK_UNLOCK_ FAILED | E X | ’0’= no error ’1’= error | Set when a sequence or password error has been detected in lock/unlock card command | C\n23 | COM_CRC_ERROR | E R | ’0’= no error ’1’= error | The CRC check of the previous command failed. | B\n22 | ILLEGAL_COMMAND | E R | ’0’= no error ’1’= error | Command not legal for the card state | B\n21 | CARD_ECC_FAILED | E X | ’0’= success ’1’= failure | Card internal ECC was applied but failed to correct the data. | C\n20 | CC_ERROR | E R | ’0’= no error ’1’= error | (Undefined by the standard) A card error occurred, which is not related to the host command. | C\n19 | ERROR | E X | ’0’= no error ’1’= error | (Undefined by the standard) A generic card error related to the (and detected during) execution of the last host command (e.g. read or write failures). | C\n18 | Reserved\n17 | Reserved\n16 | CID/CSD_OVERWRITE | E X | ’0’= no error ‘1’= error | Can be either of the following errors: – The CID register has already been written and cannot be overwritten – The read-only section of the CSD does not match the card contents – An attempt to reverse the copy (set as original) or permanent WP (unprotected) bits was made | C\n15 | WP_ERASE_SKIP | E X | ’0’= not protected ’1’= protected | Set when only partial address space was erased due to existing write | C\n14 | CARD_ECC_DISABLED | S X | ’0’= enabled ’1’= disabled | The command has been executed without using the internal ECC. | A\n13 | ERASE_RESET | - | ’0’= cleared ’1’= set | An erase sequence was cleared before executing because an out of erase sequence command was received (commands other than CMD35, CMD36, CMD38 or CMD13) | C"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 592,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bits | Identifier | Type | Value | Description | Clear condition |\n| --- | --- | --- | --- | --- | --- |\n12:9 | CURRENT_STATE | S R | 0 = Idle 1 = Ready 2 = Ident 3 = Stby 4 = Tran 5 = Data 6 = Rcv 7 = Prg 8 = Dis 9 = Btst 10-15 = reserved | The state of the card when receiving the command. If the command execution causes a state change, it will be visible to the host in the response on the next command. The four bits are interpreted as a binary number between 0 and 15. | B\n8 | READY_FOR_DATA | S R | ’0’= not ready ‘1’ = ready | Corresponds to buffer empty signaling on the bus | -\n7 | SWITCH_ERROR | E X | ’0’= no error ’1’= switch error | If set, the card did not switch to the expected mode as requested by the SWITCH command | B\n6 | Reserved\n5 | APP_CMD | S R | ‘0’ = Disabled ‘1’ = Enabled | The card will expect ACMD, or an indication that the command has been interpreted as ACMD | C\n4 | Reserved for SD I/O Card\n3 | AKE_SEQ_ERROR | E R | ’0’= no error ’1’= error | Error in the sequence of the authentication process | C\n2 | Reserved for application specific commands\n1 | Reserved for manufacturer test mode\n0"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 595,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| ERASE_SIZE | Value definition |\n| --- | --- |\n0000h | Erase timeout calculation is not supported.\n0001h | 1 AU\n0002h | 2 AU\n0003h | 3 AU\n--------- | ---------\nFFFFh | 65535 AU"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 596,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| ERASE_TIMEOUT | Value definition |\n| --- | --- |\n00 | Erase timeout calculation is not supported.\n01 | 1 [sec]\n02 | 2 [sec]\n03 | 3 [sec]\n--------- | ---------\n63 | 63 [sec]"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 603,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit position | Width (bits) | Value | Description |\n| --- | --- | --- | --- |\n47 | 1 | 0 | Start bit\n46 | 1 | 0 | Transmission bit\n[45:40] | 6 | X | Reserved\n[39:8] Argument field | 39 | 16 | X | Card is ready\n[38:36] | 3 | X | Number of I/O functions\n35 | 1 | X | Present memory\n[34:32] | 3 | X | Stuff bits\n[31:8] | 24 | X | I/O ORC\n[7:1] | 7 | X | Reserved\n0 | 1 | 1 | End bit"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 621,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Offset | Register | 13 | 03 | 92 | 82 | 72 | 62 | 52 | 42 | 32 | 22 | 12 | 02 | 91 | 81 | 71 | 61 | 51 | 41 | 31 | 21 | 11 | 01 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n0x00 | SDIO_POWER | devreseR | LRTCRWP\n0x04 | SDIO_CLKCR | devreseR | NE_CFWH | EGDEGEN | SUBDIW | SSAPYB | VASRWP | NEKLC | VIDKLC\n0x08 | SDIO_ARG | CMDARG\n0x0C | SDIO_CMD | devreseR | DMCATA-EC | NEIn | lpmocDMCNE | dnepsuSOIDS | NEMSPC | DNEPTIAW | TNITIAW | PSERTIAW | XEDNIDMC\n0x10 | SDIO_ RESPCMD | Reserved | RESPCMD\n0x14 | SDIO_RESP1 | CARDSTATUS1\n0x18 | SDIO_RESP2 | CARDSTATUS2\n0x1C | SDIO_RESP3 | CARDSTATUS3\n0x20 | SDIO_RESP4 | CARDSTATUS4\n0x24 | SDIO_DTIM- ER | DATATIME\n0x28 | SDIO_DLEN | Reserved | DATALENGTH\n0x2C | SDIO_DCTRL | devreseR | NEOIDS | DOMWR | POTSWR | TRATSWR | EZISKCOLBD | NEAMD | EDOMTD | RIDTD | NETD\n0x30 | SDIO_ DCOUNT | Reserved | DATACOUNT\n0x34 | SDIO_STA | devreseR | DNEATAEC | TIOIDS | LVADXR | LVADXT | EOFIFXR | EOFIFXT | FOFIFXR | FOFIFXT | FHOFIFXR | EHOFIFXT | TCAXR | TCAXT | TCADMC | DNEKCBD | RRETIBTS | DNEATAD | TNESDMC | DNERDMC | RREVOXR | RREDNUXT | TUOEMITD | TUOEMITC | LIAFCRCD | LIAFCRCC\n0x38 | SDIO_ICR | devreseR | CDNEATAEC | CTIOIDS | devreseR | CDNEKCBD | CRRETIBTS | CDNEATAD | CTNESDMC | CDNERDMC | CRREVOXR | CRREDNUXT | CTUOEMITD | CTUOEMITC | CLIAFCRCD | CLIAFCRCC\n0x3C | SDIO_MASK | devreseR | EIDNEATAEC | EITIOIDS | EILVADXR | EILVADXT | EIEOFIFXR | EIEOFIFXT | EIFOFIFXR | EIFOFIFXT | EIFHOFIFXR | EIEHOFIFXT | EITCAXR | EITCAXT | EITCADMC | EIDNEKCBD | EIRRETIBTS | EIDNEATAD | EITNESDMC | EIDNERDMC | EIRREVOXR | EIRREDNUXT | EITUOEMITD | EITUOEMITC | EILIAFCRCD | EILIAFCRCC\n0x48 | SDIO_ FIFOCNT | Reserved | FIFOCOUNT\n0x80 | SDIO_FIFO | FIF0Data"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 756,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| S | Header | A | Address | A |\n| --- | --- | --- | --- | --- |\nEV1"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 756,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Header | A | Data1 | A |\n| --- | --- | --- | --- |\nEV1 | EV3_1 | EV3 | EV3"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 757,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| S | Header | A | Address | A | Data1 | A |\n| --- | --- | --- | --- | --- | --- | --- |\nEV1 | EV2"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 760,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| 7-bit master transmitter S Address A Data1 A Data2 A DataN A P ..... EV5 EV6 EV8_1 EV8 EV8 EV8 EV8_2 10-bit master transmitter S Header A Address A Data1 A DataN A P ..... EV5 EV9 EV6 EV8_1 EV8 EV8 EV8_2 Legend: S= Start, S = Repeated Start, P= Stop, A= Acknowledge, r EVx= Event (with interrupt if ITEVFEN = 1) EV5: SB=1, cleared by reading SR1 register followed by writing DR register with Address. EV6: ADDR=1, cleared by reading SR1 register followed by reading SR2. EV8_1: TxE=1, shift register empty, data register empty, write Data1 in DR. EV8: TxE=1, shift register not empty, .data register empty, cleared by writing DR register EV8_2: TxE=1, BTF = 1, Program Stop request. TxE and BTF are cleared by hardware by the Stop condition EV9: ADD10=1, cleared by reading SR1 register followed by writing DR register. Notes: 1- The EV5, EV6, EV9, EV8_1 and EV8_2 events stretch SCL low until the end of the corresponding software sequence. 2- The EV8 software sequence must complete before the end of the current byte transfer. In case EV8 software sequence can not be managed before the current byte end of transfer, it is recommended to use BTF instead of TXE with the drawback of slowing the communication. ai15881b |\n| --- |\n"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 760,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| S | Header | A | Address | A | Data1 | A |\n| --- | --- | --- | --- | --- | --- | --- |\nEV5 | EV9 | EV6 | EV8_1 | EV8 | EV8"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 762,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| S | Header | A | Address | A |\n| --- | --- | --- | --- | --- |\nEV5 | EV9 | EV6"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 762,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Sr | Header | A | Data1 | A | Data2 | A |\n| --- | --- | --- | --- | --- | --- | --- |\nEV5 | EV6 | EV7 | EV7"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 763,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| S | Header | A |\n| --- | --- | --- |\nEV5"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 763,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Sr | Header | A | Data1 | A | Data2 | NA | P |\n| --- | --- | --- | --- | --- | --- | --- | --- |\nEV5 | EV6 | EV6_1 | EV7_3"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 764,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| S | Header | A | Address | A |\n| --- | --- | --- | --- | --- |\nEV5 | EV9 | EV6"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 764,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Sr | Header | A |\n| --- | --- | --- |\nEV5 | EV6_3"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 770,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Interrupt event | Event flag | Enable control bit |\n| --- | --- | --- |\nStart bit sent (Master) | SB | ITEVFEN\nAddress sent (Master) or Address matched (Slave) | ADDR\n10-bit header sent (Master) | ADD10\nStop received (Slave) | STOPF\nData byte transfer finished | BTF\nReceive buffer not empty | RxNE | ITEVFEN and ITBUFEN\nTransmit buffer empty | TxE"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 831,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Signal name | Signal type | Description |\n| --- | --- | --- |\nOTG_FS_DP | Digital input/output | USB OTG D+ line\nOTG_FS_DM | Digital input/output | USB OTG D- line\nOTG_FS_ID | Digital input | USB OTG ID\nOTG_FS_VBUS | Analog input | USB OTG VBUS\nOTG_FS_SOF | Digital output | USB OTG Start Of Frame (visibility)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 844,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Mode | Description | USB compatibility |\n| --- | --- | --- |\nRun | MCU fully active | Required when USB not in suspend state.\nSleep | USB suspend exit causes the device to exit Sleep mode. Peripheral registers content is kept. | Available while USB is in suspend state.\nStop | USB suspend exit causes the device to exit Stop mode. Peripheral registers content is kept(1). | Available while USB is in suspend state.\nStandby | Powered-down. The peripheral must be reinitialized after exiting Standby mode. | Not compatible with USB applications."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 851,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| OTG_DIEPINTx/ OTG_DOEPINTx Device IN/OUT endpoint interrupt registers |\n| --- |\nOTG_DOEPINTx Device IN/OUT endpoint interrupt registers\nOTG_DOEPINTx Device IN/OUT endpoint interrupt registers"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 853,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Core global CSRs (1 Kbyte) |\n| --- |\nHost mode CSRs (1 Kbyte)\nDevice mode CSRs (1.5 Kbyte)\nPower and clock gating CSRs (0.5 Kbyte)\nDevice EP 0/Host channel 0 FIFO (4 Kbyte)\nDevice EP1/Host channel 1 FIFO (4 Kbyte)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 855,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Acronym | Offset address | Register name |\n| --- | --- | --- |\nOTG_FS_HPRT | 0x440 | OTG_FS Host port control and status register (OTG_FS_HPRT) on page882\nOTG_FS_HCCHARx | 0x500 0x520 ... 0x5E0 | OTG_FS Host channel-x characteristics register (OTG_FS_HCCHARx) (x=0..7, where x=Channel_number) on page885\nOTG_FS_HCINTx | 0x508 | OTG_FS Host channel-x interrupt register (OTG_FS_HCINTx) (x=0..7, where x=Channel_number) on page886\nOTG_FS_HCINTMSKx | 0x50C | OTG_FS Host channel-x interrupt mask register (OTG_FS_HCINTMSKx) (x=0..7, where x=Channel_number) on page887\nOTG_FS_HCTSIZx | 0x510 | OTG_FS Host channel-x transfer size register (OTG_FS_HCTSIZx) (x=0..7, where x=Channel_number) on page888"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 856,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Acronym | Offset address | Register name |\n| --- | --- | --- |\nOTG_FS_DIEPCTLx | 0x920 0x940 0x960 | OTG device endpoint x control register (OTG_FS_DIEPCTLx) (x = 1..3, where x= Endpoint_number) on page898\nOTG_FS_DIEPINTx | 0x908 | OTG_FS device endpoint-x interrupt register (OTG_FS_DIEPINTx) (x=0..3, where x=Endpoint_number) on page905\nOTG_FS_DIEPTSIZ0 | 0x910 | OTG_FS device IN endpoint 0 transfer size register (OTG_FS_DIEPTSIZ0) on page907\nOTG_FS_DTXFSTSx | 0x918 | OTG_FS device IN endpoint transmit FIFO status register (OTG_FS_DTXFSTSx) (x = 0..3, where x = Endpoint_number) on page911\nOTG_FS_DIEPTSIZx | 0x930 0x950 0x970 | OTG_FS device OUT endpoint-x transfer size register (OTG_FS_DOEPTSIZx) (x=1..3, where x=Endpoint_number) on page911\nOTG_FS_DOEPCTL0 | 0xB00 | OTG_FS device control OUT endpoint 0 control register (OTG_FS_DOEPCTL0) on page901\nOTG_FS_DOEPCTLx | 0xB20 0xB40 0xB60 | OTG device endpoint x control register (OTG_FS_DIEPCTLx) (x = 1..3, where x= Endpoint_number) on page898\nOTG_FS_DOEPINTx | 0xB08 | OTG_FS device endpoint-x interrupt register (OTG_FS_DOEPINTx) (x=0..3, where x=Endpoint_number) on page906\nOTG_FS_DOEPTSIZ0 | 0xB10 | OTG_FS device OUT endpoint 0 transfer size register (OTG_FS_DOEPTSIZ0) on page909\nOTG_FS_DOEPTSIZx | 0xB30 0xB50 0xB70 | OTG_FS device OUT endpoint-x transfer size register (OTG_FS_DOEPTSIZx) (x=1..3, where x=Endpoint_number) on page911"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 857,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Register name | Acronym | Offset address: 0xE00–0xFFF |\n| --- | --- | --- |\nPower and clock gating control register | OTG_FS_PCGCCTL | 0xE00-0xE04\nReserved | - | 0xE05–0xFFF"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 894,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| OEPINT | IEPINT |\n| --- | --- |\nr | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r | r"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 918,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Offset | Register | 13 | 03 | 92 | 82 | 72 | 62 | 52 | 42 | 32 | 22 | 12 | 02 | 91 | 81 | 71 | 61 | 51 | 41 | 31 | 21 | 11 | 01 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n0x808 | OTG_FS_DSTS | Reserved | FNSOF | Reserved | RREE | DPSMUNE | STSPSUS\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x810 | OTG_FS_DIEPM SK | Reserved | MKAN | Reserved | MENPENI | MMNPENI | KSMEFXTTI | MOT | devreseR | MDPE | MCRFX\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x814 | OTG_FS_DOEP MSK | Reserved | KSMKAN | MRREB | devreseR | MRRETKPTUO | devreseR | MXRSHPSTS | MDPETO | MPUTS | devreseR | MDPE | MCRFX\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x818 | OTG_FS_DAINT | OEPINT | IEPINT\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x81C | OTG_FS_DAINT MSK | OEPM | IEPM\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x828 | OTG_FS_DVBU SDIS | Reserved | VBUSDT\nReset value | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1\n0x82C | OTG_FS_DVBU SPULSE | Reserved | DVBUSP\nReset value | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 0\n0x834 | OTG_FS_DIEPE MPMSK | Reserved | INEPTXFEM\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x900 | OTG_FS_DIEPC TL0 | ANEPE | SIDPE | devreseR | KANS | KANC | TXFNUM | LLATS | devreseR | EPTY P | STSKAN | devreseR | PEABSU | Reserved | MPSI Z\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0\n0x918 | TG_FS_DTXFST S0 | Reserved | INEPTFSAV\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x920 | OTG_FS_DIEPC TL1 | ANEPE | SIDPE | DIP1DS/MRFDDOS | MRFNVES/DIP0DS | KANS | KANC | TXFNUM | LLATS | devreseR | PYTPE | STSKAN | DIPD/MUNOE | PEABSU | Reserved | MPSIZ\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\n0x938 | TG_FS_DTXFST S1 | Reserved | INEPTFSAV\nReset value | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 971,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| MAC signals | MII default | MII remap | RMII default | RMII remap | Pin | Pin configuration |\n| --- | --- | --- | --- | --- | --- | --- |\nETH_MDC | MDC | - | MDC | - | PC1 | AF output push-pull high-speed (50 MHz)\nETH_MII_TXD2 | TXD2 | - | - | - | PC2 | AF output push-pull high-speed (50 MHz)\nETH_MII_TX_CLK | TX_CLK | - | - | - | PC3 | Floating input (reset state)\nETH_MII_CRS | CRS | - | - | - | PA0 | Floating input (reset state)\nETH_MII_RX_CLK ETH_RMII_REF_CLK | RX_CLK | - | REF_CLK | - | PA1 | Floating input (reset state)\nETH_MDIO | MDIO | - | MDIO | - | PA2 | AF output push-pull high-speed (50 MHz)\nETH_MII_COL | COL | - | - | - | PA3 | Floating input (reset state)\nETH_MII_RX_DV ETH_RMII_CRS_DV | RX_DV | - | CRS_DV | - | PA7 | Floating input (reset state)\nETH_MII_RXD0 ETH_RMII_RXD0 | RXD0 | - | RXD0 | - | PC4 | Floating input (reset state)\nETH_MII_RXD1 ETH_RMII_RXD1 | RXD1 | - | RXD1 | - | PC5 | Floating input (reset state)\nETH_MII_RXD2 | RXD2 | - | - | - | PB0 | Floating input (reset state)\nETH_MII_RXD3 | RXD3 | - | - | - | PB1 | Floating input (reset state)\nETH_MII_RX_ER | RX_ER | - | - | - | PB10 | Floating input (reset state)\nETH_MII_TX_EN ETH_RMII_TX_EN | TX_EN | - | TX_EN | - | PB11 | AF output push-pull high-speed (50 MHz)\nETH_MII_TXD0 ETH_RMII_TXD0 | TXD0 | - | TXD0 | - | PB12 | AF output push-pull high-speed (50 MHz)\nETH_MII_TXD1 ETH_RMII_TXD1 | TXD1 | - | TXD1 | - | PB13 | AF output push-pull high-speed (50 MHz)\nETH_PPS_OUT | PPS_OUT | - | PPS_OUT | - | PB5 | AF output push-pull high-speed (50 MHz)\nETH_MII_TXD3 | TXD3 | - | - | - | PB8 | AF output push-pull high-speed (50 MHz)\nETH_RMII_CRS_DV | - | RX_DV | - | CRS_DV | PD8 | Floating input (reset state)\nETH_MII_RXD0 ETH_RMII_RXD0 | - | RXD0 | - | RXD0 | PD9 | Floating input (reset state)\nETH_MII_RXD1 ETH_RMII_RXD1 | - | RXD1 | - | RXD1 | PD10 | Floating input (reset state)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 972,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| MAC signals | MII default | MII remap | RMII default | RMII remap | Pin | Pin configuration |\n| --- | --- | --- | --- | --- | --- | --- |\nETH_MII_RXD2 | - | RXD2 | - | - | PD11 | Floating input (reset state)\nETH_MII_RXD3 | - | RXD3 | - | - | PD12 | Floating input (reset state)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 993,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit 18: Ethernet frame | Bit 27: Header checksum error | Bit 28: Payload checksum error | Frame status |\n| --- | --- | --- | --- |\n0 | 0 | 0 | The frame is an IEEE 802.3 frame (Length field value is less than 0x0600).\n1 | 0 | 0 | IPv4/IPv6 Type frame in which no checksum error is detected.\n1 | 0 | 1 | IPv4/IPv6 Type frame in which a payload checksum error (as described for PCE) is detected\n1 | 1 | 0 | IPv4/IPv6 Type frame in which IP header checksum error (as described for IPCO HCE) is detected.\n1 | 1 | 1 | IPv4/IPv6 Type frame in which both PCE and IPCO HCE are detected.\n0 | 0 | 1 | IPv4/IPv6 Type frame in which there is no IP HCE and the payload check is bypassed due to unsupported payload.\n0 | 1 | 1 | Type frame which is neither IPv4 or IPv6 (checksum offload bypasses the checksum check completely)\n0 | 1 | 0 | Reserved"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1028,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Bit 5: frame type | Bit 7: IPC checksum error | Bit 0: payload checksum error | Frame status |\n| --- | --- | --- | --- |\n0 | 0 | 0 | IEEE 802.3 Type frame (Length field value is less than 0x0600.)\n1 | 0 | 0 | IPv4/IPv6 Type frame, no checksum error detected\n1 | 0 | 1 | IPv4/IPv6 Type frame with a payload checksum error (as described for PCE) detected\n1 | 1 | 0 | IPv4/IPv6 Type frame with an IP header checksum error (as described for IPC CE) detected\n1 | 1 | 1 | IPv4/IPv6 Type frame with both IP header and payload checksum errors detected\n0 | 0 | 1 | IPv4/IPv6 Type frame with no IP header checksum error and the payload check bypassed, due to an unsupported payload\n0 | 1 | 1 | A Type frame that is neither IPv4 or IPv6 (the checksum offload engine bypasses checksum completely.)\n0 | 1 | 0 | Reserved"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1080,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| STM32 MCU debug support Cortex-M3 debug support Bus matrix DCode interface Cortex-M3 Data System Core interface JTMS/ SWDIO External private peripheral bus (PPB) JTDI Bridge ETM JTDO/ TRACESWO SWJ-DP AHB-AP TRACESWO NJTRST Internal private NVIC Trace port JTCK/ peripheral bus (PPB) TPIU TRACECK SWCLK DWT TRACED[3:0] FPB DBGMCU ITM ai17138 |\n| --- |\n"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1082,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| SWJ-DP pin name | JTAG debug port | SW debug port | Pin assignment |\n| --- | --- | --- | --- |\nType | Description | Type | Debug assignment\nJTMS/SWDIO | I | JTAG Test Mode Selection | IO | Serial Wire Data Input/Output | PA13\nJTCK/SWCLK | I | JTAG Test Clock | I | Serial Wire Clock | PA14\nJTDI | I | JTAG Test Data Input | - | - | PA15\nJTDO/TRACESWO | O | JTAG Test Data Output | - | TRACESWO if async trace is enabled | PB3\nNJTRST | I | JTAG Test nReset | - | - | PB4"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1083,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Available debug ports | SWJ IO pin assigned |\n| --- | --- |\nPA13 / JTMS / SWDIO | PA14 / JTCK / SWCLK | PA15 / JTDI | PB3 / JTDO | PB4 / NJTRST\nFull SWJ (JTAG-DP + SW-DP) - Reset State | X | X | X | X | X\nFull SWJ (JTAG-DP + SW-DP) but without NJTRST | X | X | X | X\nJTAG-DP Disabled and SW-DP Enabled | X | X\nJTAG-DP Disabled and SW-DP Disabled | Released"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1089,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| IR(3:0) | Data register | Details |\n| --- | --- | --- |\n1111 | BYPASS [1 bit] | -\n1110 | IDCODE [32 bits] | ID CODE 0x3BA00477 (Arm® Cortex®-M3 r1p1-01rel0 ID Code)\n1010 | DPACC [35 bits] | Debug port access register This initiates a debug port and allows access to a debug port register. – When transferring data IN: Bits 34:3 = DATA[31:0] = 32-bit data to transfer for a write request Bits 2:1 = A[3:2] = 2-bit address of a debug port register. Bit 0 = RnW = Read request (1) or write request (0). – When transferring data OUT: Bits 34:3 = DATA[31:0] = 32-bit data which is read following a read request Bits 2:0 = ACK[2:0] = 3-bit Acknowledge: 010 = OK/FAULT 001 = WAIT OTHER = reserved Refer to Table222 for a description of the A[3:2] bits\n1011 | APACC [35 bits] | Access port access register Initiates an access port and allows access to an access port register. – When transferring data IN: Bits 34:3 = DATA[31:0] = 32-bit data to shift in for a write request Bits 2:1 = A[3:2] = 2-bit address (sub-address AP registers). Bit 0 = RnW= Read request (1) or write request (0). – When transferring data OUT: Bits 34:3 = DATA[31:0] = 32-bit data which is read following a read request Bits 2:0 = ACK[2:0] = 3-bit Acknowledge: 010 = OK/FAULT 001 = WAIT OTHER = reserved There are many AP registers (see AHB-AP) addressed as the combination of: – The shifted value A[3:2] – The current value of the DP SELECT register\n1000 | ABORT [35 bits] | Abort register – Bits 31:1 = Reserved – Bit 0 = DAPABORT: write 1 to generate a DAP abort."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1090,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Address | A[3:2] value | Description |\n| --- | --- | --- |\n0x0 | 00 | Reserved, must be kept at reset value.\n0x4 | 01 | DP CTRL/STAT register. Used to: – Request a system or debug power-up – Configure the transfer operation for AP accesses – Control the pushed compare and pushed verify operations. – Read some status flags (overrun, power-up acknowledges)\n0x8 | 10 | DP SELECT register: Used to select the current access port and the active 4-words register window. – Bits 31:24: APSEL: select the current AP – Bits 23:8: reserved – Bits 7:4: APBANKSEL: select the active 4-words register window on the current AP – Bits 3:0: reserved\n0xC | 11 | DP RDBUFF register: Used to allow the debugger to get the final result after a sequence of operations (without requesting new JTAG-DP operation)"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1093,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| A[3:2] | R/W | CTRLSEL bit of SELECT register | Register | Notes |\n| --- | --- | --- | --- | --- |\n01 | Read/Write | 0 | DP- CTRL/STAT | Purpose is to: – request a system or debug power-up – configure the transfer operation for AP accesses – control the pushed compare and pushed verify operations. – read some status flags (overrun, power- up acknowledges)\n01 | Read/Write | 1 | WIRE CONTROL | Purpose is to configure the physical serial port protocol (like the duration of the turnaround time)\n10 | Read | - | READ RESEND | Enables recovery of the read data from a corrupted debugger transfer, without repeating the original AP transfer.\n10 | Write | - | SELECT | The purpose is to select the current access port and the active 4-words register window\n11 | Read/Write | - | READ BUFFER | This read buffer is useful because AP accesses are posted (the result of a read AP request is available on the next AP transaction). This read buffer captures data from the AP, presented as the result of a previous read, without initiating a new transaction"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1098,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Address | Register | Details |\n| --- | --- | --- |\n@E0000FB0 | ITM lock access | Write 0xC5ACCE55 to unlock Write Access to the other ITM registers\n@E0000E80 | ITM trace control | Bits 31-24 = Always 0\nBits 23 = Busy\nBits 22-16 = 7-bits ATB ID which identifies the source of the trace data.\nBits 15-10 = Always 0\nBits 9:8 = TSPrescale = Time Stamp Prescaler\nBits 7-5 = Reserved\nBit 4 = SWOENA = Enable SWV behavior (to clock the timestamp counter by the SWV clock).\nBit 3 = DWTENA: Enable the DWT Stimulus\nBit 2 = SYNCENA: this bit must be to 1 to enable the DWT to generate synchronization triggers so that the TPIU can then emit the synchronization packets.\nBit 1 = TSENA (Timestamp Enable)\nBit 0 = ITMENA: Global Enable Bit of the ITM\n@E0000E40 | ITM trace privilege | Bit 3: mask to enable tracing ports31:24\nBit 2: mask to enable tracing ports23:16\nBit 1: mask to enable tracing ports15:8\nBit 0: mask to enable tracing ports7:0\n@E0000E00 | ITM trace enable | Each bit enables the corresponding Stimulus port to generate trace.\n@E0000000- E000007C | Stimulus port registers 0-31 | Write the 32-bits data on the selected Stimulus Port (32 available) to be traced out."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1105,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| TPUI pin name | Trace synchronous mode | STM32F10xxx pin assignment |\n| --- | --- | --- |\nType | Description\nTRACESWO | O | TRACE Async Data Output | PB3"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1105,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| TPUI pin name | Trace synchronous mode | STM32F10xxxpin assignment |\n| --- | --- | --- |\nType | Description\nTRACECK | O | TRACE Clock | PE2\nTRACED[3:0] | O | TRACE Sync Data Outputs Can be 1, 2 or 4. | PE[6:3]"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1106,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| DBGMCU_CR register | Pins assigned for: | TRACE IO pin assigned |\n| --- | --- | --- |\nTRACE _IOEN | TRACE _MODE [1:0] | PB3 /JTDO/ TRACESWO | PE2/ TRACECK | PE3 / TRACED[0] | PE4 / TRACED[1] | PE5 / TRACED[2] | PE6 / TRACED[3]\n0 | XX | No Trace (default state) | Released (1) | -\n1 | 00 | Asynchronous Trace | TRACESWO | - | - | Released (usable as GPIO)\n1 | 01 | Synchronous Trace 1 bit | Released (1) | TRACECK | TRACED[0] | - | - | -\n1 | 10 | Synchronous Trace 2 bit | TRACECK | TRACED[0] | TRACED[1] | - | -\n1 | 11 | Synchronous Trace 4 bit | TRACECK | TRACED[0] | TRACED[1] | TRACED[2] | TRACED[3]"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1108,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Address | Register | Description |\n| --- | --- | --- |\n0xE0040004 | Current port size | Allows the trace port size to be selected: Bit 0: Port size = 1 Bit 1: Port size = 2 Bit 2: Port size = 3, not supported Bit 3: Port Size = 4 Only 1 bit must be set. By default, the port size is one bit. (0x00000001)\n0xE00400F0 | Selected pin protocol | Allows the Trace Port Protocol to be selected: Bit1:0= 00: Sync Trace Port Mode 01: Serial Wire Output - manchester (default value) 10: Serial Wire Output - NRZ 11: reserved"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1109,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Address | Register | Description |\n| --- | --- | --- |\n0xE0040304 | Formatter and flush control | Bits 31-9 = always ‘0 Bit 8 = TrigIn = always ‘1 to indicate that triggers are indicated Bits 7-4 = always 0 Bits 3-2 = always 0 Bit 1 = EnFCont. In Sync Trace mode (Select_Pin_Protocol register bit1:0=00), this bit is forced to ‘1: the formatter is automatically enabled in continuous mode. In asynchronous mode (Select_Pin_Protocol register bit1:0 <> 00), this bit can be written to activate or not the formatter. Bit 0 = always 0 The resulting default value is 0x102 Note: In synchronous mode, because the TRACECTL pin is not mapped outside the chip, the formatter is always enabled in continuous mode -this way the formatter inserts some control packets to identify the source of the trace packets).\n0xE0040300 | Formatter and flush status | Not used in Cortex®-M3, always read as 0x00000008"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1111,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n19-Oct- 2007 | 1 | Document reference number changed from UM0306 to RM0008. The changes below were made with reference to revision 1 of 01-Jun-2007 of UM0306. EXTSEL[2:0] and JEXTSEL[2:0] removed from Table65: ADC pins on page218 and V REF+ range modified in Remarks column. Notes added to Section11.3.9 on page 221, Section11.9.2 on page 230, Section11.9.7 on page 233 and Section11.9.9 on page 234. SPI_CR2 corrected to SPI_CR1 in 1 clock and 1 bidirectional data wire (BIDIMODE = 1) on page708. f frequency changed to f in Section25.2: SPI and I2S main features on page700. CPU PCLK Section25.3.6: CRC calculation on page715 and Section25.3.9: SPI communication using DMA (direct memory addressing) on page719 modified. Note added to bit 13 description changed in Section25.5.1: SPI control register 1 (SPI_CR1) (not used in I2S mode) on page742. Note for bit 4 modified in Section25.5.3: SPI status register (SPI_SR) on page745. On 64-pin packages and packages with less pins on page68 modified. Section9.3.2: Using OSC_IN/OSC_OUT pins as GPIO ports PD0/PD1 on page175 updated. Description of SRAM at address 0x4000 6000 modified in Figure2: Memory map on page39 and Table3: Register boundary addresses. Note added to Section23.2: USB main features on page622 and Section24.2: bxCAN main features on page653. Figure4: Power supply overview and On 100-pin and 144-pin packages modified. Formula added to Bits 25:24 description in CAN bit timing register (CAN_BTR) on page683. Figure49: DMA block diagram in low-, medium- high- and XL-density devices on page276 modified. Example of configuration on page1099 modified. MODEx[1:0] bit definitions corrected in Section9.2.2: Port configuration register high (GPIOx_CRH) (x=A..G) on page172. Downcounting mode on page300 modified. Figure81: Output stage of capture/compare channel (channel 4) on page313 and Figure83: Output compare mode, toggle on OC1. modified. OCx output enable conditions modified in Section14.3.10: PWM mode on page317. Section14.3.19: TIMx and external trigger synchronization on page334 title changed. CC1S, CC2S, CC3S and CC4S definitions modified for (1, 1) bit setting modified in Section14.4.7: TIM1 and TIM8 capture/compare mode register 1 (TIMx_CCMR1) and Section14.4.8: TIM1 and TIM8 capture/compare mode register 2 (TIMx_CCMR2). CC1S, CC2S, CC3S and CC4S definitions for (1, 1) bit setting modified in Section15.4.7: TIMx capture/compare mode register 1 (TIMx_CCMR1) and Section15.4.8: TIMx capture/compare mode register 2 (TIMx_CCMR2). AFIO_EVCR pins modified in Table60: AFIO register map and reset values on page195. Section14.3.6: Input capture mode on page314 modified."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1112,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n19-Oct- 2007 | 1 continued | Figure114: Counter timing diagram, internal clock divided by 1, TIMx_ARR=0x6 and Figure129: Output compare mode, toggle on OC1 modified. CKD definition modified in Section15.4.1: TIMx control register 1 (TIMx_CR1). Bit 8 and Bit 9 added to Section6.4.2: RTC clock calibration register (BKP_RTCCR). it 15 and Bit 16 added to DBGMCU_CR register on page1101. Section26.5: I2C debug mode on page772 added. Stop and Standby modified in Table11: Low-power mode summary. Table13: Sleep-on-exit modified. Debug mode on page77 modified. HSITRIM[4:0] bit description modified in Section7.3.1: Clock control register (RCC_CR). Note modified in MCO description in Section7.3.2: Clock configuration register (RCC_CFGR). RCC_CR row modified in RCC register map and reset values on page121. Bits 15:0 description modified in Section9.2.6: Port bit reset register (GPIOx_BRR) (x=A..G). Embedded boot loader on page61 added. Figure13, Figure15, Figure16, Figure17 and Figure18 modified. Section3.3.3: Embedded Flash memory on page54 modified. REV_ID bit description added to DBGMCU_IDCODE on page1087. Reset value modified in Clock control register (RCC_CR) on page99 and HSITRIM[4:0] description modified. Section9.1.1 on page 161 modified. Bit definitions modified in Section9.2: GPIO registers on page171. Wakeup latency description modified in Table14: Stop mode. Clock control register (RCC_CR) reset value modified. Note added in ASOS and ASOE bit descriptions in 6.4.2 on page 83. Section31.16.2: Debug support for timers, watchdog, bxCAN and I2C modified. Table235: DBG register map and reset values updated. Section23.5.3: Buffer descriptor table clarified. Center-aligned mode (up/down counting) on page303 and Center-aligned mode (up/down counting) on page375 updated. Figure85: Center-aligned PWM waveforms (ARR=8) on page320 and Figure131: Center- aligned PWM waveforms (ARR=8) on page389 modified. RSTCAL description modified in Section11.12.3: ADC control register 2 (ADC_CR2). Note changed below Table96: Min/max IWDG timeout period (in ms) at 40 kHz (LSI). Note added below Figure8: Clock tree. ADC conversion time modified in Section11.2: ADC main features. Auto-injection on page222 updated. Note added in Section11.9.9: Combined injected simultaneous + interleaved. Note added to Section9.3.2: Using OSC_IN/OSC_OUT pins as GPIO ports PD0/PD1. Small text changes. Internal LSI RC frequency changed from 32 to 40 kHz. Table96: Min/max IWDG timeout period (in ms) at 40 kHz (LSI) updated. Option byte addresses corrected in Figure2: Memory map and Table5: Flash module organization (medium-density devices). Information block organization modified in Section3.3.3: Embedded Flash memory. External event that trigger ADC conversion is EXTI line instead of external interrupt (see Section11: Analog-to-digital converter (ADC)). Appendix A: Important notes on page500 added."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1113,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n20-Nov- 2007 | 2 | Figure279: USART block diagram modified. Procedure modified in Character reception on page795. In Section27.3.4: Fractional baud rate generation: – Equation legend modified – Table192: Error calculation for programmed baud rates modified – Note added Small text changes. In CAN bit timing register (CAN_BTR) on page683, bit 15 is reserved. Flash memory organization corrected, Table5: Flash module organization (medium-density devices) modified in Section3.3.3: Embedded Flash memory. Note added below Figure4: Power supply overview in Section5.1: Power supplies. RTCSEL[1:0] bit description modified in Backup domain control register (RCC_BDCR). Names of bits [0:2] corrected for RCC_APB1RSTR and RCC_APB1ENR in Table18: RCC register map and reset values. Impedance value specified in A.4: Voltage glitch on ADC input 0 on page500. In Section25.5.1: SPI control register 1 (SPI_CR1) (not used in I2S mode), BR[2:0] description corrected. Prescaler buffer behavior specified when an update event occurs (see Upcounting mode on page369, Downcounting mode on page372 and Center-aligned mode (up/down counting)). AWDCH[4:0] modified in Section11.12.2: ADC control register 1 (ADC_CR1) and bits [26:24] are reserved in Section11.12.4: ADC sample time register 1 (ADC_SMPR1). CAN_BTR bit 8 is reserved in Table181: bxCAN register map and reset values. CAN master control register (CAN_MCR) on page674 corrected. V range corrected in Table65: ADC pins and in On 100-pin and 144-pin packages on REF+ page68. Start condition on page758 updated. Note removed in Table34: CAN1 alternate function remapping. Note added in Table43: TIM4 alternate function remapping. In Section9.4.2: AF remap and debug I/O configuration register (AFIO_MAPR), bit definition modified for USART2_REMAP = 0. In Section9.4.3: External interrupt configuration register 1 (AFIO_EXTICR1), bit definition modified for SPI1_REMAP = 0. In Table234: Important TPIU registers, at 0xE0040004, bit2 set is not supported. TRACE port size setting corrected in TPUI TRACE pin assignment on page1105. Figure13, Figure15, Figure16, Figure17 and Figure18 modified. Figure14: Basic structure of a 5-Volt tolerant I/O port bit added. Table9.3.1: Using OSC32_IN/OSC32_OUT pins as GPIO ports PC14/PC15 on page175 added. Bit descriptions modified in Section18.4.5 and Section18.4.6. JTAG ID code corrected in Section31.7: JTAG debug port on page1088. Modified: Section20.2: WWDG main features, Section6.2: BKP main features, Section6.3.1: Tamper detection, Section6.3.2: RTC calibration, Section23.3: USB functional description, Controlling the downcounter, Section5.1.2: Battery backup domain, Section8.2: Introduction. ASOE bit description modified in Section6.4.2: RTC clock calibration register (BKP_RTCCR)."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1114,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n08-Feb- 2008 | 3 | Figure4: Power supply overview on page68 modified. Section7.1.2: Power reset on page91 modified. Section7.2: Clocks on page92 modified. Definition of Bits 26:24 modified in Section9.4.2: AF remap and debug I/O configuration register (AFIO_MAPR) on page184. AFIO_EVCR bits corrected in Table60: AFIO register map and reset values on page195. Number of maskable interrupt channels modified in Section10.1: Nested vectored interrupt controller (NVIC) on page197. Section13.3.6: Interrupts on page280 added. Small text changes. Examples modified in Figure91: 6-step generation, COM example (OSSR=1) on page327. Table83: Output control bits for complementary OCx and OCxN channels with break feature on page355 modified. Register names modified in Section24.9.4: CAN filter registers on page691. Small text change in Section26.3.3: I2C master mode on page757. Bits 5:0 frequency description modified in Section26.6.2: I2C Control register 2 (I2C_CR2) on page774. Section23.3.1: Description of USB blocks on page624 modified. Section25.3.4: Configuring the SPI for half-duplex communication on page707 modified. Section25.3.6: CRC calculation on page715 modified. Note added in BUSY flag on page717. Section25.3.8: Disabling the SPI on page718 added. Appendix A: Important notes, removed.\n22-May- 2008 | 4 | Reference manual updated to apply to devices containing up to 512 Kbytes of Flash memory (High-density devices). Document restructured. Small text changes. Definitions of Medium-density and High-density devices added to all sections. In Section3: Memory and bus architecture on page47: – Figure1: System architecture (low-, medium-, XL-density devices) on page47, Figure2: Memory map on page39, Table3: Register boundary addresses on page50 updated – Note and text added to AHB/APB bridges (APB) on page49 – SRAM size in Section3.3.1: Embedded SRAM on page53 – Section3.3.3: Embedded Flash memory on page54 updated (Flash size, page size, number of pages, Reading the Flash memory, Table6: Flash module organization (high- density devices) on page56 added) – Prefetch buffer on/off specified in Reading the Flash memory bit_number definition modified in Section3.3.2: Bit banding on page53. Section4: CRC calculation unit on page63 added (Table3: Register boundary addresses on page50 updated, Figure2: Memory map on page39 updated and CRCEN bit added to Section7.3.6: AHB peripheral clock enable register (RCC_AHBENR) on page111). Entering Stop mode on page74 specified. Updated in Section6: Backup registers (BKP) on page81: number of backup registers and available storage size and Section6.1: BKP introduction. ASOE definition modified in Section6.4.2: RTC clock calibration register (BKP_RTCCR) on page83."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1115,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n22-May- 2008 | 4 (continued) | In Section7: Low-, medium-, high- and XL-density reset and clock control (RCC) on page90: – LSI calibration on page97 added. Figure7: Simplified diagram of the reset circuit on page91 updated – APB2 peripheral reset register (RCC_APB2RSTR) on page106 updated – APB1 peripheral reset register (RCC_APB1RSTR) on page109 updated – AHB peripheral clock enable register (RCC_AHBENR) updated – APB2 peripheral clock enable register (RCC_APB2ENR) updated – APB1 peripheral clock enable register (RCC_APB1ENR) on page115 updated (see SectionTable 18.: RCC register map and reset values). – LSERDYIE definition modified in Clock interrupt register (RCC_CIR) – HSITRIM[4:0] definition modified in Clock control register (RCC_CR) In Section9: General-purpose and alternate-function I/Os (GPIOs and AFIOs) on page159: – GPIO ports F and G added – In Section9.3: Alternate function I/O and debug configuration (AFIO) on page175 remapping for High-density devices added, note modified under Section9.3.2, Section9.3.3 on page 176 modified – AF remap and debug I/O configuration register (AFIO_MAPR) updated Updated in Section10: Interrupts and events on page197: – number of maskable interrupt channels – number of GPIOs (see Figure21: External interrupt/event GPIO mapping) In Section13: Direct memory access controller (DMA) on page274: – number of DMA controllers and configurable DMA channels updated – Figure48: DMA block diagram in connectivity line devices on page275 updated, notes added – Note updated in Section13.3.2: Arbiter on page277.Note updated in Section13.3.6: Interrupts on page280. Figure50: DMA1 request mapping on page281 updated – DMA2 controller on page282 added In Section11: Analog-to-digital converter (ADC) on page215: – ADC3 added (Figure22: Single ADC block diagram on page217 updated, Table70: External trigger for injected channels for ADC3 added, etc.). Section12: Digital-to-analog converter (DAC) on page254 added.In Section14: Advanced-control timers (TIM1 and TIM8) on page292: – Advanced control timer TIM8 added (see Figure52: Advanced-control timer block diagram on page294) – TS[2:0] modified in Section14.4.3: TIM1 and TIM8 slave mode control register (TIMx_SMCR) on page342. In Section15: General-purpose timers (TIM2 to TIM5) on page365: – TIM5 added – Figure100: General-purpose timer block diagram updated. Table86: TIMx Internal trigger connection on page409 modified. Section17: Basic timers (TIM6 and TIM7) added. – RTC clock sources specified in Section18.2: RTC main features on page483. Section18.1: RTC introduction modified. Section21: Flexible static memory controller (FSMC) on page507 added. Section26: Secure digital input/output interface (SDIO) on page743 added."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1116,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n22-May- 2008 | 4 (continued) | Figure235: CAN frames on page672 modified. Bits 31:21 and bits 20:3 modified in CAN TX mailbox identifier register (CAN_TIxR) (x=0..2) on page685. Bits 31:21 and bits 20:3 modified in CAN receive FIFO mailbox identifier register (CAN_RIxR) (x=0..1) on page688. Section26.3.7: DMA requests on page768 modified. DMAEN bit 11 description modified in Section26.6.2: I2C Control register 2 (I2C_CR2) on page774. Clock phase and clock polarity on page704 modified. Transmit sequence on page706 modified. Receive sequence on page707 added. Reception sequence on page739 modified. Underrun flag (UDR) on page740 modified. I2S feature added (see Section25: Serial peripheral interface (SPI) on page699). In Section31: Debug support (DBG) on page1079: – DBGMCU_IDCODE on page1087 and DBGMCU_CR register on page1101 updated – TMC TAP changed to boundary scan TAP – Address onto which DBGMCU_CR is mapped modified in Section31.16.3: Debug MCU configuration register on page1101. Section30: Device electronic signature on page1076 added. REV_ID(15:0) definition modified in Section31.6.1: MCU device ID code on page1087.\n28-Jul- 2008 | 5 | Developed polynomial form updated in Section4.2: CRC main features on page63. Figure4: Power supply overview on page68 modified. Section5.1.2: Battery backup domain on page69 modified. Section7.2.5: LSI clock on page96 specified. Section9.1.4: Alternate functions (AF) on page162 clarified. Note added to Table45: TIM2 alternate function remapping on page179. Bits are write-only in Section13.4.2: DMA interrupt flag clear register (DMA_IFCR) on page285. Register name modified in Section11.3.1: ADC on-off control on page218. Recommended sampling time given in Section11.10: Temperature sensor on page235. Bit attributes modified in Section11.12.1: ADC status register (ADC_SR) on page237. Note modified for bits 23:0 in Section11.12.4: ADC sample time register 1 (ADC_SMPR1) on page244. Note added in Section12.2: DAC main features on page254. Formula updated in Section12.3.5: DAC output voltage on page258. DBL[4:0] description modified in Section14.3.19: TIMx and external trigger synchronization on page334. Figure82 on page315 and Figure128 on page385 modified. Section25.5.3: SPI status register (SPI_SR) on page745 modified. Closing the communication on page760 updated. Notes added to Section26.6.8: I2C Clock control register (I2C_CCR) on page781. TCK replaced by T in Section26.6.8 and Section26.6.9. PCLK1 OVR changed to ORE in Figure302: USART interrupt mapping diagram on page817. Section27.6.1: Status register (USART_SR) on page818 updated. Slave select (NSS) pin management on page703 clarified. Small text changes."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1117,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n26-Sep- 2008 | 6 | This reference manual also applies to low-density STM32F101xx, STM32F102xx and STM32F103xx devices, and to medium-density STM32F102xx devices. In all sections, definitions of low-density and medium-density devices updated. Section2.4: Peripheral availability on page46 added. Section3.3.3: Embedded Flash memory on page54 updated. Section5.1.2: Battery backup domain on page69 modified. Reset value of Port input data register (GPIOx_IDR) (x=A..G) on page172 modified. Note added in Section9.4: AFIO registers on page183. Note removed from bits 18:0 description in Section10.3.6: Pending register (EXTI_PR) on page213. Section14.2: TIM1 and TIM8 main features on page293 and Section15.2: TIMx main features on page366 updated. In Section15.3.15: Timer synchronization on page398, TS=000. FSMC_CLK signal direction corrected in Figure185: FSMC block diagram on page509. “Feedback clock” paragraph removed from Section21.5.3: General timing rules on page517. In Section21.5.6: NOR/PSRAM control registers on page541: reset value modified, WAITEN bit default value after reset is 1, bits [5:6] definition modified, , FACCEN default value after reset specified. NWE signal behavior corrected in Figure204: Synchronous multiplexed write mode - PSRAM (CRAM) on page539. The FSMC interface does not support COSMO RAM and OneNAND devices, and it does not support the asynchronous wait feature. SRAM and ROM 32 memory data size removed from Table108: NOR Flash/PSRAM controller: example of supported memories and transactions on page516. Data latency versus NOR Flash latency on page535 modified. Bits 19:16 bits are reserved in SRAM/NOR-Flash write timing registers 1..4 (FSMC_BWTR1..4) on page547. Section21.6.3: Timing diagrams for NAND and PC Card on page551 modified.Definition of PWID bits modified in Section21.6.8: NAND Flash/PC Card control registers on page557. Section21.6.6: Computation of the error correction code (ECC) in NAND Flash memory on page554 modified. Interrupt Mapper definition modified in Section23.3.1: Description of USB blocks on page624. USB register and memory base addresses modified in Section23.5: USB registers on page637. Section26.3.8: Packet error checking on page770 modified. Section: Start bit detection on page794 added. PE bit description specified in Status register (USART_SR) on page818. “RAM size register” section removed from Section30: Device electronic signature on page1076. Bit definitions updated in FIFO status and interrupt register 2..4 (FSMC_SR2..4) on page558. Small text changes."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1118,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n23-Dec- 2008 | 7 | Memory map figure removed from reference manual. Section3.1: System architecture on page47 modified. Section3.4: Boot configuration on page60 modified. Exiting Sleep mode on page73 modified. Section6.3.2: RTC calibration on page82 updated. Wakeup event management on page208 updated. Section7.3: RCC registers on page99 updated. Section13.2: DMA main features on page274 updated. Section13.3.5: Error management modified. Figure48: DMA block diagram in connectivity line devices on page275 modified. Section13.3.4: Programmable data width, data alignment and endians on page279 added. Bit definition modified in Section13.4.5: DMA channel x peripheral address register (DMA_CPARx) (x = 1..7, where x = channel number) on page288 and Section13.4.6: DMA channel x memory address register (DMA_CMARx) (x = 1..7, where x = channel number) on page288. Note added below Figure82: PWM input mode timing and Figure128: PWM input mode timing. FSMC_NWAIT signal direction corrected in Figure185: FSMC block diagram on page509. Value to set modified for bit 6 in Table114: FSMC_BCRx bit fields, Table117: FSMC_BCRx bit fields and Table123: FSMC_BCRx bit fields. Table130: 8-bit NAND Flash, Table131: 16-bit NAND Flash and Table132: 16-bit PC Card modified. NWAIT and INTR signals separated in Table132: 16-bit PC Card. Note added in PWAITEN bit definition in PC Card/NAND Flash control registers 2..4 (FSMC_PCR2..4) on page557. Bit definitions updated in FIFO status and interrupt register 2..4 (FSMC_SR2..4) on page558. Note modified in ADDHLD and ADDSET bit definitions in SRAM/NOR-Flash chip-select timing registers 1..4 (FSMC_BTR1..4) on page544. Bit 8 is reserved in PC Card/NAND Flash control registers 2..4 (FSMC_PCR2..4) on page557. MEMWAIT[15:8] bit definition modified in Common memory space timing register 2..4 (FSMC_PMEM2..4) on page559. ATTWAIT[15:8] bit definition modified in Attribute memory space timing registers 2..4 (FSMC_PATT2..4) on page560. Section21.6.5: NAND Flash prewait functionality on page553 modified. Figure205: NAND/PC Card controller timing for common memory access modified. Note added below Table100: NOR/PSRAM bank selection on page511. 32-bit external memory access removed from Table101: External memory address on page512 and note added. Caution: added to Section21.6.1: External memory interface signals. NIOS16 description modified in Table132: 16-bit PC Card on page550. Register description modified in Attribute memory space timing registers 2..4 (FSMC_PATT2..4) on page560. Resetting the password on page766 step 2 corrected. write_data signal modified in Figure205: NAND/PC Card controller timing for common memory access. bxCAN main features on page653 modified. Section26.3.8: Packet error checking on page770 modified. Section31.6.3: Cortex®-M3 TAP modified. DBG_TIMx_STOP positions modified in DBGMCU_CR register on page1101. Small text changes."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1120,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n22-Jun- 2009 | 9 | Reference manual updated to support also STM32F105xx/STM32F107xx connectivity line devices. Memory and bus architecture section: Embedded boot loader updated. Section4.3: CRC functional description updated. Note modified in Section5.1.2: Battery backup domain. Connectivity line devices: reset and clock control (RCC) section: Figure10: Simplified diagram of the reset circuit updated. PLL1 changed to PLL. Note added to BDP bit description in Section5.4.1: Power control register (PWR_CR). Table57: SPI3/I2S3 remapping corrected. DMA section: Table76: Programmable data width and endian behavior (when bits PINC = MINC = 1) updated, Section13.3.1: DMA transactions and Pointer incrementation on page277 modified. DMA channel x peripheral address register (DMA_CPARx) (x = 1..7, where x = channel number) and DMA channel x memory address register (DMA_CMARx) (x = 1..7, where x = channel number) must not be written when the channel is enabled. Advanced-control timer section: Section14.3.12: Using the break function on page322 updated. BKE and BKP bit descriptions updated in Section14.4.18: TIM1 and TIM8 break and dead-time register (TIMx_BDTR). CC1IF bit description modified in Section14.4.5: TIM1 and TIM8 status register (TIMx_SR) and Section15.4.5: TIMx status register (TIMx_SR). Note added to Table82: TIMx Internal trigger connection and Table86: TIMx Internal trigger connection on page409. Table108: NOR Flash/PSRAM controller: example of supported memories and transactions on page516 and Single-burst transfer modified. Register numbering and address offset corrected in Section26.9.6: SDIO response 1..4 register (SDIO_RESPx) on page789. In Section24: Controller area network (bxCAN): DBF bit reset value and access type modified, small text changes. SPI section: note added in Section25.2.2: I2S features. Slave select (NSS) pin management clarified. Note added at the end of Section25.3.3: Configuring the SPI in master mode and Section25.3.4: Configuring the SPI for half-duplex communication. Audio frequency precision tables 184 and 185 added to Section25.4.3: Clock generator on page731 and audio sampling frequency range increased to 96kHz. Arbitration lost (ARLO) on page765 specified. USART section: Description of “1.5 stop bits” updated in Configurable stop bits, RTS flow control corrected. Procedure sequence modified in Section27.3.2: Transmitter. How to derive USARTDIV from USART_BRR register values modified. Section27.3.5: USART receiver’s tolerance to clock deviation added. Section27.3.11: Smartcard and Section27.3.10: Single-wire half-duplex communication updated. Bit 12 description modified in Section27.6.4: Control register 1 (USART_CR1). Debug support (DBG) section: – Figure361: Block diagram of STM32 MCU and Cortex®-M3-level debug support updated – Section31.15: ETM (Embedded Trace Macrocell™) added – Figure364: TPIU block diagram updated – in DBGMCU_IDCODE, REV_ID(15:0) updated for connectivity line devices (revision Z added). Section28: USB on-the-go full-speed (OTG_FS) revised. Small text changes."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1121,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n04-Dec- 2009 | 10 (to be continued on next page) | References to the STM32F10xxx Cortex-M3 programming manual (PM0056) made throughout the document. The GPIO, AFIO, EXTI, ADC, DAC, CAN, FSMC, SDIO, USB_OTG registers are accessed by words (32 bits). The PWR, BKP, USART, SPI, I2C, TIM1&8, TIMx, TIM6&7, WWDG, IWDG, USB, RTC registers are accessed by words (32 bits) or by half-words (16 bits). The DMA registers are accessed by byte (8 bits), by words (32 bits) or by half-words (16 bits). Upper USB OTG FS boundary address corrected in Table3: Register boundary addresses. Note 4 modified in Reading the Flash memory. Section8.2: Clocks updated. Figure11: Clock tree modified. Exiting Standby mode modified. Caution added to the HPRE bit description and bit 22 description modified in Section8.3.2: Clock configuration register (RCC_CFGR). Section8.1.2: Power reset and Section7.1.2: Power reset modified, Figure7: Simplified diagram of the reset circuit and Figure10: Simplified diagram of the reset circuit modified. HSE frequency range corrected in Section7.3: RCC registers. “USB” table replaced by Table30: OTG_FS pin configuration. Address offsets corrected in Section13.4: DMA registers. Note added to Table65: ADC pins and V description modified. DDA Figure179: RTC simplified block diagram modified. Frequency changed in Table96: Min/max IWDG timeout period (in ms) at 40 kHz (LSI). Text changes in Section20.4: How to program the watchdog timeout. FSMC_TCR changed to FSMC_BTR in Section21: Flexible static memory controller (FSMC). Section25: Serial peripheral interface (SPI) structure revised. NSS description clarified in Section25.3.1: General description. Section25.2.2: I2S features modified. Note added to Section25.3.2: Configuring the SPI in slave mode. Figure240: Data clock timing diagram modified. Section25.3.4: Configuring the SPI for half-duplex communication clarified. Section25.3.5: Data transmission and reception procedures added. Section25.3.6: CRC calculation clarified. Section25.3.7: Status flags updated. Section25.3.8: Disabling the SPI updated. Section25.3.9: SPI communication using DMA (direct memory addressing) updated. Section25.3.10: Error flags modified. Section25.4.3: Clock generator updated. Note added to bit 6 (SPE) in Section25.5.1: SPI control register 1 (SPI_CR1) (not used in I2S mode). Note removed from the descriptions of bits 6 and 7 in Section25.5.2: SPI control register 2 (SPI_CR2). Note added to bit 7 (BSY) in Section25.5.3: SPI status register (SPI_SR). Section25.4.4: I2S master mode modified. Closing the communication specified. Bus error (BERR) modified. CCR bit definition modified in Section26.6.8: I2C Clock control register (I2C_CCR). Bit 14 definition modified in Section26.6.3: I2C Own address register 1 (I2C_OAR1). Note added to Table196: USART interrupt requests. SCLK replaced by CK throughout Section27: Universal synchronous asynchronous receiver transmitter (USART). Figure282: TC/TXE behavior when transmitting clarified. Start bit detection modified. Transmission using DMA updated. Figure297: Transmission using DMA added. Figure298: Reception using DMA added."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1122,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n04-Dec- 2009 | 10 continued | TXFELVL bit description modified in OTG_FS AHB configuration register (OTG_FS_GAHBCFG). NPTXFE bit description modified in OTG_FS core interrupt register (OTG_FS_GINTSTS). NPTXFEM bit description modified in OTG_FS interrupt mask register (OTG_FS_GINTMSK). Figure313: Transmit FIFO write task modified. Bit 22 is reserved in OTG_FS interrupt mask register (OTG_FS_GINTMSK). Bit 29 description modified in OTG device endpoint x control register (OTG_FS_DIEPCTLx) (x = 1..3, where x= Endpoint_number). Bits 21:20 no longer reserved in OTG_FS Host channel-x characteristics register (OTG_FS_HCCHARx) (x=0..7, where x=Channel_number). There are only 4 IN and OUT endpoints: – Bit descriptions corrected in OTG_FS all endpoints interrupt mask register (OTG_FS_DAINTMSK). – Bits15:0 description corrected in OTG_FS device IN endpoint FIFO empty interrupt mask register: (OTG_FS_DIEPEMPMSK) (there are only 4 endpoints). – Table208: OTG_FS register map and reset values corrected Note added to Section29.4: Ethernet functional description: SMI, MII and RMII on page972. Note added to Unicast destination address filter and Multicast destination address filter. System consideration during power-down on page1003 updated. Figure327: ETH block diagram modified. CIC bit description modified in TDES0: Transmit descriptor Word0 and TDES0: Transmit descriptor Word0: Transmit time stamp control and status on page967. Ethernet MAC hash table high register (ETH_MACHTHR) description clarified. Description of bits 6:2 modified in Ethernet DMA bus mode register (ETH_DMABMR). Peripheral register access specified in Section29.8: Ethernet register descriptions."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1123,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n23-Apr- 2010 | 11 | XL-density devices added. Flash access control register (FLASH_ACR) inserted. External source (HSE bypass) and External source (HSE bypass) : maximum HSE frequency modified. HSEBYP bit description modified in Section7.3.1: Clock control register (RCC_CR) and Section8.3.1: Clock control register (RCC_CR). SPI3_REMAP definition modified in Section9.4.2: AF remap and debug I/O configuration register (AFIO_MAPR). Figure48: DMA block diagram in connectivity line devices modified. Figure85: Center-aligned PWM waveforms (ARR=8) modified. OIS1N and OIS1 bit descriptions modified in Section14.4.2: TIM1 and TIM8 control register 2 (TIMx_CR2). FSMC block diagram reinserted. Figure203: Synchronous multiplexed read mode - NOR, PSRAM (CRAM) modified. FSMC_ECCR2 and FSMC_ECCR3 reset value modified in Table136: FSMC register map. Updated I2C Master mode Slave address transmission on page759 Notes modified in the bit 5 descriptions in OTG_FS core interrupt register (OTG_FS_GINTSTS) and OTG_FS interrupt mask register (OTG_FS_GINTMSK). Transmission using DMA updated. Updated Section21: Flexible static memory controller (FSMC), Updated Section21.3: AHB interface on page509 Updated Wrap support for NOR Flash/PSRAM on page512 Added ASYNCWAIT, in Table109: FSMC_BCRx bit fields on page519 Added section WAIT management in asynchronous accesses on page532 Updated Figure201: Asynchronous wait during a write access on page534 Updated Table132: 16-bit PC Card on page550 Added Section21.6.7: PC Card/CompactFlash operations on page555 Removed OTG_FS controller block diagram Update Section28.11.2: Peripheral Tx FIFOs Added Section28.13: FIFO RAM allocation Updated Table201: Core global control and status registers (CSRs) Added method 1 and 2 in Section26.3.3: I2C master mode Updated note in POS bit description Section26.6: I2C registers Removed NPTXRWEN bit in Section28: USB on-the-go full-speed (OTG_FS) Updated formula for TRDT bit in Section28: USB on-the-go full-speed (OTG_FS) Removed BIM and TXFURM bits OTG_FS device IN endpoint common interrupt mask register (OTG_FS_DIEPMSK) Removed BOIM, OPEM, B2BSTUP bits in OTG_FS device OUT endpoint common interrupt mask register (OTG_FS_DOEPMSK) Updated Section: JTAG ID code on page1088"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1124,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n12-Jan- 2011 | 12 | Added Section1: Overview of the manual Added FSMC boundary addresses to Table3 on page50 Added paragraph on HSI to Programming and erasing the Flash memory on page59 Updated Table11.12.12: ADC injected sequence register (ADC_JSQR) on page250 Added “VREF shared with ADC in Section12.1: DAC introduction on page254 Updated example in Section14.4.19: TIM1 and TIM8 DMA control register (TIMx_DCR) on page361 and other timer sections. Updated description of counter operation in Section15.3.12: Encoder interface mode Moved caution paragraph from RTC_PRLH to RTC PRLL in Section18.4: RTC registers Updated Table108: NOR Flash/PSRAM controller: example of supported memories and transactions on page516Changed data phase to data setup phase in FSMC WAIT management in asynchronous accesses on page532 Added note on shared SRAM for USB and CAN to Section23.2: USB main features on page622 Updated LEC description in CAN error status register (CAN_ESR) on page682 Updated CRCNEXT description in Section25.3.6: CRC calculation on page715 Corrected Figure265: PCM standard waveforms (16-bit) on page730 Updated Table184: Audio-frequency precision using standard 25MHz and PLL3 (connectivity line devices only) and Table185: Audio-frequency precision using standard 14.7456 MHz and PLL3 (connectivity line devices only) on page735 Updated BERR description in Section26.6.6: I2C Status register 1 (I2C_SR1) on page777 Updated note 1 in Section26.6.8: I2C Clock control register (I2C_CCR) on page781"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1125,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n17-May- 2011 | 13 | Updated SPI table in Section9.1.11: GPIO configurations for device peripherals on page166 Updated bit descriptions in Section7.3.1: Clock control register (RCC_CR) on page99 and Section8.3.1: Clock control register (RCC_CR) on page132 TIMERS: TIM1&TIM8: Updated example and definition of DBL bits in Section14.4.19: TIM1 and TIM8 DMA control register (TIMx_DCR). Added example related to DMA burst feature and description of DMAB bits in Section14.4.20: TIM1 and TIM8 DMA address for full transfer (TIMx_DMAR). TIM2 to TIM5: added example and updated definition of DBL bits in Section15.4.17: TIMx DMA control register (TIMx_DCR). Added example related to DMA burst feature and description of DMAB bits in Section15.4.18: TIMx DMA address for full transfer (TIMx_DMAR). Updated definition of DBL bits in Section15.4.17: TIMx DMA control register (TIMx_DCR). WWDG Updated Section20.2: WWDG main features. Updated Section20.3: WWDG functional description to remove paragraph related to counter reload using EWI interrupt. I2C: Updated BERR bit description in Section26.6.6: I2C Status register 1 (I2C_SR1). Updated NoteNote: in Section26.6.8: I2C Clock control register (I2C_CCR). Added note 3 below Figure271: Transfer sequence diagram for slave transmitter on page756. Added note below Figure272: Transfer sequence diagram for slave receiver on page757. Modified Section: Closing slave communication on page757. Modified STOPF, ADDR, bit description in Section26.6.6: I2C Status register 1 (I2C_SR1) on page777. Modified Section26.6.7: I2C Status register 2 (I2C_SR2) on page780. USART: Updated Figure286: Mute mode using address mark detection for Address =1. ETHERNET: Removed TX_ETR signal from Figure331: Media independent interface signals. SPI: Modified Slave select (NSS) pin management on page703 and note on NSS in Section25.3.3: Configuring the SPI in master mode USB OTG FS: Added caution note related to minimum in Section28.3.3: Full-speed OTG PHY. FSMC: Updated description of DATLAT , DATAST , and ADDSET bits in Section: SRAM/NOR- Flash chip-select timing registers 1..4 (FSMC_BTR1..4). Updated description of DATAST and ADDSET bits in Section: SRAM/NOR-Flash write timing registers 1..4 (FSMC_BWTR1..4)."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1126,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n20-Oct- 2011 | 14 | Changed references to Programming Manual from PM0042 to PM0075. ADC: Removed scan mode note from AWDIE in Section11.12.2 on page 238 Updated Section11.3.8: Scan mode on page221 to refer to DMA use. DMA: Added TIM8 and TIM7 DMA2 requests in Table79 on page283 Updated Figure48. TIMERS: Updated Figure72: Update rate examples depending on mode and TIMx_RCR register settings on page307 and preceding paragraph. GPIO: Added footnote below Table24: USARTs . FSMC: Updated SRAM/ROM transactions in Table108 UpdatedSection21.3.1: Supported memories and transactions on page510 Updated Section21.3: AHB interface on page509 Added note below Figure188 and Figure190 Updated Section21.5: NOR Flash/PSRAM controller on page513 Updated DATAST in SRAM/NOR-Flash write timing registers 1..4 (FSMC_BWTR1..4) on page547 Updated para b) in General transaction rules on page510 SDIO: Updated Table163: R4 response on page602 and Table165: R5 response on page603 USB: Changed max. avrg. USB suspend mode current to 2.5 mA in Section23. bxCAN: Updated Section24.4.2: Normal mode on page657 I2C: Updated note in Section26.6.8: I2C Clock control register (I2C_CCR) on page781 USART: Removed reference to dedicated IrDA pins from Section27.3: USART functional description on page787 DBG: Updated REV_ID in DBGMCU_IDCODE on page1087"
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1127,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n02-Jun- 2014 | 15 | Updated Table3: Register boundary addresses Restricted hyperlinks to homepages. PWR: Added note related to HSE failure in Section: Entering Stop mode. Updated note related to Stop mode entry in Table14: Stop mode. Changed conditions to clear CWUF in Section5.4.2: Power control/status register (PWR_CSR). Low-, medium-, high- and XL-density RCC: Updated Figure7: Simplified diagram of the reset circuit. Connectivity line RCC: Updated Figure10: Simplified diagram of the reset circuit. Interrupts and events: Updated bit definitions in Section10.3.5: Software interrupt event register (EXTI_SWIER) and Section10.3.6: Pending register (EXTI_PR). ADC: Updated examples in Section11.3.10: Discontinuous mode Updated note related to prerequisites to start calibration in Section11.4: Calibration. Updated note related to sampling time in Section11.9.1: Injected simultaneous mode, Section11.9.2: Regular simultaneous mode, Section11.9.7: Combined regular/injected simultaneous mode, and Section11.9.8: Combined regular simultaneous + alternate trigger mode. TIMER1/8: Updated 16-bit prescaler range in Section14.2: TIM1 and TIM8 main features. Modified update event generation in Upcounting mode and Downcounting mode in Section14.3.2: Counter modes, and in Section14.3.3: Repetition counter. Updated OC1 block diagram in Figure80: Output stage of capture/compare channel (channel 1 to 3). Updated Section14.3.6: Input capture mode. Updated bits that control the dead-time generation in Section14.3.11: Complementary outputs and dead-time insertion. Updated ways to generate a break in Section14.3.12: Using the break function. OCxREF changed to ETR in the Section14.3.13: Clearing the OCxREF signal on an external event example, OCREF_CLR to ETRF in Figure90: Clearing TIMx OCxREF. Updated configuration for example of counter operation in encoder interface mode in Section14.3.16: Encoder interface mode. Updated Section14.3.18: Interfacing with Hall sensors and CCPC definition in Section14.4.2: TIM1 and TIM8 control register 2 (TIMx_CR2). Changed definition of ARR[15:0] bits in Section14.4.12: TIM1 and TIM8 auto-reload register (TIMx_ARR). Updated BKE definition in Section14.4.18: TIM1 and TIM8 break and dead-time register (TIMx_BDTR). TIMER 2 to 5: Removed all mentions to “repetition counter”. Renamed Figure113: Counter timing diagram, Update event. Updated Figure127: Output stage of capture/compare channel (channel 1). Updated Figure140: Master/Slave timer example to change ITR1 to ITR0. Updated Section: Starting 2 timers synchronously in response to an external trigger Updated read and write access to registers in Section15.4: TIMx registers. Removed note 1 related to OC1M bits and replaced IC2S by CC2S in Section15.4.7: TIMx capture/compare mode register 1 (TIMx_CCMR1)."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1128,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n02-Jun- 2014 | 15 (continued) | TIMER9 to 14: Removed TRGO output for timer controller in Figure147: General-purpose timer block diagram (TIM10/11/13/14). Updated 16-bit prescaler range in Section16.2: TIM9 to TIM14 main features. Added register access in Section16.4: TIM9 and TIM12 registers and Section16.5: TIM10/11/13/14 registers. TIMER 16/17: Removed references to repetition counter. Updated 16-bit prescaler factor in Section17.2: TIM6 and TIM7 main features.Updated read/write access to registers in Section17.4: TIM6 and TIM7 registers. IWDG: Corrected Figure182: Independent watchdog block diagram.. Added register access in Section19.4: IWDG registers. WWDG: Added register access in Section20.6: WWDG registers FSMC: Updated Figure185: FSMC block diagram. Updated Table109 to Table128. Replaced all occurrences of DATALAT by DATLAT in the whole section. Updated Section21.1: FSMC main features. Replace SRAM/CRAM by SRAM/PSRAM in the whole section. Updated Section21.5.3: General timing rules/Signals synchronization. – Updated Section21.5.4: NOR Flash/PSRAM controller asynchronous transactions – Modified step b) in Section21.3.1: Supported memories and transactions. – Moved note from Figure188: Mode1 write accesses to Figure187: Mode1 read accesses. – Moved note from Figure190: ModeA write accesses to Figure189: ModeA read accesses. Updated Section: WAIT management in asynchronous accesses and Figure200: Asynchronous wait during a read access. – Modified differences between Mode B and mode 1 in Section: Mode 2/B - NOR Flash. – Modified differences between Mode C and mode 1 in Section: Mode C - NOR Flash - OE toggling. – Modified differences between Mode D and mode 1 in Section: Mode D - asynchronous access with extended address. – Updated NWAIT signal in Figure200: Asynchronous wait during a read access, Figure201: Asynchronous wait during a write access, Figure202: Wait configurations, Figure203: Synchronous multiplexed read mode - NOR, PSRAM (CRAM), and Figure204: Synchronous multiplexed write mode - PSRAM (CRAM). Updated case of synchronous accesses in Section21.5: NOR Flash/PSRAM controller. Added register access in Section21.5.6: NOR/PSRAM control registers and Section21.6.8: NAND Flash/PC Card control registers. Updated step3 of Section21.6.4: NAND Flash operations, updated Figure206: Access to non ‘CE don’t care’ NAND-Flash and note below. Updated Section21.6.6: Computation of the error correction code (ECC) in NAND Flash memory. Updated access to I/O Space in Section21.6.7: PC Card/CompactFlash operations. Updated Table132: 16-bit PC Card."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1130,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n11-Aug- 2017 | 17 | Updated Figure5: Power on reset/power down reset waveform, Figure6: PVD thresholds, Figure34: Alternate trigger: injected channel group of each ADC, Figure44: DAC LFSR register calculation algorithm, Figure199: Multiplexed write accesses, Figure220: USB peripheral block diagram and Figure240: Data clock timing diagram. Updated Table192: Error calculation for programmed baud rates. Updated Section9.2.7: Port configuration lock register (GPIOx_LCKR) (x=A..G) and Section9.4.2: AF remap and debug I/O configuration register (AFIO_MAPR). Updated Section14.3.21: Debug mode, Section14.4.12: TIM1 and TIM8 auto-reload register (TIMx_ARR), Section14.4.14: TIM1 and TIM8 capture/compare register 1 (TIMx_CCR1), Section14.4.15: TIM1 and TIM8 capture/compare register 2 (TIMx_CCR2), Section14.4.16: TIM1 and TIM8 capture/compare register 3 (TIMx_CCR3), Section14.4.17: TIM1 and TIM8 capture/compare register 4 (TIMx_CCR4), Section14.4.20: TIM1 and TIM8 DMA address for full transfer (TIMx_DMAR), Section15.4.11: TIMx prescaler (TIMx_PSC), Section15.4.12: TIMx auto-reload register (TIMx_ARR), Section15.4.13: TIMx capture/compare register 1 (TIMx_CCR1), Section15.4.14: TIMx capture/compare register 2 (TIMx_CCR2), Section15.4.15: TIMx capture/compare register 3 (TIMx_CCR3), Section15.4.16: TIMx capture/compare register 4 (TIMx_CCR4), Section16.4.2: TIM9/12 slave mode control register (TIMx_SMCR), Section16.4.9: TIM9/12 prescaler (TIMx_PSC), Section16.4.10: TIM9/12 auto-reload register (TIMx_ARR), Section16.4.11: TIM9/12 capture/compare register 1 (TIMx_CCR1), Section16.4.12: TIM9/12 capture/compare register 2 (TIMx_CCR2), Section16.5.1: TIM10/11/13/14 control register 1 (TIMx_CR1), Section16.5.8: TIM10/11/13/14 prescaler (TIMx_PSC), Section16.5.10: TIM10/11/13/14 capture/compare register 1 (TIMx_CCR1), Section16.5.11: TIM10/11/13/14 register map, Section17.4.7: TIM6 and TIM7 prescaler (TIMx_PSC) and Section17.4.8: TIM6 and TIM7 auto-reload register (TIMx_ARR). Updated SRAM/NOR-Flash write timing registers 1..4 (FSMC_BWTR1..4), Section21.6.5: NAND Flash prewait functionality, Common memory space timing register 2..4 (FSMC_PMEM2..4) and Attribute memory space timing registers 2..4 (FSMC_PATT2..4). Updated Section26.6.2: I2C Control register 2 (I2C_CR2), Section27.3.8: LIN (local interconnection network) mode. and Section29.8.3: IEEE 1588 time stamp registers. Updated OTG_FS AHB configuration register (OTG_FS_GAHBCFG) and OTG_FS USB configuration register (OTG_FS_GUSBCFG). Updated notes in Section11.12.7 and Section11.12.8. Updated formula in Section22.3: SDIO functional description.\n08-Mar- 2018 | 18 | Updated Introduction, Section15.4: TIMx registers, Mode D - asynchronous access with extended address, Unidirectional receive-only procedure (BIDIMODE=0 and RXONLY=1), 1 clock and 1 unidirectional data wire (BIDIMODE = 0), OTG_FS core interrupt register (OTG_FS_GINTSTS), OTG_FS device control register (OTG_FS_DCTL), OTG_FS device all endpoints interrupt register (OTG_FS_DAINT), Section28.17.6: Operational model and Section29.6: Ethernet functional description: DMA controller operation. Minor text edits across the whole document. Updated title of Section26: Inter-integrated circuit (I2C) interface. Updated Table18: RCC register map and reset values."
+  },
+  {
+    "source": "test_registers.pdf",
+    "page": 1131,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: test_registers.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n26-Apr- 2018 | 19 | Updated Section23.3.1: Description of USB blocks and Section25.3.5: Data transmission and reception procedures. Updated Section28.2.1: General features, Section28.4.1: ID line detection, Section28.7.1: Host SOFs, Section28.7.2: Peripheral SOFs, Section28.8: OTG low-power modes, Section28.9: Dynamic update of the OTG_FS_HFIR register, OTG_FS control and status register (OTG_FS_GOTGCTL), OTG_FS USB configuration register (OTG_FS_GUSBCFG), OTG_FS reset register (OTG_FS_GRSTCTL), OTG_FS interrupt mask register (OTG_FS_GINTMSK), OTG_FS interrupt mask register (OTG_FS_GINTMSK), OTG_FS general core configuration register (OTG_FS_GCCFG), OTG_FS core ID register (OTG_FS_CID), OTG_FS Host periodic transmit FIFO size register (OTG_FS_HPTXFSIZ), OTG_FS device IN endpoint transmit FIFO size register (OTG_FS_DIEPTXFx) (x=1..3, where x is the FIFO_number), OTG_FS Host frame interval register (OTG_FS_HFIR), OTG_FS_Host periodic transmit FIFO/queue status register (OTG_FS_HPTXSTS), OTG_FS Host port control and status register (OTG_FS_HPRT), OTG_FS Host channel-x interrupt mask register (OTG_FS_HCINTMSKx) (x=0..7, where x=Channel_number), OTG_FS device IN endpoint common interrupt mask register (OTG_FS_DIEPMSK), OTG_FS device OUT endpoint common interrupt mask register (OTG_FS_DOEPMSK), OTG_FS device IN endpoint FIFO empty interrupt mask register: (OTG_FS_DIEPEMPMSK), OTG device endpoint x control register (OTG_FS_DIEPCTLx) (x = 1..3, where x= Endpoint_number), OTG_FS device control OUT endpoint 0 control register (OTG_FS_DOEPCTL0), OTG_FS device endpoint-x control register (OTG_FS_DOEPCTLx) (x = 1..3, where x = Endpoint_number), OTG_FS device endpoint-x interrupt register (OTG_FS_DIEPINTx) (x=0..3, where x=Endpoint_number), OTG_FS device endpoint-x interrupt register (OTG_FS_DOEPINTx) (x=0..3, where x=Endpoint_number), OTG_FS device endpoint-x transfer size register (OTG_FS_DIEPTSIZx) (x=1..3, where x = Endpoint_number) and OTG_FS device endpoint-x transfer size register (OTG_FS_DIEPTSIZx) (x=1..3, where x = Endpoint_number). Added Section2.1: General information, Section28.3.1: OTG pins and Table200: Compatibility of STM32 low power modes with the OTG. Updated Table201: Core global control and status registers (CSRs), Table202: Host-mode control and status registers (CSRs), Table203: Device-mode control and status registers, Table205: Power and clock gating control and status registers and Table208: OTG_FS register map and reset values. Updated Figure95: Example of Hall sensor interface, Figure146: General-purpose timer block diagram (TIM9 and TIM12), Figure303: OTG full-speed block diagram and Figure311: Interrupt hierarchy and its footnote.\n14-Dec- 2018 | 20 | Updated Section12.3.3: DAC data format, Transmit priority, Section24.9.3: CAN mailbox registers and Section31.6.1: MCU device ID code. Updated Figure160: Capture/compare channel 1 main circuit, Figure232: Filtering mechanism - Example and Figure238: SPI block diagram. Minor text edits across the whole document.\n22-Feb- 2021 | 21 | Updated Section5.4.1: Power control register (PWR_CR), Section7.1.1: System reset, Section11.10: Temperature sensor, Section24.4.1: Initialization mode, Section26.6.1: I2C Control register 1 (I2C_CR1), Section26.6.2: I2C Control register 2 (I2C_CR2), Section28.17.6: Operational model and TDES0: Transmit descriptor Word0. Updated Table84: TIM1 and TIM8 register map and reset values and Table88: TIMx register map and reset values. Updated Figure39: Temperature sensor and VREFINT channel block diagram and Figure52: Advanced-control timer block diagram. Minor text edits across the whole document."
+  }
+]

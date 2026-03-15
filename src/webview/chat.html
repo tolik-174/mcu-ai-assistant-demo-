@@ -1,0 +1,631 @@
+<!-- <!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>MCU Chat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: var(--vscode-editor-background);
+      color: var(--vscode-editor-foreground);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--vscode-panel-border);
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    #chat {
+      border: 1px solid var(--vscode-panel-border);
+      background: var(--vscode-panel-background);
+      padding: 15px;
+      height: 420px;
+      overflow-y: auto;
+      font-family: 'Consolas', 'Monaco', monospace;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .user-message {
+      background: var(--vscode-textBlockQuote-background);
+      border-left: 3px solid var(--vscode-textLink-foreground);
+    }
+
+    .bot-message {
+      background: var(--vscode-editor-background);
+      border-left: 3px solid var(--vscode-terminal-ansiGreen);
+    }
+
+    .message-timestamp {
+      font-size: 0.7em;
+      color: var(--vscode-descriptionForeground);
+      position: absolute;
+      top: 2px;
+      right: 5px;
+    }
+
+    .input-container {
+      display: flex;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    #user-input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid var(--vscode-input-border);
+      background: var(--vscode-input-background);
+      color: var(--vscode-input-foreground);
+      border-radius: 4px;
+      font-family: 'Consolas', 'Monaco', monospace;
+      resize: vertical;
+      min-height: 40px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: var(--vscode-button-background);
+      color: var(--vscode-button-foreground);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+
+    button:hover {
+      background: var(--vscode-button-hoverBackground);
+    }
+
+    .clear-button {
+      background: var(--vscode-errorButton-background);
+      color: var(--vscode-errorButton-foreground);
+      font-size: 0.8em;
+      padding: 5px 10px;
+    }
+
+    .clear-button:hover {
+      background: var(--vscode-errorButton-hoverBackground);
+    }
+
+    .status-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 5px;
+      background: var(--vscode-terminal-ansiGreen);
+      display: inline-block;
+    }
+
+    .history-info {
+      font-size: 0.8em;
+      color: var(--vscode-descriptionForeground);
+      text-align: center;
+      padding: 5px;
+      background: var(--vscode-badge-background);
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    pre {
+      background: var(--vscode-textCodeBlock-background);
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    /* Markdown tables */
+    .md-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 8px 0;
+      font-size: 0.85em;
+      background: var(--vscode-editor-background);
+      border: 1px solid var(--vscode-panel-border);
+    }
+    .md-table td, .md-table th {
+      border: 1px solid var(--vscode-panel-border);
+      padding: 4px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .md-table th {
+      background: var(--vscode-editorHoverWidget-background);
+      font-weight: bold;
+    }
+    .md-table-wrapper {
+      overflow-x: auto;
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h2>💬 MCU Assistant</h2>
+      <div id="history-info" class="history-info" style="display:none;"></div>
+    </div>
+    <div class="header-buttons">
+      <select id="mode-select" title="Select assistant mode">
+        <option value="local">Chat Mode</option>
+        <option value="docs">Docs Mode</option>
+      </select>
+      <button id="clear-history-button" class="clear-button">Clear</button>
+      <div>
+        <span class="status-indicator"></span>
+        <span>mistral.7B</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="chat"></div>
+
+  <div class="input-container">
+    <textarea id="user-input" placeholder="Write a message..."></textarea>
+    <button id="send-button">Send</button>
+  </div>
+
+  <script>
+    const vscode = acquireVsCodeApi();
+    let ghostCode = '';
+    let messageCount = 0;
+
+    function formatTime(ts) {
+      return new Date(ts).toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    // Markdown renderer (таблиці, код, жирний)
+    function renderMarkdown(text) {
+      // таблиці
+      text = text.replace(
+        /((?:\|[^\n]+\|\n)+)(?=\n|$)/g,
+        (match) => {
+          const lines = match.trim().split("\n");
+          let rows = [];
+          let maxCols = 0;
+          for (let line of lines) {
+            const cells = line.split("|").filter(c => c.trim() !== "");
+            maxCols = Math.max(maxCols, cells.length);
+            rows.push(cells);
+          }
+          const htmlRows = rows.map((cells, idx) => {
+            while (cells.length < maxCols) cells.push("");
+            const tag = (idx === 0 || cells.every(c => c.startsWith("---"))) ? "th" : "td";
+            return `<tr>${cells.map(c => `<${tag}>${c.trim()}</${tag}>`).join("")}</tr>`;
+          }).join("");
+          return `<div class="md-table-wrapper"><table class="md-table">${htmlRows}</table></div>`;
+        }
+      );
+      // блоки коду
+      text = text.replace(/```([\s\S]+?)```/g, '<pre><code>$1</code></pre>');
+      // inline code
+      text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+      // жирний
+      text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      return text;
+    }
+
+    function addMessageToUI(sender, text, timestamp = Date.now(), mode = 'chat') {
+      const chat = document.getElementById('chat');
+      const div = document.createElement('div');
+      div.className = `message ${sender === '👤' ? 'user-message' : 'bot-message'}`;
+      const timeDiv = document.createElement('div');
+      timeDiv.className = 'message-timestamp';
+      timeDiv.textContent = formatTime(timestamp);
+      const formatted = mode === 'docs' ? renderMarkdown(text) : renderMarkdown(text);
+      div.innerHTML = `<strong>${sender}:</strong> ${formatted}`;
+      div.appendChild(timeDiv);
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+      messageCount++;
+      updateHistoryCount();
+    }
+
+    function updateHistoryCount() {
+      const info = document.getElementById('history-info');
+      if (messageCount > 0) {
+        info.textContent = `Messages: ${messageCount}`;
+        info.style.display = 'block';
+      } else {
+        info.style.display = 'none';
+      }
+    }
+
+    function sendMessage() {
+      const input = document.getElementById('user-input');
+      const mode = document.getElementById('mode-select').value;
+      const text = input.value.trim();
+      if (!text) return;
+      input.value = '';
+      vscode.postMessage({ type: 'sendMessage', text, mode });
+    }
+
+    function clearChat() {
+      document.getElementById('chat').innerHTML = '';
+      messageCount = 0;
+      updateHistoryCount();
+    }
+
+    document.getElementById('send-button').addEventListener('click', sendMessage);
+    document.getElementById('user-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+    document.getElementById('clear-history-button').addEventListener('click', () => vscode.postMessage({ type: 'clearHistory' }));
+
+    window.addEventListener('message', (event) => {
+      const { type, sender, text, timestamp, history, mode } = event.data;
+      if (type === 'addMessage') addMessageToUI(sender, text, timestamp, mode);
+      if (type === 'clearChat') clearChat();
+      if (type === 'restoreHistory' && Array.isArray(history)) {
+        clearChat();
+        history.forEach(msg => addMessageToUI(msg.sender, msg.text, msg.timestamp));
+      }
+    });
+
+    vscode.postMessage({ type: 'webviewReady' });
+  </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>MCU Chat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: var(--vscode-editor-background);
+      color: var(--vscode-editor-foreground);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--vscode-panel-border);
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    #chat {
+      border: 1px solid var(--vscode-panel-border);
+      background: var(--vscode-panel-background);
+      padding: 15px;
+      height: 420px;
+      overflow-y: auto;
+      font-family: 'Consolas', 'Monaco', monospace;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .user-message {
+      background: var(--vscode-textBlockQuote-background);
+      border-left: 3px solid var(--vscode-textLink-foreground);
+    }
+
+    .bot-message {
+      background: var(--vscode-editor-background);
+      border-left: 3px solid var(--vscode-terminal-ansiGreen);
+    }
+
+    .message-timestamp {
+      font-size: 0.7em;
+      color: var(--vscode-descriptionForeground);
+      position: absolute;
+      top: 2px;
+      right: 5px;
+    }
+
+    .input-container {
+      display: flex;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    #user-input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid var(--vscode-input-border);
+      background: var(--vscode-input-background);
+      color: var(--vscode-input-foreground);
+      border-radius: 4px;
+      font-family: 'Consolas', 'Monaco', monospace;
+      resize: vertical;
+      min-height: 40px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: var(--vscode-button-background);
+      color: var(--vscode-button-foreground);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+
+    button:hover {
+      background: var(--vscode-button-hoverBackground);
+    }
+
+    .clear-button {
+      background: var(--vscode-errorButton-background);
+      color: var(--vscode-errorButton-foreground);
+      font-size: 0.8em;
+      padding: 5px 10px;
+    }
+
+    .clear-button:hover {
+      background: var(--vscode-errorButton-hoverBackground);
+    }
+
+    .status-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 5px;
+      background: var(--vscode-terminal-ansiGreen);
+      display: inline-block;
+    }
+
+    .history-info {
+      font-size: 0.8em;
+      color: var(--vscode-descriptionForeground);
+      text-align: center;
+      padding: 5px;
+      background: var(--vscode-badge-background);
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    pre {
+      background: var(--vscode-textCodeBlock-background);
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    /* Markdown tables */
+    .md-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 8px 0;
+      font-size: 0.85em;
+      background: var(--vscode-editor-background);
+      border: 1px solid var(--vscode-panel-border);
+    }
+
+    .md-table td, .md-table th {
+      border: 1px solid var(--vscode-panel-border);
+      padding: 4px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .md-table th {
+      background: var(--vscode-editorHoverWidget-background);
+      font-weight: bold;
+    }
+
+    .md-table-wrapper {
+      overflow-x: auto;
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h2>💬 MCU Assistant</h2>
+      <div id="history-info" class="history-info" style="display:none;"></div>
+    </div>
+    <div class="header-buttons">
+      <select id="mode-select" title="Select assistant mode">
+        <option value="local">Chat Mode</option>
+        <option value="docs">Docs Mode</option>
+      </select>
+      <button id="clear-history-button" class="clear-button">Clear</button>
+      <div>
+        <span class="status-indicator"></span>
+        <span>mistral.7B</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="chat"></div>
+
+  <div class="input-container">
+    <textarea id="user-input" placeholder="Write a message..."></textarea>
+    <button id="send-button">Send</button>
+  </div>
+
+  
+  <script>
+  const vscode = acquireVsCodeApi();
+  let messageCount = 0;
+  let botMessageMap = new Map();
+
+  function formatTime(ts) {
+    return new Date(ts).toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function renderMarkdown(md) {
+    if (!md) return "";
+
+    md = md.replace(/\[\/?TABLE\]/gi, "")
+      .replace(/\[SOURCE:[^\]]+\]/gi, "")
+      .replace(/\[\/?source[^\]]*\]/gi, "");
+
+    md = md.replace(/((?:\|[^\n]+\|\n?)+)/g, (match) => {
+      const lines = match.trim().split("\n");
+      if (lines.length < 2) return match;
+
+      const headerCells = lines[0].split("|").map(c => `<th>${c.trim()}</th>`).join("");
+      const bodyRows = lines.slice(2).map(row => {
+        const cells = row.split("|").map(c => `<td>${c.trim()}</td>`).join("");
+        return `<tr>${cells}</tr>`;
+      }).join("");
+
+      return `<div class="md-table-wrapper"><table class="md-table">
+        <thead><tr>${headerCells}</tr></thead>
+        <tbody>${bodyRows}</tbody>
+      </table></div>`;
+    });
+
+    md = md.replace(/```([\s\S]+?)```/g, '<pre><code>$1</code></pre>');
+    md = md.replace(/`([^`]+)`/g, '<code>$1</code>');
+    md = md.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    md = md.replace(/\n{2,}/g, "<br><br>");
+
+    return md.trim();
+  }
+
+  function updateHistoryCount() {
+    const info = document.getElementById('history-info');
+    if (messageCount > 0) {
+      info.textContent = `Messages: ${messageCount}`;
+      info.style.display = 'block';
+    } else {
+      info.style.display = 'none';
+    }
+  }
+
+  function addMessageToUI(sender, text, timestamp = Date.now()) {
+    const chat = document.getElementById('chat');
+    const div = document.createElement('div');
+    div.className = `message ${sender === '👤' ? 'user-message' : 'bot-message'}`;
+
+    const timeDiv = document.createElement('div');
+    timeDiv.className = 'message-timestamp';
+    timeDiv.textContent = formatTime(timestamp);
+
+    const formatted = renderMarkdown(text);
+    div.innerHTML = `<strong>${sender}:</strong> <span class="message-content">${formatted}</span>`;
+    div.appendChild(timeDiv);
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+
+    messageCount++;
+    updateHistoryCount();
+  }
+
+  function startStreamingMessage(messageId, sender = '🤖', timestamp = Date.now()) {
+    const chat = document.getElementById('chat');
+    const div = document.createElement('div');
+    div.className = 'message bot-message';
+    div.setAttribute('data-message-id', messageId);
+
+    const timeDiv = document.createElement('div');
+    timeDiv.className = 'message-timestamp';
+    timeDiv.textContent = formatTime(timestamp);
+
+    div.innerHTML = `<strong>${sender}:</strong> <span class="message-content"></span>`;
+    div.appendChild(timeDiv);
+
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+
+    botMessageMap.set(messageId, div);
+    messageCount++;
+    updateHistoryCount();
+  }
+
+  function updateStreamingMessage(messageId, text) {
+    const div = botMessageMap.get(messageId);
+    if (!div) return;
+
+    const content = div.querySelector('.message-content');
+    if (content) {
+      content.innerHTML = renderMarkdown(text);
+    }
+
+    const chat = document.getElementById('chat');
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function clearChat() {
+    document.getElementById('chat').innerHTML = '';
+    botMessageMap.clear();
+    messageCount = 0;
+    updateHistoryCount();
+  }
+
+  function sendMessage() {
+    const input = document.getElementById('user-input');
+    const mode = document.getElementById('mode-select').value;
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    vscode.postMessage({ type: 'sendMessage', text, mode });
+  }
+
+  document.getElementById('send-button').addEventListener('click', sendMessage);
+  document.getElementById('user-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
+  document.getElementById('clear-history-button').addEventListener('click', () => {
+    vscode.postMessage({ type: 'clearHistory' });
+  });
+
+  window.addEventListener('message', (event) => {
+    const { type, sender, text, timestamp, history, messageId } = event.data;
+
+    if (type === 'addMessage') addMessageToUI(sender, text, timestamp);
+    if (type === 'startStreamingMessage') startStreamingMessage(messageId, sender, timestamp);
+    if (type === 'updateStreamingMessage') updateStreamingMessage(messageId, text);
+    if (type === 'clearChat') clearChat();
+
+    if (type === 'restoreHistory' && Array.isArray(history)) {
+      clearChat();
+      history.forEach(msg => addMessageToUI(msg.sender, msg.text, msg.timestamp));
+    }
+  });
+
+  vscode.postMessage({ type: 'webviewReady' });
+</script>
+</body>
+</html>

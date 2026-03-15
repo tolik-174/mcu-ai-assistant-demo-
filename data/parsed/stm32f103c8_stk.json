@@ -1,0 +1,290 @@
+[
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 10,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Peripheral | STM32F103Tx | STM32F103Cx | STM32F103Rx | STM32F103Vx |\n| --- | --- | --- | --- | --- |\nFlash - Kbytes | 64 | 128 | 64 | 128 | 64 | 128 | 64 | 128\nSRAM - Kbytes | 20 | 20 | 20 | 20\nsremiT | General-purpose | 3 | 3 | 3 | 3\nAdvanced-control | 1 | 1 | 1 | 1\nnoitacinummoC | SPI | 1 | 2 | 2 | 2\nI2C | 1 | 2 | 2 | 2\nUSART | 2 | 3 | 3 | 3\nUSB | 1 | 1 | 1 | 1\nCAN | 1 | 1 | 1 | 1\nGPIOs | 26 | 37 | 51 | 80\n12-bit synchronized ADC Number of channels | 2 10 channels | 2 10 channels | 2 16 channels(1) | 2 16 channels\nCPU frequency | 72 MHz\nOperating voltage | 2.0 to 3.6 V\nOperating temperatures | Ambient temperatures: -40 to +85 °C / -40 to +105 °C (see Table 9) Junction temperature: -40 to + 125 °C (see Table 9)\nPackages | VFQFPN36 | LQFP48, UFQFPN48 | LQFP64, TFBGA64 | LQFP100, LFBGA100, UFBGA100"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 11,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| SUPPLY SUPERVISION POR / PDR |\n| --- |\nPVD"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 13,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pinout | Low-density devices | Medium-density devices | High-density devices |\n| --- | --- | --- | --- |\n16 KB Flash | 32 KB Flash | 64 KB Flash | 128 KB Flash | 256 KB Flash | 384 KB Flash | 512 KB Flash\n6 KB RAM | 10 KB RAM | 20 KB RAM | 20 KB RAM | 48 KB RAM | 64 KB RAM | 64 KB RAM\n144 | - | - | - | - | 5× USARTs 4× 16-bit timers, 2× basic timers 3× SPIs, 2× I2Ss, 2× I2Cs USB, CAN, 2× PWM timers 3× ADCs, 2× DACs, 1× SDIO FSMC (100 and 144 pins)\n100 | - | - | 3× USARTs 3× 16-bit timers 2× SPIs, 2× I2Cs, USB, CAN, 1× PWM timer 2× ADCs\n64 | 2× USARTs 2× 16-bit timers 1× SPI, 1× I2C, USB, CAN, 1× PWM timer 2× ADCs\n48 | - | - | -\n36 | - | - | -"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 28,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pins | Pin name | )1(epyT | )2(leveL O / I | Main function(3) (after reset) | Alternate functions(4) |\n| --- | --- | --- | --- | --- | --- |\n001AGBFL | 001GBFU | 84NPFQFU/84PFQL | 46AGBFT | 46PFQL | 001PFQL | 63NPFQFV | Default | Remap\nA3 | B2 | - | - | - | 1 | - | PE2 | I/O | FT | PE2 | TRACECK | -\nB3 | A1 | - | - | - | 2 | - | PE3 | I/O | FT | PE3 | TRACED0 | -\nC3 | B1 | - | - | - | 3 | - | PE4 | I/O | FT | PE4 | TRACED1 | -\nD3 | C2 | - | - | - | 4 | - | PE5 | I/O | FT | PE5 | TRACED2 | -\nE3 | D2 | - | - | - | 5 | - | PE6 | I/O | FT | PE6 | TRACED3 | -\nB2 | E2 | 1 | B2 | 1 | 6 | - | V BAT | S | - | V BAT | - | -\nA2 | C1 | 2 | A2 | 2 | 7 | - | PC13-TAMPER- RTC(5) | I/O | - | PC13(6) | TAMPER-RTC | -\nA1 | D1 | 3 | A1 | 3 | 8 | - | PC14-OSC32_IN(5) | I/O | - | PC14(6) | OSC32_IN | -\nB1 | E1 | 4 | B1 | 4 | 9 | - | PC15- OSC32_OUT(5) | I/O | - | PC15(6) | OSC32_OUT | -\nC2 | F2 | - | - | - | 10 | - | V SS_5 | S | - | V SS_5 | - | -\nD2 | G2 | - | - | - | 11 | - | V DD_5 | S | - | V DD_5 | -\nC1 | F1 | 5 | C1 | 5 | 12 | 2 | OSC_IN | I | - | OSC_IN | - | PD0(7)\nD1 | G1 | 6 | D1 | 6 | 13 | 3 | OSC_OUT | O | - | OSC_OUT | PD1(7)\nE1 | H2 | 7 | E1 | 7 | 14 | 4 | NRST | I/O | - | NRST | - | -\nF1 | H1 | - | E3 | 8 | 15 | - | PC0 | I/O | - | PC0 | ADC12_IN10 | -\nF2 | J2 | - | E2 | 9 | 16 | - | PC1 | I/O | - | PC1 | ADC12_IN11 | -\nE2 | J3 | - | F2 | 10 | 17 | - | PC2 | I/O | - | PC2 | ADC12_IN12 | -\nF3 | K2 | - | -(8) | 11 | 18 | - | PC3 | I/O | - | PC3 | ADC12_IN13 | -\nG1 | J1 | 8 | F1 | 12 | 19 | 5 | V SSA | S | - | V SSA | - | -\nH1 | K1 | - | - | - | 20 | - | V REF- | S | - | V REF- | - | -\nJ1 | L1 | - | G1(8) | - | 21 | - | V REF+ | S | - | V REF+ | - | -\nK1 | M1 | 9 | H1 | 13 | 22 | 6 | V DDA | S | - | V DDA | - | -"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 29,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pins | Pin name | )1(epyT | )2(leveL O / I | Main function(3) (after reset) | Alternate functions(4) |\n| --- | --- | --- | --- | --- | --- |\n001AGBFL | 001GBFU | 84NPFQFU/84PFQL | 46AGBFT | 46PFQL | 001PFQL | 63NPFQFV | Default | Remap\nG2 | L2 | 10 | G2 | 14 | 23 | 7 | PA0-WKUP | I/O | - | PA0 | WKUP/ USART2_CTS(9)/ ADC12_IN0/ TIM2_CH1_ ETR(9) | -\nH2 | M2 | 11 | H2 | 15 | 24 | 8 | PA1 | I/O | - | PA1 | USART2_RTS(9)/ ADC12_IN1/ TIM2_CH2(9) | -\nJ2 | K3 | 12 | F3 | 16 | 25 | 9 | PA2 | I/O | - | PA2 | USART2_TX(9)/ ADC12_IN2/ TIM2_CH3(9) | -\nK2 | L3 | 13 | G3 | 17 | 26 | 10 | PA3 | I/O | - | PA3 | USART2_RX(9)/ ADC12_IN3/ TIM2_CH4(9) | -\nE4 | E3 | - | C2 | 18 | 27 | - | V SS_4 | S | - | V SS_4 | - | -\nF4 | H3 | - | D2 | 19 | 28 | - | V DD_4 | S | - | V DD_4 | - | -\nG3 | M3 | 14 | H3 | 20 | 29 | 11 | PA4 | I/O | - | PA4 | SPI1_NSS(9)/ USART2_CK(9)/ ADC12_IN4 | -\nH3 | K4 | 15 | F4 | 21 | 30 | 12 | PA5 | I/O | - | PA5 | SPI1_SCK(9)/ ADC12_IN5 | -\nJ3 | L4 | 16 | G4 | 22 | 31 | 13 | PA6 | I/O | - | PA6 | SPI1_MISO(9)/ ADC12_IN6/ TIM3_CH1(9) | TIM1_BKIN\nK3 | M4 | 17 | H4 | 23 | 32 | 14 | PA7 | I/O | - | PA7 | SPI1_MOSI(9)/ ADC12_IN7/ TIM3_CH2(9) | TIM1_CH1N\nG4 | K5 | - | H5 | 24 | 33 | PC4 | I/O | - | PC4 | ADC12_IN14 | -\nH4 | L5 | - | H6 | 25 | 34 | PC5 | I/O | - | PC5 | ADC12_IN15 | -\nJ4 | M5 | 18 | F5 | 26 | 35 | 15 | PB0 | I/O | - | PB0 | ADC12_IN8/ TIM3_CH3(9) | TIM1_CH2N\nK4 | M6 | 19 | G5 | 27 | 36 | 16 | PB1 | I/O | - | PB1 | ADC12_IN9/ TIM3_CH4(9) | TIM1_CH3N"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 30,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pins | Pin name | )1(epyT | )2(leveL O / I | Main function(3) (after reset) | Alternate functions(4) |\n| --- | --- | --- | --- | --- | --- |\n001AGBFL | 001GBFU | 84NPFQFU/84PFQL | 46AGBFT | 46PFQL | 001PFQL | 63NPFQFV | Default | Remap\nG5 | L6 | 20 | G6 | 28 | 37 | 17 | PB2 | I/O | FT | PB2/BOOT1 | - | -\nH5 | M7 | - | - | - | 38 | - | PE7 | I/O | FT | PE7 | - | TIM1_ETR\nJ5 | L7 | - | - | - | 39 | - | PE8 | I/O | FT | PE8 | - | TIM1_CH1N\nK5 | M8 | - | - | - | 40 | - | PE9 | I/O | FT | PE9 | - | TIM1_CH1\nG6 | L8 | - | - | - | 41 | - | PE10 | I/O | FT | PE10 | - | TIM1_CH2N\nH6 | M9 | - | - | - | 42 | - | PE11 | I/O | FT | PE11 | - | TIM1_CH2\nJ6 | L9 | - | - | - | 43 | - | PE12 | I/O | FT | PE12 | - | TIM1_CH3N\nK6 | M10 | - | - | - | 44 | - | PE13 | I/O | FT | PE13 | - | TIM1_CH3\nG7 | M11 | - | - | - | 45 | - | PE14 | I/O | FT | PE14 | - | TIM1_CH4\nH7 | M12 | - | - | - | 46 | - | PE15 | I/O | FT | PE15 | - | TIM1_BKIN\nJ7 | L10 | 21 | G7 | 29 | 47 | - | PB10 | I/O | FT | PB10 | I2C2_SCL/ USART3_TX(9) | TIM2_CH3\nK7 | L11 | 22 | H7 | 30 | 48 | - | PB11 | I/O | FT | PB11 | I2C2_SDA/ USART3_RX(9) | TIM2_CH4\nE7 | F12 | 23 | D6 | 31 | 49 | 18 | V SS_1 | S | - | V SS_1 | - | -\nF7 | G12 | 24 | E6 | 32 | 50 | 19 | V DD_1 | S | - | V DD_1 | - | -\nK8 | L12 | 25 | H8 | 33 | 51 | - | PB12 | I/O | FT | PB12 | SPI2_NSS/ I2C2_SMBAl/ USART3_CK(9)/ TIM1_BKIN(9) | -\nJ8 | K12 | 26 | G8 | 34 | 52 | - | PB13 | I/O | FT | PB13 | SPI2_SCK/ USART3_CTS(9)/ TIM1_CH1N (9) | -\nH8 | K11 | 27 | F8 | 35 | 53 | - | PB14 | I/O | FT | PB14 | SPI2_MISO/ USART3_RTS(9) TIM1_CH2N (9) | -\nG8 | K10 | 28 | F7 | 36 | 54 | - | PB15 | I/O | FT | PB15 | SPI2_MOSI/ TIM1_CH3N(9) | -\nK9 | K9 | - | - | - | 55 | - | PD8 | I/O | FT | PD8 | - | USART3_TX\nJ9 | K8 | - | - | - | 56 | - | PD9 | I/O | FT | PD9 | - | USART3_RX"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 31,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pins | Pin name | )1(epyT | )2(leveL O / I | Main function(3) (after reset) | Alternate functions(4) |\n| --- | --- | --- | --- | --- | --- |\n001AGBFL | 001GBFU | 84NPFQFU/84PFQL | 46AGBFT | 46PFQL | 001PFQL | 63NPFQFV | Default | Remap\nH9 | J12 | - | - | - | 57 | - | PD10 | I/O | FT | PD10 | - | USART3_CK\nG9 | J11 | - | - | - | 58 | - | PD11 | I/O | FT | PD11 | - | USART3_CTS\nK10 | J10 | - | - | - | 59 | - | PD12 | I/O | FT | PD12 | - | TIM4_CH1 / USART3_RTS\nJ10 | H12 | - | - | - | 60 | - | PD13 | I/O | FT | PD13 | - | TIM4_CH2\nH10 | H11 | - | - | - | 61 | - | PD14 | I/O | FT | PD14 | - | TIM4_CH3\nG10 | H10 | - | - | - | 62 | - | PD15 | I/O | FT | PD15 | - | TIM4_CH4\nF10 | E12 | - | F6 | 37 | 63 | - | PC6 | I/O | FT | PC6 | - | TIM3_CH1\nE10 | E11 | E7 | 38 | 64 | - | PC7 | I/O | FT | PC7 | - | TIM3_CH2\nF9 | E10 | E8 | 39 | 65 | - | PC8 | I/O | FT | PC8 | - | TIM3_CH3\nE9 | D12 | - | D8 | 40 | 66 | - | PC9 | I/O | FT | PC9 | - | TIM3_CH4\nD9 | D11 | 29 | D7 | 41 | 67 | 20 | PA8 | I/O | FT | PA8 | USART1_CK/ TIM1_CH1(9)/ MCO | -\nC9 | D10 | 30 | C7 | 42 | 68 | 21 | PA9 | I/O | FT | PA9 | USART1_TX(9)/ TIM1_CH2(9) | -\nD10 | C12 | 31 | C6 | 43 | 69 | 22 | PA10 | I/O | FT | PA10 | USART1_RX(9)/ TIM1_CH3(9) | -\nC10 | B12 | 32 | C8 | 44 | 70 | 23 | PA11 | I/O | FT | PA11 | USART1_CTS/ CANRX(9)/ USBDM/ TIM1_CH4(9) | -\nB10 | A12 | 33 | B8 | 45 | 71 | 24 | PA12 | I/O | FT | PA12 | USART1_RTS/ CANTX(9) /USBDP TIM1_ETR(9) | -\nA10 | A11 | 34 | A8 | 46 | 72 | 25 | PA13 | I/O | FT | JTMS/SWDIO | - | PA13\nF8 | C11 | - | - | - | 73 | - | Not connected | -\nE6 | F11 | 35 | D5 | 47 | 74 | 26 | V SS_2 | S | - | V SS_2 | - | -\nF6 | G11 | 36 | E5 | 48 | 75 | 27 | V DD_2 | S | - | V DD_2 | - | -"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 32,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pins | Pin name | )1(epyT | )2(leveL O / I | Main function(3) (after reset) | Alternate functions(4) |\n| --- | --- | --- | --- | --- | --- |\n001AGBFL | 001GBFU | 84NPFQFU/84PFQL | 46AGBFT | 46PFQL | 001PFQL | 63NPFQFV | Default | Remap\nA9 | A10 | 37 | A7 | 49 | 76 | 28 | PA14 | I/O | FT | JTCK/SWCLK | - | PA14\nA8 | A9 | 38 | A6 | 50 | 77 | 29 | PA15 | I/O | FT | JTDI | - | TIM2_CH1_ ETR/ PA15 /SPI1_NSS\nB9 | B11 | - | B7 | 51 | 78 | PC10 | I/O | FT | PC10 | - | USART3_TX\nB8 | C10 | - | B6 | 52 | 79 | PC11 | I/O | FT | PC11 | - | USART3_RX\nC8 | B10 | - | C5 | 53 | 80 | PC12 | I/O | FT | PC12 | - | USART3_CK\nD8 | C9 | - | C1 | - | 81 | 2 | PD0 | I/O | FT | PD0 | - | CANRX\nE8 | B9 | - | D1 | - | 82 | 3 | PD1 | I/O | FT | PD1 | - | CANTX\nB7 | C8 | B5 | 54 | 83 | - | PD2 | I/O | FT | PD2 | TIM3_ETR | -\nC7 | B8 | - | - | - | 84 | - | PD3 | I/O | FT | PD3 | - | USART2_CTS\nD7 | B7 | - | - | - | 85 | - | PD4 | I/O | FT | PD4 | - | USART2_RTS\nB6 | A6 | - | - | - | 86 | - | PD5 | I/O | FT | PD5 | - | USART2_TX\nC6 | B6 | - | - | - | 87 | - | PD6 | I/O | FT | PD6 | - | USART2_RX\nD6 | A5 | - | - | - | 88 | - | PD7 | I/O | FT | PD7 | - | USART2_CK\nA7 | A8 | 39 | A5 | 55 | 89 | 30 | PB3 | I/O | FT | JTDO | - | TIM2_CH2 / PB3 TRACESWO SPI1_SCK\nA6 | A7 | 40 | A4 | 56 | 90 | 31 | PB4 | I/O | FT | JNTRST | - | TIM3_CH1/ PB4/ SPI1_MISO\nC5 | C5 | 41 | C4 | 57 | 91 | 32 | PB5 | I/O | PB5 | I2C1_SMBAl | TIM3_CH2 / SPI1_MOSI\nB5 | B5 | 42 | D3 | 58 | 92 | 33 | PB6 | I/O | FT | PB6 | I2C1_SCL(9)/ TIM4_CH1(9) | USART1_TX\nA5 | B4 | 43 | C3 | 59 | 93 | 34 | PB7 | I/O | FT | PB7 | I2C1_SDA(9)/ TIM4_CH2(9) | USART1_RX\nD5 | A4 | 44 | B4 | 60 | 94 | 35 | BOOT0 | I | BOOT0 | - | -"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 33,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Pins | Pin name | )1(epyT | )2(leveL O / I | Main function(3) (after reset) | Alternate functions(4) |\n| --- | --- | --- | --- | --- | --- |\n001AGBFL | 001GBFU | 84NPFQFU/84PFQL | 46AGBFT | 46PFQL | 001PFQL | 63NPFQFV | Default | Remap\nB4 | A3 | 45 | B3 | 61 | 95 | - | PB8 | I/O | FT | PB8 | TIM4_CH3(9) | I2C1_SCL / CANRX\nA4 | B3 | 46 | A3 | 62 | 96 | - | PB9 | I/O | FT | PB9 | TIM4_CH4(9) | I2C1_SDA/ CANTX\nD4 | C3 | - | - | - | 97 | - | PE0 | I/O | FT | PE0 | TIM4_ETR | -\nC4 | A2 | - | - | - | 98 | - | PE1 | I/O | FT | PE1 | - | -\nE5 | D3 | 47 | D4 | 63 | 99 | 36 | V SS_3 | S | - | V SS_3 | - | -\nF5 | C4 | 48 | E4 | 64 | 100 | 1 | V DD_3 | S | - | V DD_3 | - | -"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 34,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Reserved |\n| --- |\nReserved\nReserved\nCRC\nReserved\nFlash interface\nReserved\nRCC\nReserved\nDMA\nReserved\nUSART1\nReserved\nSPI1\nTIM1\nADC2\nADC1\nReserved\nPort E\nPort D\nPort C\nPort B\nPort A\nEXTI\nAFIO\nReserved\nPWR\nBKP\nReserved\nbxCAN\nshared 512 byte USB/CAN SRAM\nUSB registers\nI2C2\nI2C1\nReserved\nUSART3\nUSART2\nReserved\nSPI2\nReserved\nIWDG\nWWDG\nRTC\nReserved\nTIM4\nTIM3\nTIM2"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 34,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Reserved |\n| --- |\nOption Bytes\nSystem memory\nReserved\nFlash memory\nAliased to flash or system memory depending on BOOT pins"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 37,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Ratings | Min | Max | Unit |\n| --- | --- | --- | --- | --- |\nV − V DD SS | External main supply voltage (including V and V )(1) DDA DD | –0.3 | 4.0 | V\nV (2) IN | Input voltage on 5 V tolerant pin | V − 0.3 SS | V + 4.0 DD\nInput voltage on any other pin | V − 0.3 SS | 4.0\n|ΔV | DDx | Variations between different V power pins DD | - | 50 | mV\n|V − V | SSX SS | Variations between all the different ground pins | - | 50\nV ESD(HBM) | Electrostatic discharge voltage (human body model) | See Section 5.3.11"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 37,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Ratings | Max. | Unit |\n| --- | --- | --- | --- |\nI VDD | Total current into V /V power lines (source)(1) DD DDA | 150 | mA\nI VSS | Total current out of V ground lines (sink)(1) SS | 150\nI IO | Output current sunk by any I/O and control pin | 25\nOutput current source by any I/Os and control pin | − 25\nI (2) INJ(PIN) | Injected current on five volt tolerant pins(3) | -5/+0\nInjected current on any other pin(4) | ± 5\nΣI INJ(PIN) | Total injected current (sum of all I/O and control pins)(5) | ± 25"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 38,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Max | Unit |\n| --- | --- | --- | --- | --- | --- |\nf HCLK | Internal AHB clock frequency | - | 0 | 72 | MHz\nf PCLK1 | Internal APB1 clock frequency | - | 0 | 36\nf PCLK2 | Internal APB2 clock frequency | - | 0 | 72\nV DD | Standard operating voltage | - | 2 | 3.6 | V\nV (1) DDA | Analog operating voltage (ADC not used) | Must be the same potential as V (2) DD | 2 | 3.6\nAnalog operating voltage (ADC used) | 2.4 | 3.6\nV BAT | Backup operating voltage | - | 1.8 | 3.6\nV IN | I/O input voltage | Standard IO | –0.3 | V + DD 0.3 | V\nFT IO(3) | 2 V < V ≤ 3.6 V DD | –0.3 | 5.5\nV = 2 V DD | –0.3 | 5.2\nBOOT0 | 0 | 5.5\nP D | Power dissipation at T = 85 °C for suffix 6 or A T = 105 °C for suffix 7(4) A | LFBGA100 | - | 454 | mW\nLQFP100 | - | 434\nUFBGA100 | - | 339\nTFBGA64 | - | 308\nLQFP64 | - | 444\nLQFP48 | - | 363\nUFQFPN48 | - | 624\nVFQFPN36 | - | 1000\nTA | Ambient temperature for 6 suffix version | Maximum power dissipation | –40 | 85 | °C\nLow-power dissipation(5) | –40 | 105\nAmbient temperature for 7 suffix version | Maximum power dissipation | –40 | 105\nLow-power dissipation(5) | –40 | 125\nTJ | Junction temperature range | 6 suffix version | –40 | 105\n7 suffix version | –40 | 125"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 39,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nV PVD | Programmable voltage detector level selection | PLS[2:0] = 000 (rising edge) | 2.10 | 2.18 | 2.26 | V\nPLS[2:0] = 000 (falling edge) | 2,00 | 2.08 | 2.16\nPLS[2:0] = 001 (rising edge) | 2.19 | 2.28 | 2.37\nPLS[2:0] = 001 (falling edge) | 2.09 | 2.18 | 2.27\nPLS[2:0] = 010 (rising edge) | 2.28 | 2.38 | 2.48\nPLS[2:0] = 010 (falling edge) | 2.18 | 2.28 | 2.38\nPLS[2:0] = 011 (rising edge) | 2.38 | 2.48 | 2.58\nPLS[2:0] = 011 (falling edge) | 2.28 | 2.38 | 2.48\nPLS[2:0] = 100 (rising edge) | 2.47 | 2.58 | 2.69\nPLS[2:0] = 100 (falling edge) | 2.37 | 2.48 | 2.59\nPLS[2:0] = 101 (rising edge) | 2.57 | 2.68 | 2.79\nPLS[2:0] = 101 (falling edge) | 2.47 | 2.58 | 2.69\nPLS[2:0] = 110 (rising edge) | 2.66 | 2.78 | 2.90\nPLS[2:0] = 110 (falling edge) | 2.56 | 2.68 | 2.80\nPLS[2:0] = 111 (rising edge) | 2.76 | 2.88 | 3.00\nPLS[2:0] = 111 (falling edge) | 2.66 | 2.78 | 2.90\nV (2) PVDhyst | PVD hysteresis | - | - | 100 | - | mV\nV POR/PDR | Power on/power down reset threshold | Falling edge | 1.8(1) | 1.88 | 1.96 | V\nRising edge | 1.84 | 1.92 | 2.0\nV (2) PDRhyst | PDR hysteresis | - | - | 40 | - | mV\nT (2) RSTTEMPO | Reset temporization | - | 1.0 | 2.5 | 4.5 | ms"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 40,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nV REFINT | Internal reference voltage | –40 °C < T < +105 °C A | 1.16 | 1.20 | 1.26 | V\n–40 °C < T < +85 °C A | 1.16 | 1.20 | 1.24\nT (1) S_vrefint | ADC sampling time when reading the internal reference voltage | - | - | 5.1 | 17.1(2) | µs\nV (2) RERINT | Internal reference voltage spread over the temperature range | V = 3 V ±10 mV DD | - | - | 10 | mV\nT (2) Coeff | Temperature coefficient | - | - | - | 100 | ppm/°C"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 41,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | f HCLK | Max(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nT = 85 °C A | T = 105 °C A\nI DD | Supply current in Run mode | External clock(2), all peripherals enabled | 72 MHz | 50.0 | 50.3 | mA\n48 MHz | 36.1 | 36.2\n36 MHz | 28.6 | 28.7\n24 MHz | 19.9 | 20.1\n16 MHz | 14.7 | 14.9\n8 MHz | 8.6 | 8.9\nExternal clock(2), all peripherals disabled | 72 MHz | 32.8 | 32.9\n48 MHz | 24.4 | 24.5\n36 MHz | 19.8 | 19.9\n24 MHz | 13.9 | 14.2\n16 MHz | 10.7 | 11.0\n8 MHz | 6.8 | 7.1"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 41,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | f HCLK | Max(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nT = 85 °C A | T = 105 °C A\nI DD | Supply current in Run mode | External clock(2), all peripherals enabled | 72 MHz | 48 | 50 | mA\n48 MHz | 31.5 | 32\n36 MHz | 24 | 25.5\n24 MHz | 17.5 | 18\n16 MHz | 12.5 | 13\n8 MHz | 7.5 | 8\nExternal clock(2), all peripherals disabled | 72 MHz | 29 | 29.5\n48 MHz | 20.5 | 21\n36 MHz | 16 | 16.5\n24 MHz | 11.5 | 12\n16 MHz | 8.5 | 9\n8 MHz | 5.5 | 6"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 43,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | f HCLK | Max(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nT = 85 °C A | T = 105 °C A\nI DD | Supply current in Sleep mode | External clock(2), all peripherals enabled | 72 MHz | 30 | 32 | mA\n48 MHz | 20 | 20.5\n36 MHz | 15.5 | 16\n24 MHz | 11.5 | 12\n16 MHz | 8.5 | 9\n8 MHz | 5.5 | 6\nExternal clock(2), all peripherals disabled | 72 MHz | 7.5 | 8\n48 MHz | 6 | 6.5\n36 MHz | 5 | 5.5\n24 MHz | 4.5 | 5\n16 MHz | 4 | 4.5\n8 MHz | 3 | 4"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 44,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Typ(1) | Max | Unit |\n| --- | --- | --- | --- | --- | --- |\nV /V DD BAT = 2.0 V | V /V DD BAT = 2.4 V | V /V DD BAT = 3.3 V | T = A 85 °C | T = A 105 °C\nI DD | Supply current in Stop mode | Regulator in Run mode, low-speed and high-speed internal RC oscillators and high-speed oscillator OFF (no independent watchdog) | - | 23.5 | 24 | 200 | 370 | µA\nRegulator in Low-power mode, low- speed and high-speed internal RC oscillators and high-speed oscillator OFF (no independent watchdog) | - | 13.5 | 14 | 180 | 340\nSupply current in Standby mode | Low-speed internal RC oscillator and independent watchdog ON | - | 2.6 | 3.4 | - | -\nLow-speed internal RC oscillator ON, independent watchdog OFF | - | 2.4 | 3.2 | - | -\nLow-speed internal RC oscillator and independent watchdog OFF, low-speed oscillator and RTC OFF | - | 1.7 | 2 | 4 | 5\nI DD_VBAT | Backup domain supply current | Low-speed oscillator and RTC ON | 0.9 | 1.1 | 1.4 | 1.9(2) | 2.2"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 47,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | f HCLK | Typ(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nAll peripherals enabled(2) | All peripherals disabled\nI DD | Supply current in Run mode | External clock(3) | 72 MHz | 36 | 27 | mA\n48 MHz | 24.2 | 18.6\n36 MHz | 19.0 | 14.8\n24 MHz | 12.9 | 10.1\n16 MHz | 9.3 | 7.4\n8 MHz | 5.5 | 4.6\n4 MHz | 3.3 | 2.8\n2 MHz | 2.2 | 1.9\n1 MHz | 1.6 | 1.45\n500 kHz | 1.3 | 1.25\n125 kHz | 1.08 | 1.06\nRunning on high speed internal RC (HSI), AHB prescaler used to reduce the frequency | 64 MHz | 31.4 | 23.9 | mA\n48 MHz | 23.5 | 17.9\n36 MHz | 18.3 | 14.1\n24 MHz | 12.2 | 9.5\n16 MHz | 8.5 | 6.8\n8 MHz | 4.9 | 4.0\n4 MHz | 2.7 | 2.2\n2 MHz | 1.6 | 1.4\n1 MHz | 1.02 | 0.9\n500 kHz | 0.73 | 0.67\n125 kHz | 0.5 | 0.48"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 48,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | f HCLK | Typ(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nAll peripherals enabled(2) | All peripherals disabled\nI DD | Supply current in Sleep mode | External clock(3) | 72 MHz | 14.4 | 5.5 | mA\n48 MHz | 9.9 | 3.9\n36 MHz | 7.6 | 3.1\n24 MHz | 5.3 | 2.3\n16 MHz | 3.8 | 1.8\n8 MHz | 2.1 | 1.2\n4 MHz | 1.6 | 1.1\n2 MHz | 1.3 | 1.0\n1 MHz | 1.11 | 0.98\n500 kHz | 1.04 | 0.96\n125 kHz | 0.98 | 0.95\nRunning on high speed internal RC (HSI), AHB prescaler used to reduce the frequency | 64 MHz | 12.3 | 4.4\n48 MHz | 9.3 | 3.3\n36 MHz | 7 | 2.5\n24 MHz | 4.8 | 1.8\n16 MHz | 3.2 | 1.2\n8 MHz | 1.6 | 0.6\n4 MHz | 1.0 | 0.5\n2 MHz | 0.72 | 0.47\n1 MHz | 0.56 | 0.44\n500 kHz | 0.49 | 0.42\n125 kHz | 0.43 | 0.41"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 50,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Peripherals | µA/MHz |\n| --- | --- |\nAPB2 (up to 72 MHz) | APB2-Bridge | 3.75\nGPIOA | 6.67\nGPIOB | 6.53\nGPIOC | 6.53\nGPIOD | 6.53\nGPIOE | 6.39\nSPI1 | 4.72\nUSART1 | 11.94\nTIM1 | 23.33\nADC1(2) | 17.50\nADC2(2) | 16.07"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 50,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nf HSE_ext | User external clock source frequency(1) | - | 1 | 8 | 25 | MHz\nV HSEH | OSC_IN input pin high level voltage | 0.7V DD | - | V DD | V\nV HSEL | OSC_IN input pin low level voltage | V SS | - | 0.3V DD\nt w(HSE) t w(HSE) | OSC_IN high or low time(1) | 5 | - | - | ns\nt r(HSE) t f(HSE) | OSC_IN rise or fall time(1) | - | - | 20\nC in(HSE) | OSC_IN input capacitance(1) | - | - | 5 | - | pF\nDuCy (HSE) | Duty cycle | - | 45 | - | 55 | %\nI L | OSC_IN Input leakage current | V ≤ V ≤ V SS IN DD | - | - | ±1 | µA"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 51,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nf LSE_ext | User external clock source frequency(1) | - | 32.768 | 1000 | kHz\nV LSEH | OSC32_IN input pin high level voltage | 0.7V DD | - | V DD | V\nV LSEL | OSC32_IN input pin low level voltage | V SS | - | 0.3V DD\nt w(LSE) t w(LSE) | OSC32_IN high or low time(1) | 450 | - | - | ns\nt r(LSE) t f(LSE) | OSC32_IN rise or fall time(1) | - | - | 50\nC in(LSE) | OSC32_IN input capacitance(1) | - | - | 5 | - | pF\nDuCy (LSE) | Duty cycle | - | 30 | - | 70 | %\nI L | OSC32_IN Input leakage current | V ≤V ≤V SS IN DD | - | - | ±1 | µA"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 54,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nf HSI | Frequency | - | - | 8 | - | MHz\nDuCy (HSI) | Duty cycle | - | 45 | - | 55 | %\nACC HSI | Accuracy of the HSI oscillator | User-trimmed with the RCC_CR register(2) | - | - | 1(3)\nFactory- calibrated (4)(5) | T = –40 to 105 °C A | –2 | - | 2.5\nT = –10 to 85 °C A | –1.5 | - | 2.2\nT = 0 to 70 °C A | –1.3 | - | 2\nT = 25 °C A | –1.1 | - | 1.8\nt (4) su(HSI) | HSI oscillator startup time | - | 1 | - | 2 | µs\nI (4) DD(HSI) | HSI oscillator power consumption | - | - | 80 | 100 | µA"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 55,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- |\nf (2) LSI | Frequency | 30 | 40 | 60 | kHz\nt (3) su(LSI) | LSI oscillator startup time | - | - | 85 | µs\nI (3) DD(LSI) | LSI oscillator power consumption | - | 0.65 | 1.2 | µA"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 56,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Typ | Unit |\n| --- | --- | --- | --- |\nt (1) WUSLEEP | Wakeup from Sleep mode | 1.8 | µs\nt (1) WUSTOP | Wakeup from Stop mode (regulator in run mode) | 3.6\nWakeup from Stop mode (regulator in low-power mode) | 5.4\nt (1) WUSTDBY | Wakeup from Standby mode | 50"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 57,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min(1) | Typ | Max(1) | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nI DD | Supply current | Read mode f = 72 MHz with two wait HCLK states, V = 3.3 V DD | - | - | 20 | mA\nWrite / Erase modes f = 72 MHz, V = 3.3 V HCLK DD | - | - | 5\nPower-down mode / Halt, V = 3.0 to 3.6 V DD | - | - | 50 | µA\nV prog | Programming voltage | - | 2 | - | 3.6 | V"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 58,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Level/Class |\n| --- | --- | --- | --- |\nV FESD | Voltage limits to be applied on any I/O pin to induce a functional disturbance | V = 3.3 V, T = +25 °C, DD A f = 72 MHz HCLK conforms to IEC 61000-4-2 | 2B\nV EFTB | Fast transient voltage burst limits to be applied through 100 pF on V and V DD SS pins to induce a functional disturbance | V = 3.3 V, T = +25 °C, DD A f = 72 MHz HCLK conforms to IEC 61000-4-4 | 4A"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 59,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Ratings | Conditions | Class | Maximum value(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nV ESD(HBM) | Electrostatic discharge voltage (human body model) | T = +25 °C A conforming to JESD22-A114 | 2 | 2000 | V\nV ESD(CDM) | Electrostatic discharge voltage (charge device model) | T = +25 °C A conforming to ANSI/ESD STM5.3.1 | II | 500"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 60,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Description | Functional susceptibility | Unit |\n| --- | --- | --- | --- |\nNegative injection | Positive injection\nI INJ | Injected current on OSC_IN32, OSC_OUT32, PA4, PA5, PC13 | -0 | +0 | mA\nInjected current on all FT pins | -5 | +0\nInjected current on any other pin | -5 | +5"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 61,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nV IL | Low level input voltage | Standard IO input low level voltage | - | - | 0.28*(V -2 V)+0.8 V(1) DD | V\nIO FT(3) input low level voltage | - | - | 0.32*(V -2V)+0.75 V(1) DD\nAll I/Os except BOOT0 | - | - | 0.35 V (2) DD\nV IH | High level input voltage | Standard IO input high level voltage | 0.41*(V -2 V)+1.3 V(1) DD | - | -\nIO FT(3) input high level voltage | 0.42*(V -2 V)+1 V(1) DD | - | -\nAll I/Os except BOOT0 | 0.65 V (2) DD | - | -\nV hys | Standard IO Schmitt trigger voltage hysteresis(4) | - | 200 | - | - | mV\nIO FT Schmitt trigger voltage hysteresis(4) | - | 5% V (5) DD | - | -\nI lkg | Input leakage current (6) | V ≤ V ≤ V SS IN DD Standard I/Os | - | - | ±1 | µA\nV IN = 5 V I/O FT | - | - | 3\nR PU | Weak pull-up equivalent resistor(7) | V = V IN SS | 30 | 40 | 50 | kΩ\nR PD | Weak pull-down equivalent resistor(7) | V = V IN DD | 30 | 40 | 50\nC IO | I/O pin capacitance | - | 5 | - | pF"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 64,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Max | Unit |\n| --- | --- | --- | --- | --- | --- |\nV (1) OL | Output low level voltage for an I/O pin when 8 pins are sunk at same time | CMOS port(2), I = +8 mA IO 2.7 V < V < 3.6 V DD | - | 0.4 | V\nV (3) OH | Output high level voltage for an I/O pin when 8 pins are sourced at same time | V –0.4 DD | -\nV (1) OL | Output low level voltage for an I/O pin when 8 pins are sunk at same time | TTL port(2) I =+ 8mA IO 2.7 V < V < 3.6 V DD | - | 0.4\nV (3) OH | Output high level voltage for an I/O pin when 8 pins are sourced at same time | 2.4 | -\nV (1)(4) OL | Output low level voltage for an I/O pin when 8 pins are sunk at same time | I = +20 mA IO 2.7 V < V < 3.6 V DD | - | 1.3\nV (3)(4) OH | Output high level voltage for an I/O pin when 8 pins are sourced at same time | V –1.3 DD | -\nV (1)(4) OL | Output low level voltage for an I/O pin when 8 pins are sunk at same time | I = +6 mA IO 2 V < V < 2.7 V DD | - | 0.4\nV (3)(4) OH | Output high level voltage for an I/O pin when 8 pins are sourced at same time | V –0.4 DD | -"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 65,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| MODEx[1:0] bit value(1) | Symbol | Parameter | Conditions | Min | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\n10 | f max(IO)out | Maximum frequency(2) | C = 50 pF, V = 2 V to 3.6 V L DD | - | 2 | MHz\nt f(IO)out | Output high to low level fall time | C = 50 pF, V = 2 V to 3.6 V L DD | - | 125(3) | ns\nt r(IO)out | Output low to high level rise time | - | 125(3)\n01 | f max(IO)out | Maximum frequency(2) | C = 50 pF, V = 2 V to 3.6 V L DD | - | 10 | MHz\nt f(IO)out | Output high to low level fall time | C = 50 pF, V = 2 V to 3.6 V L DD | - | 25(3) | ns\nt r(IO)out | Output low to high level rise time | - | 25(3)\n11 | F max(IO)out | Maximum frequency(2) | C = 30 pF, V = 2.7 V to 3.6 V L DD | - | 50 | MHz\nC = 50 pF, V = 2.7 V to 3.6 V L DD | - | 30\nC = 50 pF, V = 2 V to 2.7 V L DD | - | 20\nt f(IO)out | Output high to low level fall time | C = 30 pF, V = 2.7 V to 3.6 V L DD | - | 5(3) | ns\nC = 50 pF, V = 2.7 V to 3.6 V L DD | - | 8(3)\nC = 50 pF, V = 2 V to 2.7 V L DD | - | 12(3)\nt r(IO)out | Output low to high level rise time | C = 30 pF, V = 2.7 V to 3.6 V L DD | - | 5(3)\nC = 50 pF, V = 2.7 V to 3.6 V L DD | - | 8(3)\nC = 50 pF, V = 2 V to 2.7 V L DD | - | 12(3)\n- | t EXTIpw | Pulse width of external signals detected by the EXTI controller | - | 10 | - | ns"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 66,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nV (1) IL(NRST) | NRST Input low level voltage | - | –0.5 | - | 0.8 | V\nV (1) IH(NRST) | NRST Input high level voltage | - | 2 | - | V +0.5 DD\nV hys(NRST) | NRST Schmitt trigger voltage hysteresis | - | - | 200 | - | mV\nR PU | Weak pull-up equivalent resistor(2) | V = V IN SS | 30 | 40 | 50 | kΩ\nV (1) F(NRST) | NRST Input filtered pulse | - | - | - | 100 | ns\nV (1) NF(NRST) | NRST Input not filtered pulse | - | 300 | - | - | ns"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 73,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min.(1) | Max.(1) | Unit |\n| --- | --- | --- | --- | --- | --- |\nInput levels\nV DD | USB operating voltage(2) | 3.0(3) | 3.6 | V\nV (4) DI | Differential input sensitivity | I(USBDP, USBDM) | 0.2 | - | V\nV (4) CM | Differential common mode range | Includes V range DI | 0.8 | 2.5\nV (4) SE | Single ended receiver threshold | 1.3 | 2.0\nOutput levels\nV OL | Static output level low | R of 1.5 kΩ to 3.6 V(5) L | - | 0.3 | V\nV OH | Static output level high | R of 15 kΩ to V (5) L SS | 2.8 | 3.6"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 73,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Max | Unit |\n| --- | --- | --- | --- | --- | --- |\nDriver characteristics\nt r | Rise time(2) | C = 50 pF L | 4 | 20 | ns\nt f | Fall time(2) | C = 50 pF L | 4 | 20 | ns\nt rfm | Rise/ fall time matching | t/t r f | 90 | 110 | %\nV CRS | Output signal crossover voltage | - | 1.3 | 2.0 | V"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 74,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Conditions | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- | --- |\nV DDA | Power supply | - | 2.4 | - | 3.6 | V\nV REF+ | Positive reference voltage | - | 2.4 | - | V DDA | V\nI VREF | Current on the V input pin REF | - | - | 160(1) | 220(1) | µA\nf ADC | ADC clock frequency | - | 0.6 | - | 14 | MHz\nf (2) S | Sampling rate | - | 0.05 | - | 1 | MHz\nf (2) TRIG | External trigger frequency | f = 14 MHz ADC | - | - | 823 | kHz\n- | - | 17 | 1 / f ADC\nV (3) AIN | Conversion voltage range | 0 (V or V SSA REF- tied to ground) | - | V REF+ | V\nR (2) AIN | External input impedance | See Equation 1 and Table 48 for details | - | - | 50 | kΩ\nR (2) ADC | Sampling switch resistance | - | - | - | 1 | kΩ\nC (2) ADC | Internal sample and hold capacitor | - | - | - | 8 | pF\nt (2) CAL | Calibration time | f = 14 MHz ADC | 5.9 | µs\n- | 83 | 1 / f ADC\nt (2) lat | Injection trigger conversion latency | f = 14 MHz ADC | - | - | 0.214 | µs\n- | - | - | 3(4) | 1 / f ADC\nt (2) latr | Regular trigger conversion latency | f = 14 MHz ADC | - | - | 0.143 | µs\n- | - | - | 2(4) | 1 / f ADC\nt (2) S | Sampling time | f = 14 MHz ADC | 0.107 | - | 17.1 | µs\n- | 1.5 | - | 239.5 | 1 / f ADC\nt (2) STAB | Power-up time | - | 0 | 0 | 1 | µs\nt (2) CONV | Total conversion time (including sampling time) | f = 14 MHz ADC | 1 | - | 18 | µs\n- | 14 to 252 (t for sampling +12.5 for S successive approximation) | 1 / f ADC"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 78,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Symbol | Parameter | Min | Typ | Max | Unit |\n| --- | --- | --- | --- | --- | --- |\nT (1) L | V linearity with temperature SENSE | - | ±1 | ±2 | °C\nAvg_Slope(1) | Average slope | 4.0 | 4.3 | 4.6 | mV/°C\nV (1) 25 | Voltage at 25 °C | 1.34 | 1.43 | 1.52 | V\nt (2) START | Startup time | 4 | - | 10 | µs\nT (3)(2) S_temp | ADC sampling time when reading the temperature | - | - | 17.1"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 106,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n01-Jun-2007 | 1 | Initial release.\n20-Jul-2007 | 2 | Flash memory size modified in Note 9, Note 5, Note 7, Note 7 and BGA100 pins added to Table 5: Medium-density STM32F103xx pin definitions. Figure 3: STM32F103xx performance line LFBGA100 ballout added. T changed to T in Figure 23: Low-speed external clock source AC HSE LSE timing diagram. V ranged modified in Power supply schemes. BAT t changed to t in Table 22: HSE 4-16 MHz oscillator SU(LSE) SU(HSE) characteristics. I max value added to Table 24: HSI oscillator DD(HSI) characteristics. Sample size modified and machine model removed in Electrostatic discharge (ESD). Number of parts modified and standard reference updated in Static latch- up. 25 °C and 85 °C conditions removed and class name modified in Table 33: Electrical sensitivities. R and R min and max values added PU PD to Table 35: I/O static characteristics. R min and max values added to PU Table 38: NRST pin characteristics. Figure 32: I2C bus AC waveforms and measurement circuit and Figure 31: Recommended NRST pin protection corrected. Notes removed below Table 9, Table 38, Table 44. I typical values changed in Table 11: Maximum current consumption in DD Run and Sleep modes. Table 39: TIMx characteristics modified. t , V value, t and f added to Table 46: ADC characteristics. STAB REF+ lat TRIG In Table: typical endurance and data retention for T = 85 °C added, data A retention for T = 25 °C removed. A V changed to V in Table 12: Embedded internal reference BG REFINT voltage. Document title changed. Controller area network (CAN) section modified. Figure 14: Power supply scheme modified. Features on page 1 list optimized. Small text changes."
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 107,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n18-Oct-2007 | 3 | STM32F103CBT6, STM32F103T6 and STM32F103T8 root part numbers added (see Table 2: STM32F103xx medium-density device features and peripheral counts) VFQFPN36 package added (see Section 6: Package information). All packages are ECOPACK® compliant. Package mechanical data inch values are calculated from mm and rounded to 4 decimal digits (see Section 6: Package information). Table 5: Medium-density STM32F103xx pin definitions updated and clarified. Table 26: Low-power mode wakeup timings updated. T min corrected in Table 12: Embedded internal reference voltage. A Note 2 added below Table 22: HSE 4-16 MHz oscillator characteristics. V value added to Table 32: ESD absolute maximum ratings. ESD(CDM) Note 4 added and V parameter description modified in Table 36: OH Output voltage characteristics. Note 1 modified under Table 37: I/O AC characteristics. Equation 1 and Table 47: R max for f = 14 MHz added to Section AIN ADC 5.3.18: 12-bit ADC characteristics. V , t max, t , V min and t max modified, notes modified and AIN S CONV REF+ lat t added in Table 46: ADC characteristics. latr Figure 37: ADC accuracy characteristics updated. Note 1 modified below Figure 38: Typical connection diagram using the ADC. Electrostatic discharge (ESD) on page 59 modified. Number of TIM4 channels modified in Figure 1: STM32F103xx performance line block diagram. Maximum current consumption Table 13, Table 14 and Table 15 updated. V modified in Table 35: I/O static characteristics. hys Table 49: ADC accuracy updated. V value added in Table 30: EMS FESD characteristics. Values corrected, note 2 modified and note 3 removed in Table 26: Low-power mode wakeup timings. Table 16: Typical and maximum current consumptions in Stop and Standby modes: Typical values added for V /V = 2.4 V, Note 2 DD BAT modified, Note 2 added. Table 21: Typical current consumption in Standby mode added. On-chip peripheral current consumption on page 49 added. ACC values updated in Table 24: HSI oscillator characteristics. HSI V added to Table 28: Flash memory characteristics. prog Upper option byte address modified in Figure 11: Memory map. Typical f value added in Table 25: LSI oscillator characteristics and LSI internal RC value corrected from 32 to 40 kHz in entire document. T added to Table 50: TS characteristics. N modified in Table. S_temp END T added to Table 12: Embedded internal reference voltage. S_vrefint Handling of unused pins specified in General input/output characteristics on page 61. All I/Os are CMOS and TTL compliant. Figure 39: Power supply and reference decoupling (V not connected REF+ to V ) modified. DDA t and f removed from Table 27: PLL characteristics. Appendix JITTER VCO A: Important notes on page 81 added. Added Figure 16, Figure 17, Figure 19 and Figure 21."
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 108,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n22-Nov-2007 | 4 | Document status promoted from preliminary data to datasheet. STM32F103xx is USB certified. Small text changes. Power supply schemes on page 15 modified. Number of communication peripherals corrected for STM32F103Tx and number of GPIOs corrected for LQFP package in Table 2: STM32F103xx medium-density device features and peripheral counts. Main function and default alternate function modified for PC14 and PC15 in, Note 6 added and Remap column added in Table 5: Medium-density STM32F103xx pin definitions. V –V ratings and Note 1 modified in Table 6: Voltage characteristics, DD SS Note 1 modified in Table 7: Current characteristics. Note 1 and Note 2 added in Table 11: Embedded reset and power control block characteristics. I value at 72 MHz with peripherals enabled modified in Table 14: DD Maximum current consumption in Run mode, code with data processing running from RAM. I value at 72 MHz with peripherals enabled modified in Table 15: DD Maximum current consumption in Sleep mode, code running from Flash or RAM on page 43. I typical value at 2.4 V modified and I maximum values DD_VBAT DD_VBAT added in Table 16: Typical and maximum current consumptions in Stop and Standby modes. Note added in Table 17 on page 47 and Table 18 on page 48. ADC1 and ADC2 consumption and notes modified in Table 19: Peripheral current consumption. t and t conditions modified in Table 22 and Table 23, SU(HSE) SU(LSE) respectively. Maximum values removed from Table 26: Low-power mode wakeup timings. t conditions modified in Table. Figure 14: Power supply RET scheme corrected. Figure 20: Typical current consumption in Stop mode, with regulator in Low-power mode added. Note removed below Figure 33: SPI timing diagram - slave mode and CPHA = 0. Note added below Figure 34: SPI timing diagram - slave mode and CPHA = 1(1). Details on unused pins removed from General input/output characteristics on page 61. Table 42: SPI characteristics updated. Table 43: USB startup time added. V , t and t modified, note added and I removed in Table 46: ADC AIN lat latr lkg characteristics. Test conditions modified and note added in Table 49: ADC accuracy. Note added below Table 47 and Table 50. Inch values corrected in Table 55: LQPF100 mechanical data, Table 58: LQFP64 mechanical data and Table 60: LQFP48, 7 x 7 mm, 48-pin low- profile quad flat package mechanical data. Θ value for VFQFPN36 package added in Table 62: Package thermal JA characteristics. Order codes replaced by Section 7: Ordering information scheme. MCU ‘s operating conditions modified in Typical current consumption on page 46. Avg_Slope and V modified in Table 50: TS characteristics. I2C 25 interface characteristics on page 68 modified. Impedance specified in A.4: Voltage glitch on ADC input 0 on page 81."
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 109,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n14-Mar-2008 | 5 | Figure 2: Clock tree on page 12 added. Maximum T value given in Table 8: Thermal characteristics on page 37. J CRC feature added (see CRC (cyclic redundancy check) calculation unit on page 9 and Figure 11: Memory map on page 34 for address). I modified in Table 16: Typical and maximum current consumptions in DD Stop and Standby modes. ACC modified in Table 24: HSI oscillator characteristics on page 54, HSI note 2 removed. P , T and T added, t values modified and t description clarified D A J prog prog in Table 28: Flash memory characteristics on page 56. t modified in Table. RET V unit corrected in Table 38: NRST pin characteristics on page NF(NRST) 66. Table 42: SPI characteristics on page 70 modified. I added to Table 46: ADC characteristics on page 74. VREF Table 48: ADC accuracy - Limited test conditions added. Table 49: ADC accuracy modified. LQFP100 package specifications updated (see Section 6: Package information on page 79). Recommended LQFP100, LQFP 64, LQFP48 and VFQFPN36 footprints added (see Figure 55, Figure 60, Figure 64 and Figure 44). Section 6.9: Thermal characteristics on page 104 modified, Section 6.9.1 and Section 6.9.2 added. Appendix A: Important notes on page 81 removed.\n21-Mar-2008 | 6 | Small text changes. Figure 11: Memory map clarified. In Table: N tested over the whole temperature range, cycling conditions END specified for t t min modified at T = 55 °C RET, RET A V , Avg_Slope and T modified in Table 50: TS characteristics. 25 L CRC feature removed.\n22-May-2008 | 7 | CRC feature added back. Small text changes. Section 1: Introduction modified. Section 2.2: Full compatibility throughout the family added. I at T max = 105 °C added to Table 16: Typical and maximum current DD A consumptions in Stop and Standby modes on page 44. I removed from Table 21: Typical current consumption in Standby DD_VBAT mode on page 47. Values added to Table 41: SCL frequency (f = 36 MHz, V = PCLK1 DD_I2C 3.3 V) on page 69. Figure 33: SPI timing diagram - slave mode and CPHA = 0 on page 71 modified. Equation 1 corrected. t at T = 105 °C modified in Table on page 57. RET A V added to Table 44: USB DC electrical characteristics on page 73. USB Figure 65: LQFP100 P max vs. T on page 106 modified. D A Axx option added to Table 63: Ordering information scheme on page 110."
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 110,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n21-Jul-2008 | 8 | Power supply supervisor updated and V added to Table 9: General DDA operating conditions. Capacitance modified in Figure 14: Power supply scheme on page 36. Table notes revised in Section 5: Electrical characteristics. Table 16: Typical and maximum current consumptions in Stop and Standby modes modified. Data added to Table 16: Typical and maximum current consumptions in Stop and Standby modes and Table 21: Typical current consumption in Standby mode removed. f modified in Table 20: High-speed external user clock HSE_ext characteristics on page 50. f modified in Table 27: PLL PLL_IN characteristics on page 56. Minimum SDA and SCL fall time value for Fast mode removed from Table 40: I2C characteristics on page 68, note 1 modified. t modified in Table 42: SPI characteristics on page 70 and Figure h(NSS) 33: SPI timing diagram - slave mode and CPHA = 0 on page 71. C modified in Table 46: ADC characteristics on page 74 and Figure ADC 38: Typical connection diagram using the ADC modified. Typical T value removed from Table 50: TS characteristics on page S_temp 78. LQFP48 package specifications updated (see Table 60 and Table 64), Section 6: Package information revised. Axx option removed from Table 63: Ordering information scheme on page 110. Small text changes.\n22-Sep-2008 | 9 | STM32F103x6 part numbers removed (see Table 63: Ordering information scheme). Small text changes. General-purpose timers (TIMx) and Advanced-control timer (TIM1) on page 18 updated. Notes updated in Table 5: Medium-density STM32F103xx pin definitions on page 28. Note 2 modified below Table 6: Voltage characteristics on page 37, |ΔV | min and |ΔV | min removed. DDx DDx Measurement conditions specified in Section 5.3.5: Supply current characteristics on page 40. I in standby mode at 85 °C modified in Table 16: Typical and maximum DD current consumptions in Stop and Standby modes on page 44. General input/output characteristics on page 61 modified. f conditions modified in Table 30: EMS characteristics on page 58. HCLK Θ and pitch value modified for LFBGA100 package in Table 62: JA Package thermal characteristics. Small text changes."
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 111,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n23-Apr-2009 | 10 | I/O information clarified on page 1. Figure 3: STM32F103xx performance line LFBGA100 ballout modified. Figure 11: Memory map modified. Table 4: Timer feature comparison added. PB4, PB13, PB14, PB15, PB3/TRACESWO moved from Default column to Remap column in Table 5: Medium-density STM32F103xx pin definitions. P for LFBGA100 corrected in Table 9: General operating conditions. D Note modified in Table 13: Maximum current consumption in Run mode, code with data processing running from Flash and Table 15: Maximum current consumption in Sleep mode, code running from Flash or RAM. Table 20: High-speed external user clock characteristics and Table 21: Low-speed external user clock characteristics modified. Figure 20 shows a typical curve (title modified). ACC max values HSI modified in Table 24: HSI oscillator characteristics. TFBGA64 package added (see Table 59 and Table 60). Small text changes.\n22-Sep-2009 | 11 | Note 5 updated and Note 4 added in Table 5: Medium-density STM32F103xx pin definitions. V and T added to Table 12: Embedded internal reference RERINT Coeff voltage. I value added to Table 16: Typical and maximum current DD_VBAT consumptions in Stop and Standby modes. Figure 18: Typical current consumption on V (RTC on) added. BAT f min modified in Table 20: High-speed external user clock HSE_ext characteristics. C and C replaced by C in Table 22: HSE 4-16 MHz oscillator L1 L2 characteristics and Table 23: LSE oscillator characteristics (f = 32.768 LSE kHz), notes modified and moved below the tables. Table 24: HSI oscillator characteristics modified. Conditions removed from Table 26: Low-power mode wakeup timings. Note 1 modified below Figure 24: Typical application with an 8 MHz crystal. IEC 1000 standard updated to IEC 61000 and SAE J1752/3 updated to IEC 61967-2 in Section 5.3.10: EMC characteristics on page 57. Jitter added to Table 27: PLL characteristics. Table 42: SPI characteristics modified. C and R parameters modified in Table 46: ADC characteristics. ADC AIN R max values modified in Table 47: R max for f = 14 MHz. AIN AIN ADC Figure 47: LFBGA100 outline updated.\n03-Jun-2010 | 12 | Added STM32F103TB devices. Added VFQFPN48 package. Updated note 2 below Table 40: I2C characteristics Updated Figure 32: I2C bus AC waveforms and measurement circuit Updated Figure 31: Recommended NRST pin protection Updated Section 5.3.12: I/O current injection characteristics"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 112,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n19-Apr-2011 | 13 | Updated footnotes below Table 6: Voltage characteristics on page 37 and Table 7: Current characteristics on page 37 Updated tw min in Table 20: High-speed external user clock characteristics on page 50 Updated startup time in Table 23: LSE oscillator characteristics (f = LSE 32.768 kHz) on page 53 Added Section 5.3.12: I/O current injection characteristics Updated Section 5.3.13: I/O port characteristics\n07-Dec-2012 | 14 | Added UFBGA100 7 x 7 mm. Updated Figure 59: LQFP64, 10 x 10 mm, 64-pin low-profile quad flat package outline to add pin 1 identification.\n14-May-2013 | 15 | Replaced VQFN48 package with UQFN48 in cover page packages, Table 2: STM32F103xx medium-density device features and peripheral counts, Figure 9: STM32F103xx performance line UFQFPN48 pinout, Table 2: STM32F103xx medium-density device features and peripheral counts, Table 56: UFBGA100 mechanical data, Table 63: Ordering information scheme and updated Table 62: Package thermal characteristics Added footnote for TFBGA ADC channels in Table 2: STM32F103xx medium-density device features and peripheral counts Updated ‘All GPIOs are high current...’ in Section 2.3.21: GPIOs (general- purpose inputs/outputs) Updated Table 5: Medium-density STM32F103xx pin definitions Corrected Sigma letter in Section 5.1.1: Minimum and maximum values Removed the first sentence in Section 5.3.16: Communications interfaces Added ‘V ’ in Table 9: General operating conditions IN Updated first sentence in Output driving current Added note 5. in Table 24: HSI oscillator characteristics Updated ‘V ’ and ‘V ’ in Table 35: I/O static characteristics IL IH Added notes to Figure 26: Standard I/O input characteristics - CMOS port, Figure 27: Standard I/O input characteristics - TTL port, Figure 28: 5 V tolerant I/O input characteristics - CMOS port and Figure 29: 5 V tolerant I/O input characteristics - TTL port Updated Figure 32: I2C bus AC waveforms and measurement circuit Updated notes 2 and 3,removed note “the device must internally...” in Table 40: I2C characteristics Updated title of Table 41: SCL frequency (f = 36 MHz, V = 3.3 PCLK1 DD_I2C V) Updated note 2. in Table 49: ADC accuracy Updated Figure 53: UFBGA100 - 100-ball, 7 x 7 mm, 0.50 mm pitch, ultra fine pitch ball grid array package outline and Table 56: UFBGA100 mechanical data Updated Figure 47: LFBGA100 outline and Table 53: LFBGA100 mechanical data Updated Figure 60: TFBGA64 - 8 x 8 active ball array, 5 x 5 mm, 0.5 mm pitch, package outline and Table 59: TFBGA64 - 8 x 8 active ball array, 5 x 5 mm, 0.5 mm pitch, package mechanical data"
+  },
+  {
+    "source": "stm32f103c8.pdf",
+    "page": 113,
+    "type": "stk_table",
+    "text": "[TABLE] [SOURCE: stm32f103c8.pdf]\n| Date | Revision | Changes |\n| --- | --- | --- |\n05-Aug-2013 | 16 | Updated the reference for ‘V ’ in Table 32: ESD absolute ESD(CDM) maximum ratings Corrected ‘tf(IO)out’ in Figure 30: I/O AC characteristics definition Updated Table 52: UFQFPN48 mechanical data\n21-Aug-2015 | 17 | Updated Table 3: STM32F103xx family removing the note. Updated Table 63: Ordering information scheme removing the note. Updated Section 6: Package information and added Section: Marking of engineering samples for all packages. Updated I2C characteristics, added t parameter and note 4 in Table 40: SP I2C characteristics. Updated Figure 32: I2C bus AC waveforms and measurement circuit swapping SCLL and SCLH. Updated Figure 33: SPI timing diagram - slave mode and CPHA = 0. Updated min/max value notes replacing ‘Guaranteed by design, not tested in production” by “guaranteed by design”. Updated min/max value notes replacing ‘based on characterization, not tested in production” by “Guaranteed based on test during characterization”. Updated Table 19: Peripheral current consumption.\n29-Mar-2022 | 18 | Updated Table 5: Medium-density STM32F103xx pin definitions. Updated Figure 37: ADC accuracy characteristics, Figure 38: Typical connection diagram using the ADC and its footnotes. Minor text edits across the whole document.\n18-Sep-2023 | 19 | Updated Features. Updated Section 1: Introduction. Updated Figure 11: Memory map. Updated Table 24: HSE 4-16 MHz oscillator characteristics and Table 25: LSE oscillator characteristics (f = 32.768 kHz). LSE Updated Table 33: EMI characteristics for fHSE = 8 MHz and fHCLK = 48 MHz and created Table 34: EMI characteristics for fHSE = 8 MHz and fHCLK = 72 MHz. Updated Figure 33: SPI timing diagram - slave mode and CPHA = 0, Figure 34: SPI timing diagram - slave mode and CPHA = 1, and Figure 35: SPI timing diagram - master mode. Updated Table 46: USB startup time. Added Section 8: Important security notice. Updated all packages in Section 6: Package information.\n28-Jul-2025 | 20 | Updated Section 7: Ordering information scheme."
+  }
+]
