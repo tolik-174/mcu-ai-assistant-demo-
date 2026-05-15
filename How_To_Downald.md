@@ -97,6 +97,12 @@ mcu-data/
 └── projects/
     └── zips/
 ```
+4.1 Install backend server 
+Install folder 
+```
+backend
+```
+
 # 5. Add Documentation and SDKs
 Add PDFs
 
